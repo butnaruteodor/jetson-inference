@@ -1,13 +1,14 @@
 #include "Fastscnn.hpp"
+#include "ProjectPaths.h"
 
-static inline size_t sizeDims(const nvinfer1::Dims &dims, const size_t elementSize=1)
+static inline size_t sizeDims(const nvinfer1::Dims &dims, const size_t elementSize = 1)
 {
-    size_t sz = dims.d[0];
+	size_t sz = dims.d[0];
 
-    for (int n = 1; n < dims.nbDims; n++)
-        sz *= dims.d[n];
+	for (int n = 1; n < dims.nbDims; n++)
+		sz *= dims.d[n];
 
-    return sz * elementSize;
+	return sz * elementSize;
 }
 
 static inline nvinfer1::Dims validateDims(const nvinfer1::Dims &dims)
@@ -75,9 +76,9 @@ FastScnn::FastScnn(const std::string &engineFilename)
 	/*
 	 * create events for timing
 	 */
-	for( int n=0; n < PROFILER_TOTAL * 2; n++ )
+	for (int n = 0; n < PROFILER_TOTAL * 2; n++)
 		CUDA(cudaEventCreate(&mEventsGPU[n]));
-	
+
 	// De-serialize engine from file
 	std::ifstream engineFile(engineFilename, std::ios::binary);
 	if (engineFile.fail())
@@ -96,43 +97,43 @@ FastScnn::FastScnn(const std::string &engineFilename)
 	mInfer = nvinfer1::createInferRuntime(sample::gLogger.getTRTLogger());
 	// mInfer = CREATE_INFER_RUNTIME(gLogger);
 	mEngine = mInfer->deserializeCudaEngine(engineData.data(), fsize, nullptr);
-	std::cout<<mEngine<<std::endl;
+	std::cout << mEngine << std::endl;
 	uGrid = nullptr;
 	vGrid = nullptr;
 }
 FastScnn::~FastScnn()
 {
-		if (mEngine)
-		{
-			mEngine->destroy();
-		}
-		if (mInfer)
-		{
-			mInfer->destroy();
-		}
-		if (mContext)
-		{
-			mContext->destroy();
-		}
-		if (mClassMap)
-		{
-			CUDA_FREE_HOST(mClassMap);
-		}
-
-		for( size_t n=0; n < mInputs.size(); n++ )
-		{
-			CUDA_FREE(mInputs[n].CUDA);
-		}
-		
-		for( size_t n=0; n < mOutputs.size(); n++ )
-			CUDA_FREE_HOST(mOutputs[n].CPU);
-		
-		free(mBindings);
-
-		cudaStreamDestroy(mStream);
+	if (mEngine)
+	{
+		mEngine->destroy();
+	}
+	if (mInfer)
+	{
+		mInfer->destroy();
+	}
+	if (mContext)
+	{
+		mContext->destroy();
+	}
+	if (mClassMap)
+	{
+		CUDA_FREE_HOST(mClassMap);
 	}
 
-int FastScnn::initEngine()
+	for (size_t n = 0; n < mInputs.size(); n++)
+	{
+		CUDA_FREE(mInputs[n].CUDA);
+	}
+
+	for (size_t n = 0; n < mOutputs.size(); n++)
+		CUDA_FREE_HOST(mOutputs[n].CPU);
+
+	free(mBindings);
+
+	cudaStreamDestroy(mStream);
+}
+
+int FastScnn::InitEngine()
 {
 	// Context
 	if (!mEngine)
@@ -143,7 +144,7 @@ int FastScnn::initEngine()
 		sample::gLogger.log(nvinfer1::ILogger::Severity::kERROR, "Failed to create execution context");
 		return 0;
 	}
-	
+
 	const int numBindings = mEngine->getNbBindings();
 
 	std::vector<std::string> output_blobs;
@@ -295,8 +296,8 @@ int FastScnn::initEngine()
 		LogError("Could not allocate uGrid or vGrid\n");
 		return false;
 	}
-	
-	int status = loadGrid();
+
+	int status = LoadGrid();
 	if (!status)
 	{
 		LogError("FastScnn: Failed to load grid\n");
@@ -304,7 +305,189 @@ int FastScnn::initEngine()
 	}
 	return true;
 }
-bool FastScnn::loadGrid()
+
+// bool FastScnn::getRGB(pixelType *img, int middle_lane_x)
+// {
+// 	PROFILER_BEGIN(PROFILER_VISUALIZE);
+// 	for (uint32_t y = 0; y < OUT_IMG_H; y++)
+// 	{
+// 		for (uint32_t x = 0; x < OUT_IMG_W; x++)
+// 		{
+// 			int index = y * OUT_IMG_W + x;
+// 			if ((int)mClassMap[index] == 0)
+// 			{
+// 				img[index].x = 128;
+// 				img[index].y = 64;
+// 				img[index].z = 128;
+// 			}
+// 			else if ((int)mClassMap[index] == 1)
+// 			{
+// 				img[index].x = 244;
+// 				img[index].y = 35;
+// 				img[index].z = 232;
+// 			}
+// 			else if ((int)mClassMap[index] == 2)
+// 			{
+// 				img[index].x = 70;
+// 				img[index].y = 70;
+// 				img[index].z = 70;
+// 			}
+// 			else if ((int)mClassMap[index] == 3)
+// 			{
+// 				img[index].x = 102;
+// 				img[index].y = 102;
+// 				img[index].z = 156;
+// 			}
+// 			else if ((int)mClassMap[index] == 4)
+// 			{
+// 				img[index].x = 190;
+// 				img[index].y = 153;
+// 				img[index].z = 153;
+// 			}
+// 			else if ((int)mClassMap[index] == 5)
+// 			{
+// 				img[index].x = 153;
+// 				img[index].y = 153;
+// 				img[index].z = 153;
+// 			}
+// 			if (x == middle_lane_x)
+// 			{
+// 				img[index].x = 0;
+// 				img[index].y = 255;
+// 				img[index].z = 0;
+// 			}
+// 		}
+// 	}
+// 	PROFILER_END(PROFILER_VISUALIZE);
+// }
+
+// void FastScnn::loopThroughClassmap(std::vector<int> &y_vals_lane, std::vector<int> &x_vals_lane, int classidx)
+// {
+// 	obstacle.numPixels = 0;
+// 	obstacle.smallest_x_obst = OUT_IMG_W;
+// 	obstacle.biggest_x_obst = 0;
+// 	obstacle.smallest_y_obst = OUT_IMG_H;
+// 	obstacle.biggest_y_obst = 0;
+// 	for (int y = 0; y < OUT_IMG_H; ++y)
+// 	{ // Assuming height is 512
+// 		for (int x = 0; x < OUT_IMG_W; ++x)
+// 		{ // Assuming width is 1024
+// 			int index = y * OUT_IMG_W + x;
+// 			if (mClassMap[index] == classidx)
+// 			{
+// 				y_vals_lane.push_back(y);
+// 				x_vals_lane.push_back(x);
+// 			}
+// 			else if (mClassMap[index] == OBSTACLE)
+// 			{
+// 				obstacle.numPixels++;
+// 				if (x > obstacle.biggest_x_obst)
+// 				{
+// 					obstacle.biggest_x_obst = x;
+// 				}
+// 				else if (x < obstacle.smallest_x_obst)
+// 				{
+// 					obstacle.smallest_x_obst = x;
+// 				}
+// 				else if (y > obstacle.biggest_y_obst)
+// 				{
+// 					obstacle.biggest_y_obst = y;
+// 				}
+// 				else if (y < obstacle.smallest_y_obst)
+// 				{
+// 					obstacle.smallest_y_obst = y;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// int FastScnn::getLaneCenter(int laneIdx)
+// {
+// 	std::vector<int> y_vals_lane, x_vals_lane;
+// 	int right_most_x = 0;
+// 	int left_most_x = OUT_IMG_W; // Assuming width is 1024
+// 	int middle_x, bottom_most_y;
+// 	middle_x = -1;
+// 	// Loop through the classMap to find right lane
+// 	loopThroughClassmap(y_vals_lane, x_vals_lane, laneIdx);
+// 	std::cout << y_vals_lane.size() << std::endl;
+// 	if (!y_vals_lane.empty())
+// 	{
+// 		// Find the lowest y-coordinate for the lane
+// 		bottom_most_y = *std::max_element(y_vals_lane.begin(), y_vals_lane.end());
+
+// 		// Loop through a region around the bottom_most_y to find the left-most and right-most x
+// 		for (int y = std::max(0, bottom_most_y - 200); y <= bottom_most_y; ++y)
+// 		{
+// 			for (int x = 0; x < OUT_IMG_W; ++x)
+// 			{ // Assuming width is 1024
+// 				int index = y * OUT_IMG_W + x;
+// 				if (mClassMap[index] == laneIdx)
+// 				{
+// 					right_most_x = std::max(right_most_x, x);
+// 					left_most_x = std::min(left_most_x, x);
+// 				}
+// 			}
+// 		}
+
+// 		middle_x = (right_most_x + left_most_x) / 2;
+// 	}
+// 	return middle_x;
+// }
+// int FastScnn::getParkingDirection(int offset)
+// {
+// 	std::vector<int> y_vals_lane, x_vals_lane;
+// 	int right_most_x = -1;
+// 	loopThroughClassmap(y_vals_lane, x_vals_lane, CHARGING_PAD);
+// 	if (!x_vals_lane.empty())
+// 	{
+// 		// Find the lowest y-coordinate for the lane
+// 		right_most_x = *std::max_element(x_vals_lane.begin(), x_vals_lane.end()) + offset;
+// 	}
+// 	return right_most_x;
+// }
+// bool FastScnn::isObstacleOnLane(int dev)
+// {
+// 	if (obstacle.numPixels > OBSTACLE_THRESH)
+// 	{
+// 		int center_x = (obstacle.smallest_x_obst + obstacle.biggest_x_obst) / 2;
+// 		if (abs(center_x - OUT_IMG_W / 2) < dev)
+// 		{
+// 			return true;
+// 		}
+// 	}
+// 	return false;
+// }
+
+void FastScnn::PreProcess(uchar3 *input_img)
+{
+	PROFILER_BEGIN(PROFILER_PREPROCESS);
+	warpImageK(input_img, (float *)mInputs[0].CUDA, uGrid, vGrid, IN_IMG_W, IN_IMG_H); // 3ms
+	PROFILER_END(PROFILER_PREPROCESS);
+}
+
+void FastScnn::Process()
+{
+	PROFILER_BEGIN(PROFILER_NETWORK);
+	if (!mContext->enqueueV2(mBindings, mStream, NULL))
+	{
+		LogError("Fastscnn: Failed to enqueue TensorRT context on device\n");
+	}
+	PROFILER_END(PROFILER_NETWORK);
+	CUDA(cudaStreamSynchronize(mStream));
+}
+
+void FastScnn::PostProcess(uint8_t **classmap_ptr)
+{
+	PROFILER_BEGIN(PROFILER_POSTPROCESS);
+	generateClassMap((float *)mOutputs[0].CUDA, mClassMap); // 1ms
+	PROFILER_END(PROFILER_POSTPROCESS);
+
+	*classmap_ptr = mClassMap;
+}
+
+bool FastScnn::LoadGrid()
 {
 	bool ret = true;
 	int *uGridBuffer = nullptr;
@@ -313,12 +496,12 @@ bool FastScnn::loadGrid()
 	uGridBuffer = (int *)malloc(UV_GRID_COLS * sizeof(int));
 	vGridBuffer = (int *)malloc(UV_GRID_COLS * sizeof(int));
 
-	std::ifstream infile_u("files/u_grid.bin", std::ios::binary);
-	std::ifstream infile_v("files/v_grid.bin", std::ios::binary);
+	std::ifstream infile_u(ugrid_path, std::ios::binary);
+	std::ifstream infile_v(vgrid_path, std::ios::binary);
 
 	if (!infile_u || !infile_v)
 	{
-		std::cout << "Cannot open file.\n";
+		LogError("Fastscnn: Failed to open calibration files\n");
 		ret = false;
 	}
 	else
@@ -341,192 +524,11 @@ bool FastScnn::loadGrid()
 	if (cpy1_err != cudaSuccess || cpy2_err != cudaSuccess)
 	{
 		ret = false;
-		LogError("Failed to copy to cuda mem\n");
+		LogError("Fastscnn: Failed to copy uGrid/vGrid to cuda mem\n");
 	}
 
 	free(uGridBuffer);
 	free(vGridBuffer);
 
 	return ret;
-}
-bool FastScnn::infer()
-{
-	if (!mContext->enqueueV2(mBindings, mStream, NULL))
-	{
-		LogError("failed to enqueue TensorRT context on device\n");
-		return false;
-	}
-	return true;
-}
-//cudaEvent_t start, stop;
-bool FastScnn::process(uchar3 *image, uint32_t width, uint32_t height)
-{
-	PROFILER_BEGIN(PROFILER_PREPROCESS);
-	warpImageK(image, (float *)mInputs[0].CUDA, uGrid, vGrid, width, height); // 3ms
-	PROFILER_END(PROFILER_PREPROCESS);
-	PROFILER_BEGIN(PROFILER_NETWORK);
-	if (!infer())
-		return false;
-	PROFILER_END(PROFILER_NETWORK);
-
-	PROFILER_BEGIN(PROFILER_POSTPROCESS);
-	generateClassMap((float *)mOutputs[0].CUDA, mClassMap); // 1ms
-	PROFILER_END(PROFILER_POSTPROCESS);
-	CUDA(cudaDeviceSynchronize());
-
-	return true;
-}
-
-bool FastScnn::getRGB(pixelType *img, int middle_lane_x)
-{
-	PROFILER_BEGIN(PROFILER_VISUALIZE);
-	for (uint32_t y = 0; y < OUT_IMG_H; y++)
-	{
-		for (uint32_t x = 0; x < OUT_IMG_W; x++)
-		{
-			int index = y * OUT_IMG_W + x;
-			if ((int)mClassMap[index] == 0)
-			{
-				img[index].x = 128;
-				img[index].y = 64;
-				img[index].z = 128;
-			}
-			else if ((int)mClassMap[index] == 1)
-			{
-				img[index].x = 244;
-				img[index].y = 35;
-				img[index].z = 232;
-			}
-			else if ((int)mClassMap[index] == 2)
-			{
-				img[index].x = 70;
-				img[index].y = 70;
-				img[index].z = 70;
-			}
-			else if ((int)mClassMap[index] == 3)
-			{
-				img[index].x = 102;
-				img[index].y = 102;
-				img[index].z = 156;
-			}
-			else if ((int)mClassMap[index] == 4)
-			{
-				img[index].x = 190;
-				img[index].y = 153;
-				img[index].z = 153;
-			}
-			else if ((int)mClassMap[index] == 5)
-			{
-				img[index].x = 153;
-				img[index].y = 153;
-				img[index].z = 153;
-			}
-			if (x == middle_lane_x)
-			{
-				img[index].x = 0;
-				img[index].y = 255;
-				img[index].z = 0;
-			}
-		}
-	}
-	PROFILER_END(PROFILER_VISUALIZE);
-}
-
-void FastScnn::loopThroughClassmap(std::vector<int> &y_vals_lane, std::vector<int> &x_vals_lane, int classidx)
-{
-	obstacle.numPixels = 0;
-	obstacle.smallest_x_obst = OUT_IMG_W;
-	obstacle.biggest_x_obst = 0;
-	obstacle.smallest_y_obst = OUT_IMG_H;
-	obstacle.biggest_y_obst = 0;
-	for (int y = 0; y < OUT_IMG_H; ++y)
-	{ // Assuming height is 512
-		for (int x = 0; x < OUT_IMG_W; ++x)
-		{ // Assuming width is 1024
-			int index = y * OUT_IMG_W + x;
-			if (mClassMap[index] == classidx)
-			{
-				y_vals_lane.push_back(y);
-				x_vals_lane.push_back(x);
-			}
-			else if (mClassMap[index] == OBSTACLE)
-			{
-				obstacle.numPixels++;
-				if (x > obstacle.biggest_x_obst)
-				{
-					obstacle.biggest_x_obst = x;
-				}
-				else if (x < obstacle.smallest_x_obst)
-				{
-					obstacle.smallest_x_obst = x;
-				}
-				else if (y > obstacle.biggest_y_obst)
-				{
-					obstacle.biggest_y_obst = y;
-				}
-				else if (y < obstacle.smallest_y_obst)
-				{
-					obstacle.smallest_y_obst = y;
-				}
-			}
-		}
-	}
-}
-
-int FastScnn::getLaneCenter(int laneIdx)
-{
-	std::vector<int> y_vals_lane, x_vals_lane;
-	int right_most_x = 0;
-	int left_most_x = OUT_IMG_W; // Assuming width is 1024
-	int middle_x, bottom_most_y;
-	middle_x = -1;
-	// Loop through the classMap to find right lane
-	loopThroughClassmap(y_vals_lane, x_vals_lane, laneIdx);
-	std::cout << y_vals_lane.size() << std::endl;
-	if (!y_vals_lane.empty())
-	{
-		// Find the lowest y-coordinate for the lane
-		bottom_most_y = *std::max_element(y_vals_lane.begin(), y_vals_lane.end());
-
-		// Loop through a region around the bottom_most_y to find the left-most and right-most x
-		for (int y = std::max(0, bottom_most_y - 200); y <= bottom_most_y; ++y)
-		{
-			for (int x = 0; x < OUT_IMG_W; ++x)
-			{ // Assuming width is 1024
-				int index = y * OUT_IMG_W + x;
-				if (mClassMap[index] == laneIdx)
-				{
-					right_most_x = std::max(right_most_x, x);
-					left_most_x = std::min(left_most_x, x);
-				}
-			}
-		}
-
-		middle_x = (right_most_x + left_most_x) / 2;
-	}
-	return middle_x;
-}
-int FastScnn::getParkingDirection(int offset)
-{
-	std::vector<int> y_vals_lane, x_vals_lane;
-	int right_most_x = -1;
-	loopThroughClassmap(y_vals_lane, x_vals_lane, CHARGING_PAD);
-	if (!x_vals_lane.empty())
-	{
-		// Find the lowest y-coordinate for the lane
-		right_most_x = *std::max_element(x_vals_lane.begin(), x_vals_lane.end()) + offset;
-	}
-	return right_most_x;
-}
-bool FastScnn::isObstacleOnLane(int dev)
-{
-	if (obstacle.numPixels > OBSTACLE_THRESH)
-	{
-		int center_x = (obstacle.smallest_x_obst + obstacle.biggest_x_obst) / 2;
-		if (abs(center_x - OUT_IMG_W / 2) < dev)
-		{
-			return true;
-		}
-	}
-	return false;
 }

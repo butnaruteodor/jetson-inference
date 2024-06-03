@@ -203,4 +203,5 @@ CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.o: \
  /usr/include/c++/7/algorithm /usr/include/c++/7/bits/stl_algo.h \
  /usr/include/c++/7/bits/algorithmfwd.h \
  /usr/include/c++/7/bits/stl_heap.h /usr/include/c++/7/bits/stl_tempbuf.h \
- /usr/include/c++/7/bits/uniform_int_dist.h /usr/include/c++/7/limits
+ /usr/include/c++/7/bits/uniform_int_dist.h /usr/include/c++/7/limits \
+ /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/util/ProjectPaths.h

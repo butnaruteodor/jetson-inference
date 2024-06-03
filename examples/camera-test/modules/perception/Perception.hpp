@@ -23,9 +23,7 @@ struct DetectedSign
 class Perception
 {
 public:
-    /*
-    ** Perception module constructor
-    */
+    /* Perception module constructor */
     Perception() : seg_network(segModelPath), det_network(detModelPath)
     {
         if (!cudaAllocMapped(&det_vis_image, make_int2(DETECTION_ROI_W, DETECTION_ROI_H)))
@@ -34,30 +32,42 @@ public:
         }
     };
 
-    /*
-    ** Perception module desstructor
-    */
+    /* Perception module destructor */
     ~Perception();
 
-    /*
-    ** Initialize the module
-    */
+    /* Initialize the module*/
     int InitModule();
+
+    /* Main function that processes the module */
     int RunPerception(pixelType *img_input, pixelType *img_output);
+
+    /* Get detected sign interface function */
     int GetDetection(Yolo::Detection* det);
 
-protected:
+    /* Get segmap pointer */
+    uint8_t* GetSegmapPtr();
+
+private:
+    /* Network TensorRT objects */
     FastScnn seg_network;
     YoloV3 det_network;
 
+    uint8_t* classmap_ptr;
+
+    /* Pointer to the detection overlay image */
     pixelType *det_vis_image;
 
+    /* Structure that contains info about the detected sign */
     DetectedSign detected_sign;
 
     /* Get the image thats fed to the detection network before preprocessing */
-    void GetVisImage(pixelType *img_input);
-    void OverlayVisImage(pixelType *img_output);
+    void GetDetImage(pixelType *input_img);
+
+    /* Overlay detection image on the visualization image */
+    void OverlayDetImage(pixelType *vis_img);
 
     /* Filter the detections to get a reliable reading of the detected sign */
     void FilterDetections(std::vector<Yolo::Detection> detections);
+
+    void OverlaySegImage(pixelType *img, int middle_lane_x);
 };

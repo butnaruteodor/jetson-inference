@@ -137,7 +137,7 @@ void YoloV3::PreProcess(uchar3 *input_img)
 void YoloV3::Process(){
 	if (!mContext->enqueue(1,mBindings, mStream, NULL))
 	{
-		LogError("failed to enqueue TensorRT context on device\n");
+		LogError("YoloV3: Failed to enqueue TensorRT context on device\n");
 	}
 	cudaStreamSynchronize(mStream);
 }

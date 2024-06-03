@@ -666,6 +666,7 @@ CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.o
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/perception/fastscnn/Fastscnn.hpp
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/perception/fastscnn/argmax.h
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/perception/ipm.h
+ /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/util/ProjectPaths.h
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/util/logger.h
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/util/logging.h
  /usr/include/aarch64-linux-gnu/NvInfer.h

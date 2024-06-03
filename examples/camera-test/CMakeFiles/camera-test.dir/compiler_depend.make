@@ -662,6 +662,7 @@ CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.o: modules/p
   modules/perception/fastscnn/Fastscnn.hpp \
   modules/perception/fastscnn/argmax.h \
   modules/perception/ipm.h \
+  util/ProjectPaths.h \
   util/logger.h \
   util/logging.h \
   /usr/include/aarch64-linux-gnu/NvInfer.h \

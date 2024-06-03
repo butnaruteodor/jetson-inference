@@ -91,7 +91,6 @@ public:
 	YoloV3(const std::string &engineFilename);
 	~YoloV3();
 	bool InitEngine();
-	bool infer();
 	void PreProcess(uchar3 *input_img);
 	void Process();
 	void PostProcess(std::vector<Yolo::Detection>* out_detections);

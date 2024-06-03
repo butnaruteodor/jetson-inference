@@ -16,8 +16,8 @@
 
 #define OUT_IMG_W 1024
 #define OUT_IMG_H 512
-#define IN_IMG_W 1280
-#define IN_IMH_H 720
+#define IN_IMG_W 1920
+#define IN_IMG_H 1080
 #define UV_GRID_COLS 524288
 #define SEG_MAP_W 1024
 #define SEG_MAP_H 512
@@ -72,13 +72,11 @@ public:
 	FastScnn(const std::string &engineFilename);
 	~FastScnn();
 
-	int initEngine();
-	bool process(uchar3 *image, uint32_t width, uint32_t height);
-	bool infer();
-	bool getRGB(pixelType *img, int middle_x);
-	int getLaneCenter(int laneIdx);
-	int getParkingDirection(int offset);
-	bool isObstacleOnLane(int dev);
+	int InitEngine();
+	void PreProcess(uchar3 *input_img);
+	void Process();
+	void PostProcess(uint8_t **classmap_ptr);
+	bool LoadGrid();
 
 
 	/*****************Performance profiling functions*****************/
@@ -220,8 +218,6 @@ public:
 	std::vector<layerInfo> mInputs;
 	std::vector<layerInfo> mOutputs;
 protected:
-	void loopThroughClassmap(std::vector<int> &y_vals_lane, std::vector<int> &x_vals_lane, int classidx);
-	bool loadGrid();
 	nvinfer1::ICudaEngine *mEngine;
 	nvinfer1::IRuntime *mInfer;
 	nvinfer1::IExecutionContext *mContext;

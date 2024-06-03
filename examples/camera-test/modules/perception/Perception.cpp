@@ -15,19 +15,15 @@ Perception::~Perception()
 
 int Perception::InitModule()
 {
-	/*
-	 * initialize segmentation network
-	 */
-	/*int status_seg = seg_network.initEngine();
+	/* Initialize segmentation network */
+	int status_seg = seg_network.InitEngine();
 	if (!status_seg)
 	{
 		LogError("Perception: Failed to init fast scnn model\n");
 		return 1;
-	}*/
+	}
 
-	/*
-	 * create detection network
-	 */
+	/* Initialize detection network */
 	int status_det = det_network.InitEngine();
 	if (!status_det)
 	{
@@ -39,13 +35,12 @@ int Perception::InitModule()
 int Perception::RunPerception(pixelType *imgInput, pixelType *imgOutput)
 {
 	std::vector<Yolo::Detection> detections;
-	/*seg_network.process(imgInput, 1920, 1080); // 60ms 62ms(Paddle)
 
-	int lane_center = seg_network.getLaneCenter(1); // 57ms
+	seg_network.PreProcess(imgInput); 
+	seg_network.Process();// 60ms 62ms(Paddle)
+	seg_network.PostProcess(&classmap_ptr);
 
-	seg_network.getRGB(*imgOutput, lane_center); // 54 ms
-	*/
-	// seg_network.PrintProfilerTimes();
+	//int lane_center = seg_network.getLaneCenter(1); // 57ms
 
 	det_network.PreProcess(imgInput);
 	det_network.Process();				  // run inference (22 ms)
@@ -54,27 +49,35 @@ int Perception::RunPerception(pixelType *imgInput, pixelType *imgOutput)
 	FilterDetections(detections);
 
 #if VISUALIZATION_ENABLED
-	GetVisImage(imgInput);
+	OverlaySegImage(imgOutput,0);// 54 ms
+	GetDetImage(imgInput);
 	det_network.OverlayBBoxesOnVisImage(det_vis_image, DETECTION_ROI_W, DETECTION_ROI_H);
-	OverlayVisImage(imgOutput);
+	OverlayDetImage(imgOutput);
 #endif
 }
 
 int Perception::GetDetection(Yolo::Detection *det)
 {
-	if(detected_sign.frame_cnt>=DETECTION_FILTER_THRESH){
-		//*det = detected_sign.det;
-		return 1;
+	det->class_id = -1;
+	if (detected_sign.frame_cnt >= DETECTION_FILTER_THRESH)
+	{
+		*det = detected_sign.det;
+		return 0;
 	}
-    return 0;
+	return 1;
 }
 
-void Perception::GetVisImage(pixelType *img_input)
+uint8_t *Perception::GetSegmapPtr()
+{
+	return classmap_ptr;
+}
+
+void Perception::GetDetImage(pixelType *img_input)
 {
 	getROIOfImage(img_input, det_vis_image, CAMERA_INPUT_W, CAMERA_INPUT_H, DETECTION_ROI_W, DETECTION_ROI_H);
 }
 
-void Perception::OverlayVisImage(pixelType *img_output)
+void Perception::OverlayDetImage(pixelType *img_output)
 {
 	for (int y = 0; y < DETECTION_ROI_H; ++y)
 	{
@@ -129,5 +132,58 @@ void Perception::FilterDetections(std::vector<Yolo::Detection> detections)
 	{
 		detected_sign.miss_cnt = 0;
 		detected_sign.frame_cnt = 0;
+	}
+}
+
+void Perception::OverlaySegImage(pixelType *img, int middle_lane_x)
+{
+	for (uint32_t y = 0; y < OUT_IMG_H; y++)
+	{
+		for (uint32_t x = 0; x < OUT_IMG_W; x++)
+		{
+			int index = y * OUT_IMG_W + x;
+			if ((int)classmap_ptr[index] == 0)
+			{
+				img[index].x = 128;
+				img[index].y = 64;
+				img[index].z = 128;
+			}
+			else if ((int)classmap_ptr[index] == 1)
+			{
+				img[index].x = 244;
+				img[index].y = 35;
+				img[index].z = 232;
+			}
+			else if ((int)classmap_ptr[index] == 2)
+			{
+				img[index].x = 70;
+				img[index].y = 70;
+				img[index].z = 70;
+			}
+			else if ((int)classmap_ptr[index] == 3)
+			{
+				img[index].x = 102;
+				img[index].y = 102;
+				img[index].z = 156;
+			}
+			else if ((int)classmap_ptr[index] == 4)
+			{
+				img[index].x = 190;
+				img[index].y = 153;
+				img[index].z = 153;
+			}
+			else if ((int)classmap_ptr[index] == 5)
+			{
+				img[index].x = 153;
+				img[index].y = 153;
+				img[index].z = 153;
+			}
+			if (x == middle_lane_x)
+			{
+				img[index].x = 0;
+				img[index].y = 255;
+				img[index].z = 0;
+			}
+		}
 	}
 }
