@@ -28,6 +28,7 @@
 #include "jetson-utils/videoOutput.h"
 
 #include "Perception.hpp"
+#include "Planning.hpp"
 
 using namespace std;
 
@@ -96,16 +97,12 @@ int main(int argc, char **argv)
 		return 1;
 	}
 #endif
-	/*
-	 * Init the perception module
-	 */
+
 	Perception PerceptionModule;
-	int status = PerceptionModule.InitModule();
-	if (status)
-	{
-		LogError("Ideas: Failed to init perception module\n");
-		return 1;
-	}
+	Planning PlanningModule;
+
+	PerceptionModule.InitModule();
+
 	while (!signal_recieved)
 	{
 		pixelType *imgInput = NULL;
@@ -119,6 +116,8 @@ int main(int argc, char **argv)
 		}
 
 		PerceptionModule.RunPerception(imgInput, imgOutput);
+		PlanningModule.GetPerceptionData(&PerceptionModule);
+		PlanningModule.RunStateHandler();
 
 #if VISUALIZATION_ENABLED
 		if (output != NULL)

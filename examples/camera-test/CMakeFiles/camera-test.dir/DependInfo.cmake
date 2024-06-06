@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/perception/Perception.cpp" "CMakeFiles/camera-test.dir/modules/perception/Perception.cpp.o" "gcc" "CMakeFiles/camera-test.dir/modules/perception/Perception.cpp.o.d"
   "/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/perception/fastscnn/Fastscnn.cpp" "CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.o" "gcc" "CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.o.d"
   "/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/perception/yolo/YoloV3.cpp" "CMakeFiles/camera-test.dir/modules/perception/yolo/YoloV3.cpp.o" "gcc" "CMakeFiles/camera-test.dir/modules/perception/yolo/YoloV3.cpp.o.d"
+  "/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/planning/Planning.cpp" "CMakeFiles/camera-test.dir/modules/planning/Planning.cpp.o" "gcc" "CMakeFiles/camera-test.dir/modules/planning/Planning.cpp.o.d"
   "/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/util/logger.cpp" "CMakeFiles/camera-test.dir/util/logger.cpp.o" "gcc" "CMakeFiles/camera-test.dir/util/logger.cpp.o.d"
   )
 

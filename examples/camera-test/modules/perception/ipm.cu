@@ -40,3 +40,56 @@ void warpImageK(uchar3 *input, float *output, int *uGrid, int *vGrid, int width,
     dim3 gridDim((OUT_IMAGE_WIDTH + blockDim.x - 1) / blockDim.x, (OUT_IMAGE_HEIGHT + blockDim.y - 1) / blockDim.y);
     rgbToIpm<<<gridDim, blockDim>>>(input, output, uGrid, vGrid, 1024, 512);
 }
+
+__global__ void OverlaySegImageKernel(uchar3 *img, int middle_lane_x, const uint8_t *classmap_ptr, int width, int height) {
+    int x = blockIdx.x * blockDim.x + threadIdx.x;
+    int y = blockIdx.y * blockDim.y + threadIdx.y;
+    int index = y * width + x;
+
+    if (x < width && y < height) {
+        if ((int)classmap_ptr[index] == 0) {
+            img[index].x = 128;
+            img[index].y = 64;
+            img[index].z = 128;
+        }
+        else if ((int)classmap_ptr[index] == 1) {
+            img[index].x = 244;
+            img[index].y = 35;
+            img[index].z = 232;
+        }
+        else if ((int)classmap_ptr[index] == 2) {
+            img[index].x = 70;
+            img[index].y = 70;
+            img[index].z = 70;
+        }
+        else if ((int)classmap_ptr[index] == 3) {
+            img[index].x = 102;
+            img[index].y = 102;
+            img[index].z = 156;
+        }
+        else if ((int)classmap_ptr[index] == 4) {
+            img[index].x = 190;
+            img[index].y = 153;
+            img[index].z = 153;
+        }
+        else if ((int)classmap_ptr[index] == 5) {
+            img[index].x = 153;
+            img[index].y = 153;
+            img[index].z = 153;
+        }
+        if (x == middle_lane_x) {
+            img[index].x = 0;
+            img[index].y = 255;
+            img[index].z = 0;
+        }
+    }
+}
+
+void OverlaySegImageK(uchar3 *img, int middle_lane_x, const uint8_t *classmap_ptr, int width, int height) {
+    // Define block size and grid size
+    dim3 blockSize(16, 16);
+    dim3 gridSize((width + blockSize.x - 1) / blockSize.x, (height + blockSize.y - 1) / blockSize.y);
+
+    // Launch the kernel
+    OverlaySegImageKernel<<<gridSize, blockSize>>>(img, middle_lane_x, classmap_ptr, width, height);
+}

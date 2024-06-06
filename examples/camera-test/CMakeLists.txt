@@ -23,7 +23,7 @@ include_directories( ${OpenCV_INCLUDE_DIRS} )
 
 # add directory for libnvbuf-utils to program
 link_directories(/usr/lib/aarch64-linux-gnu/tegra)
-include_directories(util modules/perception modules/perception/yolo modules/perception/fastscnn modules/perception/communication)
+include_directories(util modules/perception modules/perception/yolo modules/perception/fastscnn modules/planning)
 
 cuda_add_library(yololayer SHARED ${PROJECT_SOURCE_DIR}/modules/perception/yolo/yololayer.cu)
 
@@ -37,6 +37,7 @@ cuda_add_executable(camera-test camera-test.cpp
                                 modules/perception/yolo/kernel.cu 
                                 modules/perception/fastscnn/Fastscnn.cpp
                                 modules/perception/Perception.cpp
+                                modules/planning/Planning.cpp
                                 modules/communication/Comm.cpp
                                 )
 

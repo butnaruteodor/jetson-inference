@@ -53,6 +53,7 @@ int Perception::RunPerception(pixelType *imgInput, pixelType *imgOutput)
 	GetDetImage(imgInput);
 	det_network.OverlayBBoxesOnVisImage(det_vis_image, DETECTION_ROI_W, DETECTION_ROI_H);
 	OverlayDetImage(imgOutput);
+	cudaDeviceSynchronize();
 #endif
 }
 
@@ -137,53 +138,5 @@ void Perception::FilterDetections(std::vector<Yolo::Detection> detections)
 
 void Perception::OverlaySegImage(pixelType *img, int middle_lane_x)
 {
-	for (uint32_t y = 0; y < OUT_IMG_H; y++)
-	{
-		for (uint32_t x = 0; x < OUT_IMG_W; x++)
-		{
-			int index = y * OUT_IMG_W + x;
-			if ((int)classmap_ptr[index] == 0)
-			{
-				img[index].x = 128;
-				img[index].y = 64;
-				img[index].z = 128;
-			}
-			else if ((int)classmap_ptr[index] == 1)
-			{
-				img[index].x = 244;
-				img[index].y = 35;
-				img[index].z = 232;
-			}
-			else if ((int)classmap_ptr[index] == 2)
-			{
-				img[index].x = 70;
-				img[index].y = 70;
-				img[index].z = 70;
-			}
-			else if ((int)classmap_ptr[index] == 3)
-			{
-				img[index].x = 102;
-				img[index].y = 102;
-				img[index].z = 156;
-			}
-			else if ((int)classmap_ptr[index] == 4)
-			{
-				img[index].x = 190;
-				img[index].y = 153;
-				img[index].z = 153;
-			}
-			else if ((int)classmap_ptr[index] == 5)
-			{
-				img[index].x = 153;
-				img[index].y = 153;
-				img[index].z = 153;
-			}
-			if (x == middle_lane_x)
-			{
-				img[index].x = 0;
-				img[index].y = 255;
-				img[index].z = 0;
-			}
-		}
-	}
+	OverlaySegImageK(img, middle_lane_x, classmap_ptr, OUT_IMG_W, OUT_IMG_H);
 }

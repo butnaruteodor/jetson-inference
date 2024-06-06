@@ -3,28 +3,40 @@
 
 Planning::Planning()
 {
-    state = WAIT;
-    planning_vars.first_time_wait = true;
+    state = STOP;
+    wait_struct.first_time_wait = true;
+}
+
+Planning::~Planning()
+{
 }
 
 void Planning::RunStateHandler()
 {
-    static auto duration = duration_cast<seconds>(high_resolution_clock::now());
+    auto static start_time = std::chrono::high_resolution_clock::now();
+    auto elapsed_time = std::chrono::duration_cast<std::chrono::seconds>(start_time-std::chrono::high_resolution_clock::now());
 
     switch (state)
     {
+    /* Wait for command to start the car */
+    case STOP:
+        /* Car is stopped */
+        desired_speed = 0;
+        desired_steering_angle = 0;
+        state = DRIVE;
+        break;
     /* The car will stop in this state for a planning_vars.time_to_stop_sec seconds */
     case WAIT:
         /* Timestamp for the first time the state machine enters the wait state */
-        if (planning_vars.first_time_wait == true)
+        if (wait_struct.first_time_wait == true)
         {
-            planning_vars.last_time_sec = duration.count();
-            planning_vars.first_time_wait = false;
+            wait_struct.last_time_sec = elapsed_time.count();
+            wait_struct.first_time_wait = false;
         }
         /* If planning_vars.time_to_stop seconds has passed the car stopped enough */
-        if (duration.count() - planning_vars.last_time_sec >= planning_vars.time_to_stop_sec)
+        if (elapsed_time.count() - wait_struct.last_time_sec >= wait_struct.time_to_stop_sec)
         {
-            planning_vars.first_time_wait = true;
+            wait_struct.first_time_wait = true;
             state = DRIVE;
         }
 
@@ -33,11 +45,18 @@ void Planning::RunStateHandler()
         desired_steering_angle = 0;
         break;
     case DRIVE:
-    
+        LogInfo("Sign: %f\n",detected_sign.class_id);
         break;
-    case STOP:
-        break;
+    /* Unkwonw state, shouldn't ever get here */
     default:
+        desired_speed = 0;
+        desired_steering_angle = 0;
         break;
     }
+}
+
+void Planning::GetPerceptionData(Perception* perception_module)
+{
+    perception_module->GetDetection(&detected_sign);
+    segmap_ptr = perception_module->GetSegmapPtr();
 }

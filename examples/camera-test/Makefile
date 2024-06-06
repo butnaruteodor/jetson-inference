@@ -262,6 +262,30 @@ modules/perception/yolo/YoloV3.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera-test.dir/build.make CMakeFiles/camera-test.dir/modules/perception/yolo/YoloV3.cpp.s
 .PHONY : modules/perception/yolo/YoloV3.cpp.s
 
+modules/planning/Planning.o: modules/planning/Planning.cpp.o
+.PHONY : modules/planning/Planning.o
+
+# target to build an object file
+modules/planning/Planning.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera-test.dir/build.make CMakeFiles/camera-test.dir/modules/planning/Planning.cpp.o
+.PHONY : modules/planning/Planning.cpp.o
+
+modules/planning/Planning.i: modules/planning/Planning.cpp.i
+.PHONY : modules/planning/Planning.i
+
+# target to preprocess a source file
+modules/planning/Planning.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera-test.dir/build.make CMakeFiles/camera-test.dir/modules/planning/Planning.cpp.i
+.PHONY : modules/planning/Planning.cpp.i
+
+modules/planning/Planning.s: modules/planning/Planning.cpp.s
+.PHONY : modules/planning/Planning.s
+
+# target to generate assembly for a file
+modules/planning/Planning.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera-test.dir/build.make CMakeFiles/camera-test.dir/modules/planning/Planning.cpp.s
+.PHONY : modules/planning/Planning.cpp.s
+
 util/logger.o: util/logger.cpp.o
 .PHONY : util/logger.o
 
@@ -311,6 +335,9 @@ help:
 	@echo "... modules/perception/yolo/YoloV3.o"
 	@echo "... modules/perception/yolo/YoloV3.i"
 	@echo "... modules/perception/yolo/YoloV3.s"
+	@echo "... modules/planning/Planning.o"
+	@echo "... modules/planning/Planning.i"
+	@echo "... modules/planning/Planning.s"
 	@echo "... util/logger.o"
 	@echo "... util/logger.i"
 	@echo "... util/logger.s"
