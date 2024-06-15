@@ -93,3 +93,28 @@ void OverlaySegImageK(uchar3 *img, int middle_lane_x, const uint8_t *classmap_pt
     // Launch the kernel
     OverlaySegImageKernel<<<gridSize, blockSize>>>(img, middle_lane_x, classmap_ptr, width, height);
 }
+
+__global__ void OverlayDetImageKernel(uchar3* img_output, uchar3* det_vis_image)
+{
+    int x = blockIdx.x * blockDim.x + threadIdx.x;
+    int y = blockIdx.y * blockDim.y + threadIdx.y;
+
+    if (x < DETECTION_ROI_W && y < DETECTION_ROI_H)
+    {
+        int srcPos = y * DETECTION_ROI_W + x;
+        int dstPos = (y + 512) * 1024 + x;
+
+        // Copy pixel
+        img_output[dstPos] = det_vis_image[srcPos];
+    }
+}
+
+void OverlayDetImagek(uchar3* img_output, uchar3* det_vis_image)
+{
+    // Define the grid and block dimensions
+    dim3 blockDim(16, 16); // Adjust block size as needed
+    dim3 gridDim((DETECTION_ROI_W + blockDim.x - 1) / blockDim.x, (DETECTION_ROI_H + blockDim.y - 1) / blockDim.y);
+
+    // Launch the kernel
+    OverlayDetImageKernel<<<gridDim, blockDim>>>(img_output, det_vis_image);
+}

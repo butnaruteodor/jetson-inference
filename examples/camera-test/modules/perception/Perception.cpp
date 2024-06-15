@@ -38,10 +38,9 @@ int Perception::RunPerception(pixelType *imgInput, pixelType *imgOutput)
 
 	seg_network.PreProcess(imgInput); 
 	seg_network.Process();// 60ms 62ms(Paddle)
-	InitializeClassesExtremities(classes_extremities_x);
-	seg_network.PostProcess(&classmap_ptr, classes_extremities_x);
-
-	//int lane_center = seg_network.getLaneCenter(1); // 57ms
+	InitializeLaneLimitsArray(left_lane_x_limits);
+	InitializeLaneLimitsArray(right_lane_x_limits);
+	seg_network.PostProcess(&classmap_ptr, left_lane_x_limits, right_lane_x_limits);
 
 	det_network.PreProcess(imgInput);
 	det_network.Process();				  // run inference (22 ms)
@@ -50,7 +49,7 @@ int Perception::RunPerception(pixelType *imgInput, pixelType *imgOutput)
 	FilterDetections(detections);
 
 #if VISUALIZATION_ENABLED
-	OverlaySegImage(imgOutput,0);// 54 ms
+	OverlaySegImage(imgOutput,IMG_WIDTH/2);// 54 ms
 	GetDetImage(imgInput);
 	det_network.OverlayBBoxesOnVisImage(det_vis_image, DETECTION_ROI_W, DETECTION_ROI_H);
 	OverlayDetImage(imgOutput);
@@ -74,9 +73,14 @@ uint8_t *Perception::GetSegmapPtr()
 	return classmap_ptr;
 }
 
-int *Perception::GetClassesExtremitiesX()
+int *Perception::GetLeftLaneXLimits()
 {
-    return classes_extremities_x;
+    return left_lane_x_limits;
+}
+
+int *Perception::GetRightLaneXLimits()
+{
+    return right_lane_x_limits;
 }
 
 void Perception::GetDetImage(pixelType *img_input)
@@ -86,18 +90,7 @@ void Perception::GetDetImage(pixelType *img_input)
 
 void Perception::OverlayDetImage(pixelType *img_output)
 {
-	for (int y = 0; y < DETECTION_ROI_H; ++y)
-	{
-		for (int x = 0; x < DETECTION_ROI_W; ++x)
-		{
-			// Calculate position in source and destination arrays
-			int srcPos = y * DETECTION_ROI_W + x;
-			int dstPos = (y + 512) * 1024 + x;
-
-			// Copy pixel
-			img_output[dstPos] = det_vis_image[srcPos];
-		}
-	}
+	OverlayDetImagek(img_output,det_vis_image);
 }
 
 void Perception::FilterDetections(std::vector<Yolo::Detection> detections)
@@ -147,7 +140,7 @@ void Perception::OverlaySegImage(pixelType *img, int middle_lane_x)
 	OverlaySegImageK(img, middle_lane_x, classmap_ptr, OUT_IMG_W, OUT_IMG_H);
 }
 
-void Perception::InitializeClassesExtremities(int *classes_extremities_x)
+void Perception::InitializeLaneLimitsArray(int *classes_extremities_x)
 {
 	for(int i = 0;i<IMG_HEIGHT/CONTOUR_RES; i++){
 		classes_extremities_x[2*i] = IMG_WIDTH;

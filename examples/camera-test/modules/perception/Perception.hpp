@@ -30,9 +30,13 @@ public:
         {
             LogError("Perception: Failed to allocate CUDA memory for detection vis image\n");
         }
-        if (!cudaAllocMapped(&classes_extremities_x, 20 * sizeof(int)))
+        if (!cudaAllocMapped(&left_lane_x_limits, 2 * IMG_HEIGHT * CONTOUR_RES * sizeof(int)))
         {
-            LogError("Perception: Failed to allocate CUDA memory for class_pixels_indices\n");
+            LogError("Perception: Failed to allocate CUDA memory for left_lane_x_limits\n");
+        }
+        if (!cudaAllocMapped(&right_lane_x_limits, 2 * IMG_HEIGHT * CONTOUR_RES * sizeof(int)))
+        {
+            LogError("Perception: Failed to allocate CUDA memory for right_lane_x_limits\n");
         }
     };
 
@@ -51,8 +55,11 @@ public:
     /* Get segmap pointer */
     uint8_t* GetSegmapPtr();
 
-    /* Get the array that contains x coordinates of each pixel of a class */
-    int* GetClassesExtremitiesX();
+    /* Get the array that contains the x limits coordinates of left lane */
+    int* GetLeftLaneXLimits();
+
+    /* Get the array that contains the x limits coordinates of right lane */
+    int* GetRightLaneXLimits();
 
 private:
     /* Network TensorRT objects */
@@ -60,7 +67,8 @@ private:
     YoloV3 det_network;
 
     uint8_t* classmap_ptr;
-    int* classes_extremities_x;
+    int* left_lane_x_limits;
+    int* right_lane_x_limits;
 
     /* Pointer to the detection overlay image */
     pixelType *det_vis_image;
@@ -79,6 +87,6 @@ private:
 
     void OverlaySegImage(pixelType *img, int middle_lane_x);
 
-    /* Initialize the  */
-    void InitializeClassesExtremities(int* classes_extremities_x);
+    /* Initialize the lane limits array */
+    void InitializeLaneLimitsArray(int* lane_x_limits);
 };
