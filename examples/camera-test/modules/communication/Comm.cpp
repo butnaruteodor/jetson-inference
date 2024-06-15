@@ -1,8 +1,5 @@
 #include "Comm.hpp"
 
-#include <netinet/in.h>
-#include <arpa/inet.h>
-#include <sys/socket.h>
 #include <fcntl.h>  // File control
 #include <termios.h> // Terminal control
 #include <unistd.h>  // UNIX standard
@@ -22,7 +19,7 @@ Comm::Comm(int commType){
 	isCommInit = false;
 	speedSetpoint = 0;
 	lateralSetpoint = 50;
-
+    printf("INIT COMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\n");
 	if(commType == UART_COMM_TYPE){
 		fd = open_uart("/dev/ttyTHS1", B115200);
 		if (fd == -1)
@@ -31,19 +28,20 @@ Comm::Comm(int commType){
 		}else{
             isCommInit = true;
         }
-	}else if(fd == SOCKET_COMM_TYPE){
-		fd = socket(AF_INET, SOCK_STREAM, 0);
+	}else if(commType == SOCKET_COMM_TYPE){
+		fd = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
         if (fd == -1)
 		{
 			perror("Comm: Failed to create socket.\n");
 		}else{
             isCommInit = true;
-            sockaddr_in serverAddress;
             serverAddress.sin_family = AF_INET;
             serverAddress.sin_port = htons(25001);
             serverAddress.sin_addr.s_addr = inet_addr("192.168.100.122");
 
-            connect(fd, (struct sockaddr *)&serverAddress, sizeof(serverAddress));
+            if(serverAddress.sin_addr.s_addr == INADDR_NONE){
+                perror("Error: intet_addr failed");
+            }
         }
 	}else{
 		
@@ -59,9 +57,10 @@ bool Comm::publishMessage(){
 	char message[50];
 	sprintf(message, "%d %d\n", speedSetpoint, lateralSetpoint);
 	if(commType==SOCKET_COMM_TYPE){
-		int ret = send(fd, message, strlen(message), 0);
+		int ret = sendto(fd, message, strlen(message), 0, (sockaddr*)&serverAddress, sizeof(serverAddress));
 		if (ret == -1)
 		{
+            perror("Error: Could not send data");
 			return false;
 		}
 	}else if(commType==UART_COMM_TYPE){

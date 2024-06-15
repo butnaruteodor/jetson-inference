@@ -30,6 +30,10 @@ public:
         {
             LogError("Perception: Failed to allocate CUDA memory for detection vis image\n");
         }
+        if (!cudaAllocMapped(&classes_extremities_x, 20 * sizeof(int)))
+        {
+            LogError("Perception: Failed to allocate CUDA memory for class_pixels_indices\n");
+        }
     };
 
     /* Perception module destructor */
@@ -47,12 +51,16 @@ public:
     /* Get segmap pointer */
     uint8_t* GetSegmapPtr();
 
+    /* Get the array that contains x coordinates of each pixel of a class */
+    int* GetClassesExtremitiesX();
+
 private:
     /* Network TensorRT objects */
     FastScnn seg_network;
     YoloV3 det_network;
 
     uint8_t* classmap_ptr;
+    int* classes_extremities_x;
 
     /* Pointer to the detection overlay image */
     pixelType *det_vis_image;
@@ -70,4 +78,7 @@ private:
     void FilterDetections(std::vector<Yolo::Detection> detections);
 
     void OverlaySegImage(pixelType *img, int middle_lane_x);
+
+    /* Initialize the  */
+    void InitializeClassesExtremities(int* classes_extremities_x);
 };

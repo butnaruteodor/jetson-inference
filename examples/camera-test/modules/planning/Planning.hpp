@@ -1,6 +1,13 @@
 #pragma once
 #include "Perception.hpp"
 
+/* The lane width in pixels is between LANE_WIDTH_BETWEEN_MIN and LANE_WIDTH_BETWEEN_MAX */
+#define LANE_WIDTH_BETWEEN_MIN 150
+#define LANE_WIDTH_BETWEEN_MAX 300
+
+/* Aproximate value of the width of the lane in pixels */
+#define LANE_WIDTH 250
+
 class Planning
 {
 
@@ -10,6 +17,12 @@ public:
     void RunStateHandler();
     /* Get the detected sign and the pointer to the segmap */
     void GetPerceptionData(Perception* perception_module);
+    /* Overlay lane center on image */
+    void OverlayLanePoints(uchar3* out_img);
+    /* Get the lateral setpoint */
+    int GetLateralSetpoint();
+    /* Get the longitudinal setpoint */
+    int GetLongitudinalSetpoint();
 
 private:
     enum State
@@ -26,10 +39,20 @@ private:
     };
 
     State state;
-    int desired_speed;
-    int desired_steering_angle;
-    uint8_t *segmap_ptr;
+    int speed_sp;
+    int lateral_sp;
+    
 
     Yolo::Detection detected_sign;
     WaitStruct wait_struct;
+
+    /* Lane extremities x values, taken raw from perception module */
+    int* classes_extremities_x;
+    /* Right lane center x values */
+    int right_lane_x[OUT_IMG_H/CONTOUR_RES];
+    /* Left lane center x values */
+    int left_lane_x[OUT_IMG_H/CONTOUR_RES];
+
+    /* Pre processes the data from the perception module, gives the lane center points */
+    void PreProcessPerceptionData(int * classes_extremities_x);
 };

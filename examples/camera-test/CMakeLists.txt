@@ -23,7 +23,7 @@ include_directories( ${OpenCV_INCLUDE_DIRS} )
 
 # add directory for libnvbuf-utils to program
 link_directories(/usr/lib/aarch64-linux-gnu/tegra)
-include_directories(util modules/perception modules/perception/yolo modules/perception/fastscnn modules/planning)
+include_directories(util modules/perception modules/perception/yolo modules/perception/fastscnn modules/planning modules/control modules/communication)
 
 cuda_add_library(yololayer SHARED ${PROJECT_SOURCE_DIR}/modules/perception/yolo/yololayer.cu)
 
@@ -39,6 +39,7 @@ cuda_add_executable(camera-test camera-test.cpp
                                 modules/perception/Perception.cpp
                                 modules/planning/Planning.cpp
                                 modules/communication/Comm.cpp
+                                modules/control/Control.cpp
                                 )
 
 # link my-recognition to jetson-inference library

@@ -75,7 +75,7 @@ public:
 	int InitEngine();
 	void PreProcess(uchar3 *input_img);
 	void Process();
-	void PostProcess(uint8_t **classmap_ptr);
+	void PostProcess(uint8_t **classmap_ptr, int* class_pixels_indices);
 	bool LoadGrid();
 
 

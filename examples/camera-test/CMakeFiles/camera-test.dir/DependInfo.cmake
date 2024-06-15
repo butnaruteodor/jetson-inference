@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/camera-test.cpp" "CMakeFiles/camera-test.dir/camera-test.cpp.o" "gcc" "CMakeFiles/camera-test.dir/camera-test.cpp.o.d"
   "/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/communication/Comm.cpp" "CMakeFiles/camera-test.dir/modules/communication/Comm.cpp.o" "gcc" "CMakeFiles/camera-test.dir/modules/communication/Comm.cpp.o.d"
+  "/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/control/Control.cpp" "CMakeFiles/camera-test.dir/modules/control/Control.cpp.o" "gcc" "CMakeFiles/camera-test.dir/modules/control/Control.cpp.o.d"
   "/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/perception/Perception.cpp" "CMakeFiles/camera-test.dir/modules/perception/Perception.cpp.o" "gcc" "CMakeFiles/camera-test.dir/modules/perception/Perception.cpp.o.d"
   "/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/perception/fastscnn/Fastscnn.cpp" "CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.o" "gcc" "CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.o.d"
   "/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/perception/yolo/YoloV3.cpp" "CMakeFiles/camera-test.dir/modules/perception/yolo/YoloV3.cpp.o" "gcc" "CMakeFiles/camera-test.dir/modules/perception/yolo/YoloV3.cpp.o.d"

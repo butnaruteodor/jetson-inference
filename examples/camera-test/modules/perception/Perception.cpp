@@ -38,7 +38,8 @@ int Perception::RunPerception(pixelType *imgInput, pixelType *imgOutput)
 
 	seg_network.PreProcess(imgInput); 
 	seg_network.Process();// 60ms 62ms(Paddle)
-	seg_network.PostProcess(&classmap_ptr);
+	InitializeClassesExtremities(classes_extremities_x);
+	seg_network.PostProcess(&classmap_ptr, classes_extremities_x);
 
 	//int lane_center = seg_network.getLaneCenter(1); // 57ms
 
@@ -71,6 +72,11 @@ int Perception::GetDetection(Yolo::Detection *det)
 uint8_t *Perception::GetSegmapPtr()
 {
 	return classmap_ptr;
+}
+
+int *Perception::GetClassesExtremitiesX()
+{
+    return classes_extremities_x;
 }
 
 void Perception::GetDetImage(pixelType *img_input)
@@ -139,4 +145,12 @@ void Perception::FilterDetections(std::vector<Yolo::Detection> detections)
 void Perception::OverlaySegImage(pixelType *img, int middle_lane_x)
 {
 	OverlaySegImageK(img, middle_lane_x, classmap_ptr, OUT_IMG_W, OUT_IMG_H);
+}
+
+void Perception::InitializeClassesExtremities(int *classes_extremities_x)
+{
+	for(int i = 0;i<IMG_HEIGHT/CONTOUR_RES; i++){
+		classes_extremities_x[2*i] = IMG_WIDTH;
+		classes_extremities_x[2*i+1] = 0;
+	}
 }

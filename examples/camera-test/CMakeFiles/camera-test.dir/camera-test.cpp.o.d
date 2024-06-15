@@ -250,4 +250,17 @@ CMakeFiles/camera-test.dir/camera-test.cpp.o: \
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/perception/yolo/kernel.h \
  /usr/local/include/jetson-utils/logging.h \
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/util/ProjectPaths.h \
- /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/planning/Planning.hpp
+ /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/planning/Planning.hpp \
+ /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/control/Control.hpp \
+ /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/communication/Comm.hpp \
+ /usr/include/netinet/in.h /usr/include/aarch64-linux-gnu/sys/socket.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/aarch64-linux-gnu/bits/socket.h \
+ /usr/include/aarch64-linux-gnu/bits/socket_type.h \
+ /usr/include/aarch64-linux-gnu/bits/sockaddr.h \
+ /usr/include/aarch64-linux-gnu/asm/socket.h \
+ /usr/include/asm-generic/socket.h \
+ /usr/include/aarch64-linux-gnu/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_osockaddr.h \
+ /usr/include/aarch64-linux-gnu/bits/in.h /usr/include/arpa/inet.h

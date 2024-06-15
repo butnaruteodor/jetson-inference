@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/camera-test.dir/camera-test.cpp.o.d"
   "CMakeFiles/camera-test.dir/modules/communication/Comm.cpp.o"
   "CMakeFiles/camera-test.dir/modules/communication/Comm.cpp.o.d"
+  "CMakeFiles/camera-test.dir/modules/control/Control.cpp.o"
+  "CMakeFiles/camera-test.dir/modules/control/Control.cpp.o.d"
   "CMakeFiles/camera-test.dir/modules/perception/Perception.cpp.o"
   "CMakeFiles/camera-test.dir/modules/perception/Perception.cpp.o.d"
   "CMakeFiles/camera-test.dir/modules/perception/camera-test_generated_ipm.cu.o"

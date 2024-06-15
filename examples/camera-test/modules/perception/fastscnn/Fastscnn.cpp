@@ -423,10 +423,11 @@ void FastScnn::Process()
 	CUDA(cudaStreamSynchronize(mStream));
 }
 
-void FastScnn::PostProcess(uint8_t **classmap_ptr)
+void FastScnn:: PostProcess(uint8_t **classmap_ptr, int* class_pixels_indices)
 {
 	PROFILER_BEGIN(PROFILER_POSTPROCESS);
-	generateClassMap((float *)mOutputs[0].CUDA, mClassMap); // 1ms
+	//initializeClassPixelsIndices(class_pixels_indices);
+	generateClassMap((float *)mOutputs[0].CUDA, mClassMap, class_pixels_indices); // 1ms
 	PROFILER_END(PROFILER_POSTPROCESS);
 
 	*classmap_ptr = mClassMap;

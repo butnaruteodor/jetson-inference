@@ -190,6 +190,30 @@ modules/communication/Comm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera-test.dir/build.make CMakeFiles/camera-test.dir/modules/communication/Comm.cpp.s
 .PHONY : modules/communication/Comm.cpp.s
 
+modules/control/Control.o: modules/control/Control.cpp.o
+.PHONY : modules/control/Control.o
+
+# target to build an object file
+modules/control/Control.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera-test.dir/build.make CMakeFiles/camera-test.dir/modules/control/Control.cpp.o
+.PHONY : modules/control/Control.cpp.o
+
+modules/control/Control.i: modules/control/Control.cpp.i
+.PHONY : modules/control/Control.i
+
+# target to preprocess a source file
+modules/control/Control.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera-test.dir/build.make CMakeFiles/camera-test.dir/modules/control/Control.cpp.i
+.PHONY : modules/control/Control.cpp.i
+
+modules/control/Control.s: modules/control/Control.cpp.s
+.PHONY : modules/control/Control.s
+
+# target to generate assembly for a file
+modules/control/Control.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera-test.dir/build.make CMakeFiles/camera-test.dir/modules/control/Control.cpp.s
+.PHONY : modules/control/Control.cpp.s
+
 modules/perception/Perception.o: modules/perception/Perception.cpp.o
 .PHONY : modules/perception/Perception.o
 
@@ -326,6 +350,9 @@ help:
 	@echo "... modules/communication/Comm.o"
 	@echo "... modules/communication/Comm.i"
 	@echo "... modules/communication/Comm.s"
+	@echo "... modules/control/Control.o"
+	@echo "... modules/control/Control.i"
+	@echo "... modules/control/Control.s"
 	@echo "... modules/perception/Perception.o"
 	@echo "... modules/perception/Perception.i"
 	@echo "... modules/perception/Perception.s"

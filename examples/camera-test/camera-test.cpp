@@ -29,6 +29,7 @@
 
 #include "Perception.hpp"
 #include "Planning.hpp"
+#include "Control.hpp"
 
 using namespace std;
 
@@ -100,6 +101,7 @@ int main(int argc, char **argv)
 
 	Perception PerceptionModule;
 	Planning PlanningModule;
+	Control ControlModule;
 
 	PerceptionModule.InitModule();
 
@@ -118,6 +120,9 @@ int main(int argc, char **argv)
 		PerceptionModule.RunPerception(imgInput, imgOutput);
 		PlanningModule.GetPerceptionData(&PerceptionModule);
 		PlanningModule.RunStateHandler();
+		PlanningModule.OverlayLanePoints(imgOutput);
+		ControlModule.GetPlanningData(&PlanningModule);
+		ControlModule.SendSetpoints();
 
 #if VISUALIZATION_ENABLED
 		if (output != NULL)
