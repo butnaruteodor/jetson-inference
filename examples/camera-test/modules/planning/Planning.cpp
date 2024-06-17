@@ -1,6 +1,11 @@
 #include "Planning.hpp"
 #include <chrono>
 
+/* When the y center of the sign is above the threshold the sign is considered to be near the car */
+#define SIGN_DISTANCE_THRESH 90
+/* The time it takes to get to the sign in s */
+#define TIME_TO_GET_TO_SIGN 3.5
+
 Planning::Planning()
 {
     state = STOP;
@@ -44,6 +49,7 @@ void Planning::RunStateHandler()
         lateral_sp = 512;
         break;
     case DRIVE:
+    {
         // lateral_sp = 512;
         for (int i = IMG_HEIGHT / CONTOUR_RES - 1; i > 0; i--)
         {
@@ -54,7 +60,9 @@ void Planning::RunStateHandler()
             }
         }
         speed_sp = 300;
-        
+        static bool detected = false;
+        static int cross_timestamp = elapsed_time.count();
+        static bool first_time_close = false;
         switch ((int)detected_sign.class_id)
         {
         case YoloV3::STOP_SIGN_LABEL_ID:
@@ -64,21 +72,32 @@ void Planning::RunStateHandler()
             wait_struct.time_to_stop_sec = 4;
             break;
         case YoloV3::CHARGE_SIGN_LABEL_ID:
-            wait_struct.time_to_stop_sec = 4;
+
             break;
         case YoloV3::CROSS_SIGN_LABEL_ID:
             wait_struct.time_to_stop_sec = 2;
+            detected = true;
             break;
         default:
+            /* When the sign goes out of view timestamp */
+            if (detected == true)
+            {
+                detected = false;
+                first_time_close = true;
+                cross_timestamp = elapsed_time.count();
+            }
             break;
         }
         /* The closer the sign is the bigger the y axis center coordinate of the bbox will be */
-        if (detected_sign.class_id >= 0 && (detected_sign.bbox[1] + detected_sign.bbox[3]) / 2 > 90)
+        bool is_close = (detected_sign.class_id > -1) && ((detected_sign.bbox[1] + detected_sign.bbox[3]) / 2 > SIGN_DISTANCE_THRESH);
+        bool wait_toget_close = (abs(elapsed_time.count() - cross_timestamp) > TIME_TO_GET_TO_SIGN && first_time_close);
+        if (is_close || wait_toget_close)
         {
-            LogInfo("Width: %f\n", (detected_sign.bbox[1] + detected_sign.bbox[3]) / 2);
+            first_time_close = false;
             state = WAIT;
         }
         break;
+    }
     /* Unkwonw state, shouldn't ever get here */
     default:
         speed_sp = 0;
