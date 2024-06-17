@@ -96,6 +96,13 @@ public:
 	void PostProcess(std::vector<Yolo::Detection>* out_detections);
 	void OverlayBBoxesOnVisImage(uchar3 *out_image, int img_width, int img_height);
 
+	enum ClassLabels{
+		STOP_SIGN_LABEL_ID = 0,
+		PARK_SIGN_LABEL_ID = 1,
+		CHARGE_SIGN_LABEL_ID = 2,
+		CROSS_SIGN_LABEL_ID = 3
+	};
+
 private:
 	nvinfer1::ICudaEngine *mEngine;
 	nvinfer1::IRuntime *mInfer;

@@ -960,12 +960,18 @@ CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.o: modules/p
   modules/perception/fastscnn/Fastscnn.hpp \
   modules/perception/fastscnn/argmax.h \
   modules/perception/ipm.h \
+  modules/perception/yolo/YoloV3.hpp \
+  modules/perception/yolo/kernel.h \
+  modules/perception/yolo/macros.h \
+  modules/perception/yolo/yololayer.h \
   util/ProjectPaths.h \
   util/logger.h \
   util/logging.h \
   /usr/include/aarch64-linux-gnu/NvInfer.h \
   /usr/include/aarch64-linux-gnu/NvInferImpl.h \
   /usr/include/aarch64-linux-gnu/NvInferLegacyDims.h \
+  /usr/include/aarch64-linux-gnu/NvInferPlugin.h \
+  /usr/include/aarch64-linux-gnu/NvInferPluginUtils.h \
   /usr/include/aarch64-linux-gnu/NvInferRuntime.h \
   /usr/include/aarch64-linux-gnu/NvInferRuntimeCommon.h \
   /usr/include/aarch64-linux-gnu/NvInferVersion.h \
@@ -1106,9 +1112,12 @@ CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.o: modules/p
   /usr/include/c++/7/bits/stl_iterator.h \
   /usr/include/c++/7/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/7/bits/stl_iterator_base_types.h \
+  /usr/include/c++/7/bits/stl_map.h \
+  /usr/include/c++/7/bits/stl_multimap.h \
   /usr/include/c++/7/bits/stl_pair.h \
   /usr/include/c++/7/bits/stl_relops.h \
   /usr/include/c++/7/bits/stl_tempbuf.h \
+  /usr/include/c++/7/bits/stl_tree.h \
   /usr/include/c++/7/bits/stl_uninitialized.h \
   /usr/include/c++/7/bits/stl_vector.h \
   /usr/include/c++/7/bits/streambuf.tcc \
@@ -1132,6 +1141,7 @@ CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.o: modules/p
   /usr/include/c++/7/debug/assertions.h \
   /usr/include/c++/7/debug/debug.h \
   /usr/include/c++/7/exception \
+  /usr/include/c++/7/ext/aligned_buffer.h \
   /usr/include/c++/7/ext/alloc_traits.h \
   /usr/include/c++/7/ext/atomicity.h \
   /usr/include/c++/7/ext/new_allocator.h \
@@ -1147,6 +1157,7 @@ CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.o: modules/p
   /usr/include/c++/7/istream \
   /usr/include/c++/7/limits \
   /usr/include/c++/7/locale \
+  /usr/include/c++/7/map \
   /usr/include/c++/7/new \
   /usr/include/c++/7/ostream \
   /usr/include/c++/7/sstream \

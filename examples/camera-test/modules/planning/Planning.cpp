@@ -44,7 +44,7 @@ void Planning::RunStateHandler()
         lateral_sp = 512;
         break;
     case DRIVE:
-        lateral_sp = 512;
+        // lateral_sp = 512;
         for (int i = IMG_HEIGHT / CONTOUR_RES - 1; i > 0; i--)
         {
             if (right_lane_x[i] > 0)
@@ -54,30 +54,30 @@ void Planning::RunStateHandler()
             }
         }
         speed_sp = 300;
-
-        static bool detected = false;
+        
         switch ((int)detected_sign.class_id)
         {
-        case 0:
+        case YoloV3::STOP_SIGN_LABEL_ID:
             wait_struct.time_to_stop_sec = 4;
-            detected = true;
             break;
-        case 1:
+        case YoloV3::PARK_SIGN_LABEL_ID:
+            wait_struct.time_to_stop_sec = 4;
             break;
-        case 2:
+        case YoloV3::CHARGE_SIGN_LABEL_ID:
+            wait_struct.time_to_stop_sec = 4;
             break;
-        case 3:
+        case YoloV3::CROSS_SIGN_LABEL_ID:
+            wait_struct.time_to_stop_sec = 2;
             break;
         default:
-            /* When the sign goes out of view, the car passed it, perform the behaviour */
-            if(detected == true)
-            {
-                detected = false;
-                state = WAIT;
-            }
             break;
         }
-
+        /* The closer the sign is the bigger the y axis center coordinate of the bbox will be */
+        if (detected_sign.class_id >= 0 && (detected_sign.bbox[1] + detected_sign.bbox[3]) / 2 > 90)
+        {
+            LogInfo("Width: %f\n", (detected_sign.bbox[1] + detected_sign.bbox[3]) / 2);
+            state = WAIT;
+        }
         break;
     /* Unkwonw state, shouldn't ever get here */
     default:
@@ -226,9 +226,23 @@ void Planning::GetLaneCenterPoints()
         else if (left_lane_x[i] == -3)
         {
             /* only part of the lane width is visible, estimate where the middle is based on known lane width */
+            int left_most_x = left_lane_x_limits[2 * i];
             int right_most_x = left_lane_x_limits[2 * i + 1];
-            /* if its negative(the lane is in the top corner somewhere and only a small part is visible) we dont care will be ignored */
-            left_lane_x[i] = (right_most_x + (right_most_x - LANE_WIDTH)) / 2;
+
+            if (left_most_x < IMG_WIDTH / 2 && right_most_x < IMG_WIDTH / 2)
+            {
+                left_lane_x[i] = (right_most_x + (right_most_x - LANE_WIDTH)) / 2;
+            }
+            /* Here the coordinate could be higher than the width of the image, we need to clamp */
+            else if (left_most_x >= IMG_WIDTH / 2 && right_most_x >= IMG_WIDTH / 2)
+            {
+                left_lane_x[i] = (left_most_x + (left_most_x + LANE_WIDTH)) / 2;
+            }
+
+            if (left_lane_x[i] >= IMG_WIDTH)
+            {
+                left_lane_x[i] = IMG_WIDTH - 1;
+            }
         }
 
         /************************RIGHT LANE*******************************/
@@ -245,8 +259,17 @@ void Planning::GetLaneCenterPoints()
         {
             /* only part of the lane width is visible, estimate where the middle is based on known lane width */
             int left_most_x = right_lane_x_limits[2 * i];
+            int right_most_x = right_lane_x_limits[2 * i + 1];
+
+            if (left_most_x < IMG_WIDTH / 2 && right_most_x < IMG_WIDTH / 2)
+            {
+                right_lane_x[i] = (right_most_x + (right_most_x - LANE_WIDTH)) / 2;
+            }
             /* Here the coordinate could be higher than the width of the image, we need to clamp */
-            right_lane_x[i] = (left_most_x + (left_most_x + LANE_WIDTH)) / 2;
+            else if (left_most_x >= IMG_WIDTH / 2 && right_most_x >= IMG_WIDTH / 2)
+            {
+                right_lane_x[i] = (left_most_x + (left_most_x + LANE_WIDTH)) / 2;
+            }
             if (right_lane_x[i] >= IMG_WIDTH)
             {
                 right_lane_x[i] = IMG_WIDTH - 1;
