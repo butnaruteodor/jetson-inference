@@ -38,6 +38,10 @@ public:
         {
             LogError("Perception: Failed to allocate CUDA memory for right_lane_x_limits\n");
         }
+        if (!cudaAllocMapped(&charging_pad_center, 2 * sizeof(int)))
+        {
+            LogError("Perception: Failed to allocate CUDA memory for charging_pad_center\n");
+        }
     };
 
     /* Perception module destructor */
@@ -60,6 +64,9 @@ public:
 
     /* Get the array that contains the x limits coordinates of right lane */
     int* GetRightLaneXLimits();
+    
+    /*Get the charging pad center array pointer */
+    int* GetChargingPadCenter();
 
 private:
     /* Network TensorRT objects */
@@ -69,6 +76,9 @@ private:
     uint8_t* classmap_ptr;
     int* left_lane_x_limits;
     int* right_lane_x_limits;
+
+    /* Charging pad array */
+    int *charging_pad_center;
 
     /* Pointer to the detection overlay image */
     pixelType *det_vis_image;
@@ -89,4 +99,6 @@ private:
 
     /* Initialize the lane limits array */
     void InitializeLaneLimitsArray(int* lane_x_limits);
+
+    void InitializePadArray(int* pad_center);
 };

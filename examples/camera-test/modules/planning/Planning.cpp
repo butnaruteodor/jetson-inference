@@ -20,7 +20,10 @@ void Planning::RunStateHandler()
 {
     auto static start_time = std::chrono::high_resolution_clock::now();
     auto elapsed_time = std::chrono::duration_cast<std::chrono::seconds>(start_time - std::chrono::high_resolution_clock::now());
-
+    static bool detected = false;
+    static int cross_timestamp = elapsed_time.count();
+    static bool first_time_close = false;
+    LogInfo("State: %d\n",state);
     switch (state)
     {
     /* Wait for command to start the car */
@@ -50,7 +53,6 @@ void Planning::RunStateHandler()
         break;
     case DRIVE:
     {
-        // lateral_sp = 512;
         for (int i = IMG_HEIGHT / CONTOUR_RES - 1; i > 0; i--)
         {
             if (right_lane_x[i] > 0)
@@ -59,20 +61,23 @@ void Planning::RunStateHandler()
                 break;
             }
         }
+
         speed_sp = 300;
-        static bool detected = false;
-        static int cross_timestamp = elapsed_time.count();
-        static bool first_time_close = false;
+
         switch ((int)detected_sign.class_id)
         {
         case YoloV3::STOP_SIGN_LABEL_ID:
             wait_struct.time_to_stop_sec = 4;
             break;
         case YoloV3::PARK_SIGN_LABEL_ID:
-            wait_struct.time_to_stop_sec = 4;
+            wait_struct.time_to_stop_sec = -1;
+            state = PARK;
+            LogInfo("park\n");
             break;
         case YoloV3::CHARGE_SIGN_LABEL_ID:
-
+            wait_struct.time_to_stop_sec = -1;
+            state = PARK;
+            LogInfo("park\n");
             break;
         case YoloV3::CROSS_SIGN_LABEL_ID:
             wait_struct.time_to_stop_sec = 2;
@@ -88,16 +93,26 @@ void Planning::RunStateHandler()
             }
             break;
         }
+        //LogInfo("Size y: %f", detected_sign.bbox[3]);
         /* The closer the sign is the bigger the y axis center coordinate of the bbox will be */
         bool is_close = (detected_sign.class_id > -1) && ((detected_sign.bbox[1] + detected_sign.bbox[3]) / 2 > SIGN_DISTANCE_THRESH);
         bool wait_toget_close = (abs(elapsed_time.count() - cross_timestamp) > TIME_TO_GET_TO_SIGN && first_time_close);
-        if (is_close || wait_toget_close)
+        if ((is_close || wait_toget_close) && wait_struct.time_to_stop_sec>0)
         {
             first_time_close = false;
             state = WAIT;
         }
         break;
     }
+    case PARK:
+        speed_sp = 0;
+        if(charging_pad_center[0]<charging_pad_center[1])
+        {
+            lateral_sp = (charging_pad_center[0]+charging_pad_center[1])/2;
+            speed_sp = 150;
+        }
+        
+        break;
     /* Unkwonw state, shouldn't ever get here */
     default:
         speed_sp = 0;
@@ -111,6 +126,7 @@ void Planning::GetPerceptionData(Perception *perception_module)
     perception_module->GetDetection(&detected_sign);
     left_lane_x_limits = perception_module->GetLeftLaneXLimits();
     right_lane_x_limits = perception_module->GetRightLaneXLimits();
+    charging_pad_center = perception_module->GetChargingPadCenter();
     GetLaneCenterPoints();
 }
 

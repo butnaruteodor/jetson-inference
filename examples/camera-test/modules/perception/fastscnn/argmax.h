@@ -8,5 +8,4 @@
 #define NUM_CLASSES 6
 #define CONTOUR_RES 50
 
-__global__ void generateClassMapKernel(float *output_1D, uint8_t *class_map);
-extern "C" void generateClassMap(float *output_1D, uint8_t *class_map, int* left_lane_x_limits, int* right_lane_x_limits);
+extern "C" void generateClassMap(float *output_1D, uint8_t *class_map, int* left_lane_x_limits, int* right_lane_x_limits, int *charging_pad_center);

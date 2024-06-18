@@ -75,7 +75,7 @@ public:
 	int InitEngine();
 	void PreProcess(uchar3 *input_img);
 	void Process();
-	void PostProcess(uint8_t **classmap_ptr, int* left_lane_x_limits, int* right_lane_x_limits);
+	void PostProcess(uint8_t **classmap_ptr, int* left_lane_x_limits, int* right_lane_x_limits, int* charging_pad_center);
 	bool LoadGrid();
 
 

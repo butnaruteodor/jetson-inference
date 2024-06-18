@@ -1,6 +1,6 @@
 #include "argmax.h"
 
-__global__ void generateClassMapKernel(float *output_1D, uint8_t *class_map, int *left_lane_x_limits, int *right_lane_x_limits)
+__global__ void generateClassMapKernel(float *output_1D, uint8_t *class_map, int *left_lane_x_limits, int *right_lane_x_limits, int *charging_pad_center)
 {
     int i = blockIdx.y * blockDim.y + threadIdx.y; // equivalent of i in your original function
     int j = blockIdx.x * blockDim.x + threadIdx.x; // equivalent of j in your original function
@@ -36,20 +36,25 @@ __global__ void generateClassMapKernel(float *output_1D, uint8_t *class_map, int
                 atomicMin(&left_lane_x_limits[base_index], j);
                 atomicMax(&left_lane_x_limits[base_index + 1], j);
             }
-            else if(max_class == 1)
+            else if (max_class == 1)
             {
                 // Use atomicMax and atomicMin to safely update the maximum and minimum x-coordinates
                 atomicMin(&right_lane_x_limits[base_index], j);
                 atomicMax(&right_lane_x_limits[base_index + 1], j);
             }
         }
+        if (max_class == 4)
+        {
+            atomicMin(&charging_pad_center[0], j);
+            atomicMax(&charging_pad_center[1], j);
+        }
     }
 }
-void generateClassMap(float *output_1D, uint8_t *class_map, int *left_lane_x_limits, int *right_lane_x_limits)
+void generateClassMap(float *output_1D, uint8_t *class_map, int *left_lane_x_limits, int *right_lane_x_limits, int *charging_pad_center)
 {
 
     dim3 blockDim(16, 16); // You might need to tune these numbers
     dim3 gridDim((IMG_WIDTH + blockDim.x - 1) / blockDim.x, (IMG_HEIGHT + blockDim.y - 1) / blockDim.y);
     // Launch the kernel
-    generateClassMapKernel<<<gridDim, blockDim>>>(output_1D, class_map, left_lane_x_limits, right_lane_x_limits);
+    generateClassMapKernel<<<gridDim, blockDim>>>(output_1D, class_map, left_lane_x_limits, right_lane_x_limits, charging_pad_center);
 }

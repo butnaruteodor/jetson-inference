@@ -306,105 +306,6 @@ int FastScnn::InitEngine()
 	return true;
 }
 
-// void FastScnn::loopThroughClassmap(std::vector<int> &y_vals_lane, std::vector<int> &x_vals_lane, int classidx)
-// {
-// 	obstacle.numPixels = 0;
-// 	obstacle.smallest_x_obst = OUT_IMG_W;
-// 	obstacle.biggest_x_obst = 0;
-// 	obstacle.smallest_y_obst = OUT_IMG_H;
-// 	obstacle.biggest_y_obst = 0;
-// 	for (int y = 0; y < OUT_IMG_H; ++y)
-// 	{ // Assuming height is 512
-// 		for (int x = 0; x < OUT_IMG_W; ++x)
-// 		{ // Assuming width is 1024
-// 			int index = y * OUT_IMG_W + x;
-// 			if (mClassMap[index] == classidx)
-// 			{
-// 				y_vals_lane.push_back(y);
-// 				x_vals_lane.push_back(x);
-// 			}
-// 			else if (mClassMap[index] == OBSTACLE)
-// 			{
-// 				obstacle.numPixels++;
-// 				if (x > obstacle.biggest_x_obst)
-// 				{
-// 					obstacle.biggest_x_obst = x;
-// 				}
-// 				else if (x < obstacle.smallest_x_obst)
-// 				{
-// 					obstacle.smallest_x_obst = x;
-// 				}
-// 				else if (y > obstacle.biggest_y_obst)
-// 				{
-// 					obstacle.biggest_y_obst = y;
-// 				}
-// 				else if (y < obstacle.smallest_y_obst)
-// 				{
-// 					obstacle.smallest_y_obst = y;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
-// int FastScnn::getLaneCenter(int laneIdx)
-// {
-// 	std::vector<int> y_vals_lane, x_vals_lane;
-// 	int right_most_x = 0;
-// 	int left_most_x = OUT_IMG_W; // Assuming width is 1024
-// 	int middle_x, bottom_most_y;
-// 	middle_x = -1;
-// 	// Loop through the classMap to find right lane
-// 	loopThroughClassmap(y_vals_lane, x_vals_lane, laneIdx);
-// 	std::cout << y_vals_lane.size() << std::endl;
-// 	if (!y_vals_lane.empty())
-// 	{
-// 		// Find the lowest y-coordinate for the lane
-// 		bottom_most_y = *std::max_element(y_vals_lane.begin(), y_vals_lane.end());
-
-// 		// Loop through a region around the bottom_most_y to find the left-most and right-most x
-// 		for (int y = std::max(0, bottom_most_y - 200); y <= bottom_most_y; ++y)
-// 		{
-// 			for (int x = 0; x < OUT_IMG_W; ++x)
-// 			{ // Assuming width is 1024
-// 				int index = y * OUT_IMG_W + x;
-// 				if (mClassMap[index] == laneIdx)
-// 				{
-// 					right_most_x = std::max(right_most_x, x);
-// 					left_most_x = std::min(left_most_x, x);
-// 				}
-// 			}
-// 		}
-
-// 		middle_x = (right_most_x + left_most_x) / 2;
-// 	}
-// 	return middle_x;
-// }
-// int FastScnn::getParkingDirection(int offset)
-// {
-// 	std::vector<int> y_vals_lane, x_vals_lane;
-// 	int right_most_x = -1;
-// 	loopThroughClassmap(y_vals_lane, x_vals_lane, CHARGING_PAD);
-// 	if (!x_vals_lane.empty())
-// 	{
-// 		// Find the lowest y-coordinate for the lane
-// 		right_most_x = *std::max_element(x_vals_lane.begin(), x_vals_lane.end()) + offset;
-// 	}
-// 	return right_most_x;
-// }
-// bool FastScnn::isObstacleOnLane(int dev)
-// {
-// 	if (obstacle.numPixels > OBSTACLE_THRESH)
-// 	{
-// 		int center_x = (obstacle.smallest_x_obst + obstacle.biggest_x_obst) / 2;
-// 		if (abs(center_x - OUT_IMG_W / 2) < dev)
-// 		{
-// 			return true;
-// 		}
-// 	}
-// 	return false;
-// }
-
 void FastScnn::PreProcess(uchar3 *input_img)
 {
 	PROFILER_BEGIN(PROFILER_PREPROCESS);
@@ -423,10 +324,10 @@ void FastScnn::Process()
 	CUDA(cudaStreamSynchronize(mStream));
 }
 
-void FastScnn:: PostProcess(uint8_t **classmap_ptr, int* left_lane_x_limits, int* right_lane_x_limits)
+void FastScnn:: PostProcess(uint8_t **classmap_ptr, int* left_lane_x_limits, int* right_lane_x_limits, int* charging_pad_center)
 {
 	PROFILER_BEGIN(PROFILER_POSTPROCESS);
-	generateClassMap((float *)mOutputs[0].CUDA, mClassMap, left_lane_x_limits, right_lane_x_limits); // 1ms
+	generateClassMap((float *)mOutputs[0].CUDA, mClassMap, left_lane_x_limits, right_lane_x_limits, charging_pad_center); // 1ms
 	PROFILER_END(PROFILER_POSTPROCESS);
 
 	*classmap_ptr = mClassMap;

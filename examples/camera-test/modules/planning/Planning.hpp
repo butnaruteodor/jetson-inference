@@ -29,7 +29,8 @@ private:
     {
         WAIT,
         DRIVE,
-        STOP
+        STOP,
+        PARK
     };
     struct WaitStruct
     {
@@ -49,6 +50,8 @@ private:
     /* Lane extremities x values, taken raw from perception module */
     int* left_lane_x_limits;
     int* right_lane_x_limits;
+    /* Charging pad center*/
+    int* charging_pad_center;
     /* Right lane center x values */
     int right_lane_x[OUT_IMG_H/CONTOUR_RES];
     /* Left lane center x values */

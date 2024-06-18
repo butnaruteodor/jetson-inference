@@ -3,14 +3,12 @@
 /* Consecutive times a sign has to be detected to be trusted that it was actually detected */
 #define DETECTION_FILTER_THRESH 4
 
-/*Perception::Perception(){
-	//FastScnn *segNetwork = new FastScnn(segModelPath);
-	LogInfo("After serialization\n");
-}*/
-
 Perception::~Perception()
 {
-	// delete segNetwork;
+	CUDA_FREE_HOST(det_vis_image);
+	CUDA_FREE_HOST(left_lane_x_limits);
+	CUDA_FREE_HOST(right_lane_x_limits);
+	CUDA_FREE_HOST(charging_pad_center);
 }
 
 int Perception::InitModule()
@@ -40,7 +38,8 @@ int Perception::RunPerception(pixelType *imgInput, pixelType *imgOutput)
 	seg_network.Process();// 60ms 62ms(Paddle)
 	InitializeLaneLimitsArray(left_lane_x_limits);
 	InitializeLaneLimitsArray(right_lane_x_limits);
-	seg_network.PostProcess(&classmap_ptr, left_lane_x_limits, right_lane_x_limits);
+	InitializePadArray(charging_pad_center);
+	seg_network.PostProcess(&classmap_ptr, left_lane_x_limits, right_lane_x_limits, charging_pad_center);
 
 	det_network.PreProcess(imgInput);
 	det_network.Process();				  // run inference (22 ms)
@@ -60,7 +59,7 @@ int Perception::RunPerception(pixelType *imgInput, pixelType *imgOutput)
 int Perception::GetDetection(Yolo::Detection *det)
 {
 	det->class_id = -1;
-	if (detected_sign.frame_cnt >= DETECTION_FILTER_THRESH)
+	if (detected_sign.frame_cnt >= DETECTION_FILTER_THRESH && detected_sign.det.class_confidence>0.8)
 	{
 		*det = detected_sign.det;
 		return 0;
@@ -81,6 +80,11 @@ int *Perception::GetLeftLaneXLimits()
 int *Perception::GetRightLaneXLimits()
 {
     return right_lane_x_limits;
+}
+
+int *Perception::GetChargingPadCenter()
+{
+    return charging_pad_center;
 }
 
 void Perception::GetDetImage(pixelType *img_input)
@@ -146,4 +150,10 @@ void Perception::InitializeLaneLimitsArray(int *classes_extremities_x)
 		classes_extremities_x[2*i] = IMG_WIDTH;
 		classes_extremities_x[2*i+1] = 0;
 	}
+}
+
+void Perception::InitializePadArray(int *pad_center)
+{
+	pad_center[0] = 1024;
+	pad_center[1] = 0;
 }
