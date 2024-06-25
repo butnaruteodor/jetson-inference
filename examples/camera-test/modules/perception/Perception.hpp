@@ -38,9 +38,13 @@ public:
         {
             LogError("Perception: Failed to allocate CUDA memory for right_lane_x_limits\n");
         }
-        if (!cudaAllocMapped(&charging_pad_center, 2 * sizeof(int)))
+        if (!cudaAllocMapped(&charging_pad_center, 4 * sizeof(int)))
         {
             LogError("Perception: Failed to allocate CUDA memory for charging_pad_center\n");
+        }
+        if (!cudaAllocMapped(&obstacle_limits, 4 * sizeof(int)))
+        {
+            LogError("Perception: Failed to allocate CUDA memory for obstacle_limits\n");
         }
     };
 
@@ -68,6 +72,9 @@ public:
     /*Get the charging pad center array pointer */
     int* GetChargingPadCenter();
 
+    /* Get the obstacle limits array */
+    int* GetObstacleLimitsArray();
+
 private:
     /* Network TensorRT objects */
     FastScnn seg_network;
@@ -77,8 +84,11 @@ private:
     int* left_lane_x_limits;
     int* right_lane_x_limits;
 
-    /* Charging pad array */
+    /* Charging pad limits array */
     int *charging_pad_center;
+
+    /* Obstacle limits array */
+    int *obstacle_limits;
 
     /* Pointer to the detection overlay image */
     pixelType *det_vis_image;
@@ -92,6 +102,9 @@ private:
     /* Overlay detection image on the visualization image */
     void OverlayDetImage(pixelType *vis_img);
 
+    /* Overlay bboxes on det image */
+    void OverlayBBoxesOnVisImage(uchar3 *out_image, int img_width, int img_height);
+
     /* Filter the detections to get a reliable reading of the detected sign */
     void FilterDetections(std::vector<Yolo::Detection> detections);
 
@@ -100,5 +113,9 @@ private:
     /* Initialize the lane limits array */
     void InitializeLaneLimitsArray(int* lane_x_limits);
 
-    void InitializePadArray(int* pad_center);
+    /* Init charging pad limits array */
+    void InitializePadArray();
+
+    /* Init charging pad limits array */
+    void InitializeObstacleLimitsArray();
 };

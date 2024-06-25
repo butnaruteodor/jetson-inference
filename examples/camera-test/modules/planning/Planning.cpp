@@ -1,10 +1,18 @@
 #include "Planning.hpp"
 #include <chrono>
 
-/* When the y center of the sign is above the threshold the sign is considered to be near the car */
-#define SIGN_DISTANCE_THRESH 90
-/* The time it takes to get to the sign in s */
-#define TIME_TO_GET_TO_SIGN 3.5
+/* When the height size is above the threshold the sign is considered to be near the car */
+#define SIGN_HEIGHT_SIZE_THRESH 160
+/* How often a sign will be considered in seconds */
+#define SIGN_DETECTION_FREQ_THRESH 5
+#define LIGHT_SIZE_THRESH 140
+#define LIGHT_CREEP_SIZE_THRESH 80
+/* Distance until the car starts creeping to the pad */
+#define PAD_DISTANCE_THRESHOLD 200
+/* Distance from the obstacle until the car changes lane */
+#define OBSTACLE_DISTANCE_THRESH 280
+
+int last_det_time[4];
 
 Planning::Planning()
 {
@@ -20,10 +28,12 @@ void Planning::RunStateHandler()
 {
     auto static start_time = std::chrono::high_resolution_clock::now();
     auto elapsed_time = std::chrono::duration_cast<std::chrono::seconds>(start_time - std::chrono::high_resolution_clock::now());
-    static bool detected = false;
-    static int cross_timestamp = elapsed_time.count();
-    static bool first_time_close = false;
-    LogInfo("State: %d\n",state);
+    static bool need_to_creep = true;
+    static bool wait_for_green = false;
+
+    // LogInfo("State: %d\n", (int)state);
+
+    // LogInfo("Obstacle: %d, %d, %d, %d\n",obstacle_limits[0],obstacle_limits[1],obstacle_limits[2],obstacle_limits[3]);
     switch (state)
     {
     /* Wait for command to start the car */
@@ -47,22 +57,26 @@ void Planning::RunStateHandler()
             wait_struct.first_time_wait = true;
             state = DRIVE;
         }
-        /* Set desired speed and steering angle */
+        /* Set desired speed */
         speed_sp = 0;
-        lateral_sp = 512;
         break;
     case DRIVE:
     {
-        for (int i = IMG_HEIGHT / CONTOUR_RES - 1; i > 0; i--)
+        lateral_sp = GetLaneCenter(RIGHT_LANE, IsObstacleOnLane());
+
+        if (need_to_creep == true)
         {
-            if (right_lane_x[i] > 0)
-            {
-                lateral_sp = right_lane_x[i];
-                break;
-            }
+            speed_sp = 15;
+        }
+        else
+        {
+            speed_sp = 40;
         }
 
-        speed_sp = 300;
+        if (wait_for_green)
+        {
+            speed_sp = 0;
+        }
 
         switch ((int)detected_sign.class_id)
         {
@@ -70,50 +84,93 @@ void Planning::RunStateHandler()
             wait_struct.time_to_stop_sec = 4;
             break;
         case YoloV3::PARK_SIGN_LABEL_ID:
+            need_to_creep = true;
             wait_struct.time_to_stop_sec = -1;
-            state = PARK;
-            LogInfo("park\n");
             break;
         case YoloV3::CHARGE_SIGN_LABEL_ID:
             wait_struct.time_to_stop_sec = -1;
             state = PARK;
-            LogInfo("park\n");
             break;
         case YoloV3::CROSS_SIGN_LABEL_ID:
+            LogInfo("Size w: %f h: %f conf: %f\n", detected_sign.bbox[2], detected_sign.bbox[3], detected_sign.class_confidence);
             wait_struct.time_to_stop_sec = 2;
-            detected = true;
+            break;
+        case YoloV3::YELLOW_LIGHT_LABEL_ID:
+            // LogInfo("Size: %f\n", detected_sign.bbox[3]);
+            wait_struct.time_to_stop_sec = -1;
+            break;
+        case YoloV3::RED_LIGHT_LABEL_ID:
+            // LogInfo("Size: %f\n", detected_sign.bbox[3]);
+            wait_struct.time_to_stop_sec = -1;
+            break;
+        case 6:
+            // LogInfo("Size: %f\n", detected_sign.bbox[3]);
+            wait_struct.time_to_stop_sec = -1;
             break;
         default:
-            /* When the sign goes out of view timestamp */
-            if (detected == true)
-            {
-                detected = false;
-                first_time_close = true;
-                cross_timestamp = elapsed_time.count();
-            }
             break;
         }
-        //LogInfo("Size y: %f", detected_sign.bbox[3]);
-        /* The closer the sign is the bigger the y axis center coordinate of the bbox will be */
-        bool is_close = (detected_sign.class_id > -1) && ((detected_sign.bbox[1] + detected_sign.bbox[3]) / 2 > SIGN_DISTANCE_THRESH);
-        bool wait_toget_close = (abs(elapsed_time.count() - cross_timestamp) > TIME_TO_GET_TO_SIGN && first_time_close);
-        if ((is_close || wait_toget_close) && wait_struct.time_to_stop_sec>0)
+        /* The closer the sign is the bigger the y axis center coordinate of the bbox will be,
+         * the width is also considered because when it is below a certain threshold the sign is going out of view
+         * traffic light is ignored because different logic
+         */
+        bool is_close = (detected_sign.class_id > -1) && (detected_sign.class_id < YoloV3::YELLOW_LIGHT_LABEL_ID) &&
+                        (detected_sign.bbox[3] > SIGN_HEIGHT_SIZE_THRESH) &&
+                        (abs(elapsed_time.count() - last_det_time[(int)detected_sign.class_id]) > SIGN_DETECTION_FREQ_THRESH);
+        if (is_close)
         {
-            first_time_close = false;
             state = WAIT;
+            last_det_time[(int)detected_sign.class_id] = elapsed_time.count();
+        }
+        else if ((detected_sign.class_id > -1) && (detected_sign.class_id >= YoloV3::YELLOW_LIGHT_LABEL_ID))
+        {
+            if (detected_sign.class_id != 6 && detected_sign.bbox[3] > LIGHT_SIZE_THRESH && need_to_creep)
+            {
+                wait_for_green = true;
+            }
+            else
+            {
+                wait_for_green = false;
+                need_to_creep = false;
+            }
         }
         break;
     }
     case PARK:
-        speed_sp = 0;
-        if(charging_pad_center[0]<charging_pad_center[1])
+        static bool passed_pad = false;
+        static int time_to_adjust = elapsed_time.count();
+        speed_sp = 40;
+        lateral_sp = GetLaneCenter(RIGHT_LANE, false);
+        /* If charging pad was detected */
+        if (charging_pad_center[0] < charging_pad_center[1])
         {
-            lateral_sp = (charging_pad_center[0]+charging_pad_center[1])/2;
-            speed_sp = 150;
+            if ((charging_pad_center[2] + charging_pad_center[3]) / 2 > PAD_DISTANCE_THRESHOLD)
+            {
+                lateral_sp = charging_pad_center[1] - 20;
+                speed_sp = 10;
+                passed_pad = true;
+                time_to_adjust = elapsed_time.count();
+            }
         }
-        
+        else
+        {
+            if (abs(elapsed_time.count() - time_to_adjust) > 1)
+            {
+                if (passed_pad)
+                {
+                    passed_pad = false;
+                    wait_struct.time_to_stop_sec = 5;
+                    state = WAIT;
+                }
+            }
+            else
+            {
+                speed_sp = 10;
+            }
+        }
+
         break;
-    /* Unkwonw state, shouldn't ever get here */
+    /* Unknown state, shouldn't ever get here */
     default:
         speed_sp = 0;
         lateral_sp = 512;
@@ -127,6 +184,7 @@ void Planning::GetPerceptionData(Perception *perception_module)
     left_lane_x_limits = perception_module->GetLeftLaneXLimits();
     right_lane_x_limits = perception_module->GetRightLaneXLimits();
     charging_pad_center = perception_module->GetChargingPadCenter();
+    obstacle_limits = perception_module->GetObstacleLimitsArray();
     GetLaneCenterPoints();
 }
 
@@ -311,4 +369,60 @@ void Planning::GetLaneCenterPoints()
             }
         }
     }
+}
+
+int Planning::GetLaneCenter(int lane_idx, bool obstacle)
+{
+    if (lane_idx == RIGHT_LANE)
+    {
+        for (int i = IMG_HEIGHT / CONTOUR_RES - 1; i > 0; i--)
+        {
+            if (right_lane_x[i] > 0)
+            {
+                if (obstacle)
+                {
+                    LogInfo("Depasire\n");
+                    return right_lane_x[i] - 100;
+                }
+                return right_lane_x[i];
+            }
+        }
+    }
+    else if (lane_idx == LEFT_LANE)
+    {
+        for (int i = IMG_HEIGHT / CONTOUR_RES - 1; i > 0; i--)
+        {
+            if (left_lane_x[i] > 0)
+            {
+                return left_lane_x[i];
+            }
+        }
+    }
+    return 512;
+}
+
+bool Planning::IsObstacleOnLane()
+{
+    static int consecutive_detections = 0;
+    static int consecutive_misses = 0;
+    static bool change_lane = false;
+    if (obstacle_limits[0] < obstacle_limits[1])
+    {
+        consecutive_detections++;
+        consecutive_misses = 0;
+    }
+    else
+    {
+        consecutive_misses++;
+        consecutive_detections = 0;
+    }
+    if (consecutive_detections > 10 && obstacle_limits[3] > OBSTACLE_DISTANCE_THRESH)
+    {
+        change_lane = true;
+    }
+    if (consecutive_misses > 15)
+    {
+        change_lane = false;
+    }
+    return change_lane;
 }

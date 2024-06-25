@@ -73,9 +73,9 @@ __global__ void OverlaySegImageKernel(uchar3 *img, int middle_lane_x, const uint
             img[index].z = 153;
         }
         else if ((int)classmap_ptr[index] == 5) {
-            img[index].x = 153;
-            img[index].y = 153;
-            img[index].z = 153;
+            img[index].x = 255;
+            img[index].y = 255;
+            img[index].z = 0;
         }
         if (x == middle_lane_x) {
             img[index].x = 0;

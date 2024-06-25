@@ -94,13 +94,14 @@ public:
 	void PreProcess(uchar3 *input_img);
 	void Process();
 	void PostProcess(std::vector<Yolo::Detection>* out_detections);
-	void OverlayBBoxesOnVisImage(uchar3 *out_image, int img_width, int img_height);
 
 	enum ClassLabels{
 		STOP_SIGN_LABEL_ID = 0,
 		PARK_SIGN_LABEL_ID = 1,
 		CHARGE_SIGN_LABEL_ID = 2,
-		CROSS_SIGN_LABEL_ID = 3
+		CROSS_SIGN_LABEL_ID = 3,
+		YELLOW_LIGHT_LABEL_ID = 4,
+		RED_LIGHT_LABEL_ID = 5
 	};
 
 private:
