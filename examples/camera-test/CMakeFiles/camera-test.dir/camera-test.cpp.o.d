@@ -165,6 +165,9 @@ CMakeFiles/camera-test.dir/camera-test.cpp.o: \
  /usr/include/aarch64-linux-gnu/c++/7/bits/basic_file.h \
  /usr/include/aarch64-linux-gnu/c++/7/bits/c++io.h \
  /usr/include/c++/7/bits/fstream.tcc /usr/include/c++/7/iostream \
+ /usr/include/c++/7/chrono /usr/include/c++/7/ratio \
+ /usr/include/c++/7/limits /usr/include/c++/7/ctime \
+ /usr/include/c++/7/bits/parse_numbers.h \
  /usr/local/include/jetson-utils/videoSource.h \
  /usr/local/include/jetson-utils/videoOptions.h \
  /usr/local/include/jetson-utils/imageFormat.h \
@@ -207,15 +210,14 @@ CMakeFiles/camera-test.dir/camera-test.cpp.o: \
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/perception/Perception.hpp \
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/perception/fastscnn/Fastscnn.hpp \
  /usr/local/include/jetson-utils/cudaMappedMemory.h \
- /usr/local/include/jetson-utils/timespec.h \
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/util/logger.h \
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/util/logging.h \
  /usr/include/aarch64-linux-gnu/NvInferRuntimeCommon.h \
  /usr/include/aarch64-linux-gnu/NvInferVersion.h \
  /usr/include/c++/7/cstddef /usr/local/cuda/include/cuda_runtime_api.h \
  /usr/include/c++/7/cassert /usr/include/assert.h \
- /usr/include/c++/7/ctime /usr/include/c++/7/iomanip \
- /usr/include/c++/7/locale /usr/include/c++/7/bits/locale_facets_nonio.h \
+ /usr/include/c++/7/iomanip /usr/include/c++/7/locale \
+ /usr/include/c++/7/bits/locale_facets_nonio.h \
  /usr/include/aarch64-linux-gnu/c++/7/bits/time_members.h \
  /usr/include/aarch64-linux-gnu/c++/7/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/7/bits/locale_facets_nonio.tcc \
@@ -243,13 +245,15 @@ CMakeFiles/camera-test.dir/camera-test.cpp.o: \
  /usr/include/c++/7/algorithm /usr/include/c++/7/bits/stl_algo.h \
  /usr/include/c++/7/bits/algorithmfwd.h \
  /usr/include/c++/7/bits/stl_heap.h /usr/include/c++/7/bits/stl_tempbuf.h \
- /usr/include/c++/7/bits/uniform_int_dist.h /usr/include/c++/7/limits \
+ /usr/include/c++/7/bits/uniform_int_dist.h \
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/perception/yolo/yololayer.h \
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/perception/yolo/macros.h \
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/perception/yolo/kernel.h \
  /usr/local/include/jetson-utils/logging.h \
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/perception/fastscnn/argmax.h \
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/util/ProjectPaths.h \
+ /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/util/PerfProfiler.hpp \
+ /usr/local/include/jetson-utils/timespec.h \
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/planning/Planning.hpp \
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/control/Control.hpp \
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/communication/Comm.hpp \

@@ -23,6 +23,7 @@
 #include <signal.h>
 #include <fstream>
 #include <iostream>
+#include <chrono>
 
 #include "jetson-utils/videoSource.h"
 #include "jetson-utils/videoOutput.h"
@@ -30,11 +31,12 @@
 #include "Perception.hpp"
 #include "Planning.hpp"
 #include "Control.hpp"
+#include "PerfProfiler.hpp"
 
 using namespace std;
-
+int fps,ms;
 bool signal_recieved = false;
-bool toggleParking = false;
+PerfProfiler *PerfProfiler::instancePtr = NULL;
 
 void sig_handler(int signo)
 {
@@ -102,11 +104,11 @@ int main(int argc, char **argv)
 	Perception PerceptionModule;
 	Planning PlanningModule;
 	Control ControlModule;
-
-	PerceptionModule.InitModule();
+	PerfProfiler *PerfProfiler = PerfProfiler::getInstance();
 
 	while (!signal_recieved)
 	{
+		auto start_time = std::chrono::high_resolution_clock::now();
 		pixelType *imgInput = NULL;
 		int status = 0;
 		if (!input->Capture(&imgInput, &status))
@@ -116,28 +118,29 @@ int main(int argc, char **argv)
 
 			break; // EOS
 		}
-
-		PerceptionModule.RunPerception(imgInput, imgOutput);
-		PlanningModule.GetPerceptionData(&PerceptionModule);
-		PlanningModule.RunStateHandler();
-		PlanningModule.OverlayLanePoints(imgOutput);
-		ControlModule.GetPlanningData(&PlanningModule);
-		ControlModule.SendSetpoints();
+		
+		PerceptionModule.Process(imgInput, imgOutput);
+		PlanningModule.Process(&PerceptionModule);
+		ControlModule.Process(&PlanningModule);
 
 #if VISUALIZATION_ENABLED
 		if (output != NULL)
 		{
+			PlanningModule.OverlayLanePoints(imgOutput);
 			output->Render(imgOutput, VIS_WINDOW_W, VIS_WINDOW_H);
 			//  update status bar
 			char str[256];
-			// sprintf(str, "Latency(ms): %li, FPS: %f", duration.count(), 1000.0f / (duration.count()));
-			// output->SetStatus(str);
+			sprintf(str, "Latency(ms): %d, FPS: %d", ms, fps);
+			output->SetStatus(str);
 
 			// check if the user quit
 			if (!output->IsStreaming())
 				break;
 		}
 #endif
+		auto end_time = std::chrono::high_resolution_clock::now();
+		ms = std::chrono::duration_cast<std::chrono::milliseconds>(end_time-start_time).count();
+		fps = 1000.0f/ms;
 	}
 	/*
 	 * destroy resources

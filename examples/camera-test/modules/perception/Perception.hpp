@@ -3,6 +3,7 @@
 #include "Fastscnn.hpp"
 #include "YoloV3.hpp"
 #include "ProjectPaths.h"
+#include "PerfProfiler.hpp"
 
 /* Configuration of the visualization window */
 #define VISUALIZATION_ENABLED true
@@ -12,6 +13,8 @@
 /* Camera input dimensions */
 #define CAMERA_INPUT_W 1920
 #define CAMERA_INPUT_H 1080
+
+#define BETWEEN_LANES 3
 
 struct DetectedSign
 {
@@ -46,36 +49,30 @@ public:
         {
             LogError("Perception: Failed to allocate CUDA memory for obstacle_limits\n");
         }
+        perf_profiler_ptr = PerfProfiler::getInstance();
+        InitNetworks();
     };
 
     /* Perception module destructor */
     ~Perception();
-
-    /* Initialize the module*/
-    int InitModule();
-
     /* Main function that processes the module */
-    int RunPerception(pixelType *img_input, pixelType *img_output);
-
+    int Process(pixelType *img_input, pixelType *img_output);
     /* Get detected sign interface function */
     int GetDetection(Yolo::Detection* det);
-
     /* Get segmap pointer */
     uint8_t* GetSegmapPtr();
-
     /* Get the array that contains the x limits coordinates of left lane */
     int* GetLeftLaneXLimits();
-
     /* Get the array that contains the x limits coordinates of right lane */
     int* GetRightLaneXLimits();
-    
     /*Get the charging pad center array pointer */
     int* GetChargingPadCenter();
-
     /* Get the obstacle limits array */
     int* GetObstacleLimitsArray();
 
 private:
+    /* Performance profiler instance pointer */
+    PerfProfiler* perf_profiler_ptr;
     /* Network TensorRT objects */
     FastScnn seg_network;
     YoloV3 det_network;
@@ -83,39 +80,26 @@ private:
     uint8_t* classmap_ptr;
     int* left_lane_x_limits;
     int* right_lane_x_limits;
-
     /* Charging pad limits array */
     int *charging_pad_center;
-
     /* Obstacle limits array */
     int *obstacle_limits;
-
     /* Pointer to the detection overlay image */
     pixelType *det_vis_image;
-
     /* Structure that contains info about the detected sign */
     DetectedSign detected_sign;
-
+    /* Initialize the networks*/
+    int InitNetworks();
     /* Get the image thats fed to the detection network before preprocessing */
     void GetDetImage(pixelType *input_img);
-
     /* Overlay detection image on the visualization image */
     void OverlayDetImage(pixelType *vis_img);
-
     /* Overlay bboxes on det image */
     void OverlayBBoxesOnVisImage(uchar3 *out_image, int img_width, int img_height);
-
     /* Filter the detections to get a reliable reading of the detected sign */
     void FilterDetections(std::vector<Yolo::Detection> detections);
-
+    /* Overlay the segmap*/
     void OverlaySegImage(pixelType *img, int middle_lane_x);
-
-    /* Initialize the lane limits array */
-    void InitializeLaneLimitsArray(int* lane_x_limits);
-
-    /* Init charging pad limits array */
-    void InitializePadArray();
-
-    /* Init charging pad limits array */
-    void InitializeObstacleLimitsArray();
+    /* Initialize all the limits arrays */
+    void InitializeLimitsArrays();
 };

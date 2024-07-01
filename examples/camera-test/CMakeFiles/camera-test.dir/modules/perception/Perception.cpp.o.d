@@ -148,7 +148,6 @@ CMakeFiles/camera-test.dir/modules/perception/Perception.cpp.o: \
  /usr/include/c++/7/bits/basic_string.tcc \
  /usr/local/include/jetson-utils/imageFormat.h \
  /usr/local/include/jetson-utils/imageFormat.inl \
- /usr/local/include/jetson-utils/timespec.h \
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/util/logger.h \
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/util/logging.h \
  /usr/include/aarch64-linux-gnu/NvInferRuntimeCommon.h \
@@ -216,4 +215,7 @@ CMakeFiles/camera-test.dir/modules/perception/Perception.cpp.o: \
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/perception/yolo/kernel.h \
  /usr/local/include/jetson-utils/logging.h \
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/perception/fastscnn/argmax.h \
- /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/util/ProjectPaths.h
+ /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/util/ProjectPaths.h \
+ /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/util/PerfProfiler.hpp \
+ /usr/local/include/jetson-utils/timespec.h /usr/include/c++/7/chrono \
+ /usr/include/c++/7/ratio /usr/include/c++/7/bits/parse_numbers.h

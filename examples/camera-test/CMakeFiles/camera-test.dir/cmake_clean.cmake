@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/camera-test.dir/modules/perception/yolo/camera-test_generated_yololayer.cu.o"
   "CMakeFiles/camera-test.dir/modules/planning/Planning.cpp.o"
   "CMakeFiles/camera-test.dir/modules/planning/Planning.cpp.o.d"
+  "CMakeFiles/camera-test.dir/util/PerfProfiler.cpp.o"
+  "CMakeFiles/camera-test.dir/util/PerfProfiler.cpp.o.d"
   "CMakeFiles/camera-test.dir/util/logger.cpp.o"
   "CMakeFiles/camera-test.dir/util/logger.cpp.o.d"
   "CMakeFiles/yololayer.dir/modules/perception/yolo/yololayer_generated_yololayer.cu.o"

@@ -2,7 +2,6 @@
 #define _FASTSCNN_
 
 #include <jetson-utils/cudaMappedMemory.h>
-#include <jetson-utils/timespec.h>
 
 #include "logger.h"
 #include "ipm.h"
@@ -52,20 +51,6 @@ struct Obstacle
 	int biggest_y_obst;
 };
 
-/**
- * Profiling queries
- * @see tensorNet::GetProfilerTime()
- * @ingroup tensorNet
- */
-enum profilerQuery
-{
-	PROFILER_PREPROCESS = 0,
-	PROFILER_NETWORK,
-	PROFILER_POSTPROCESS,
-	PROFILER_VISUALIZE,
-	PROFILER_TOTAL,
-};
-
 class FastScnn
 {
 public:
@@ -78,117 +63,7 @@ public:
 	void PostProcess(uint8_t **classmap_ptr, int* left_lane_x_limits, int* right_lane_x_limits, int* charging_pad_center, int* obstacle_limits);
 	bool LoadGrid();
 
-
-	/*****************Performance profiling functions*****************/
-	/**
-	 * Begin a profiling query, before network is run
-	 */
-	inline void PROFILER_BEGIN(profilerQuery query)
-	{
-		const uint32_t evt = query * 2;
-		const uint32_t flag = (1 << query);
-
-		CUDA(cudaEventRecord(mEventsGPU[evt], mStream));
-		timestamp(&mEventsCPU[evt]);
-
-		mProfilerQueriesUsed |= flag;
-		mProfilerQueriesDone &= ~flag;
-	}
-
-	/**
-	 * End a profiling query, after the network is run
-	 */
-	inline void PROFILER_END(profilerQuery query)
-	{
-		const uint32_t evt = query * 2 + 1;
-
-		CUDA(cudaEventRecord(mEventsGPU[evt]));
-		timestamp(&mEventsCPU[evt]);
-		timespec cpuTime;
-		timeDiff(mEventsCPU[evt - 1], mEventsCPU[evt], &cpuTime);
-		mProfilerTimes[query].x = timeFloat(cpuTime);
-	}
-
-	/**
-	 * Query the CUDA part of a profiler query.
-	 */
-	inline bool PROFILER_QUERY(profilerQuery query)
-	{
-		const uint32_t flag = (1 << query);
-
-		if (query == PROFILER_TOTAL)
-		{
-			mProfilerTimes[PROFILER_TOTAL].x = 0.0f;
-			mProfilerTimes[PROFILER_TOTAL].y = 0.0f;
-
-			for (uint32_t n = 0; n < PROFILER_TOTAL; n++)
-			{
-				if (PROFILER_QUERY((profilerQuery)n))
-				{
-					mProfilerTimes[PROFILER_TOTAL].x += mProfilerTimes[n].x;
-					mProfilerTimes[PROFILER_TOTAL].y += mProfilerTimes[n].y;
-				}
-			}
-
-			return true;
-		}
-		else if (mProfilerQueriesUsed & flag)
-		{
-			if (!(mProfilerQueriesDone & flag))
-			{
-				const uint32_t evt = query * 2;
-				float cuda_time = 0.0f;
-				CUDA(cudaEventElapsedTime(&cuda_time, mEventsGPU[evt], mEventsGPU[evt + 1]));
-				cudaThreadSynchronize();
-				mProfilerTimes[query].y = cuda_time;
-				mProfilerQueriesDone |= flag;
-				mProfilerQueriesUsed &= ~flag;
-			}
-
-			return true;
-		}
-
-		return false;
-	}
-
-	const char *profilerQueryToStr(profilerQuery query)
-	{
-		switch (query)
-		{
-		case PROFILER_PREPROCESS:
-			return "Pre-Process";
-		case PROFILER_NETWORK:
-			return "Network";
-		case PROFILER_POSTPROCESS:
-			return "Post-Process";
-		case PROFILER_VISUALIZE:
-			return "Visualize";
-		case PROFILER_TOTAL:
-			return "Total";
-		}
-		return nullptr;
-	}
-
-	/**
-	 * Print the profiler times (in millseconds).
-	 */
-	inline void PrintProfilerTimes()
-	{
-		LogInfo("\n");
-		LogInfo("------------------------------------------------\n");
-		LogInfo("Timing Report\n");
-		LogInfo("------------------------------------------------\n");
-
-		for (uint32_t n = 0; n <= PROFILER_TOTAL; n++)
-		{
-			const profilerQuery query = (profilerQuery)n;
-
-			if (PROFILER_QUERY(query))
-				LogInfo("%-12s  CPU %9.5fms  CUDA %9.5fms\n", profilerQueryToStr(query), mProfilerTimes[n].x, mProfilerTimes[n].y);
-		}
-
-		LogInfo("------------------------------------------------\n\n");
-	}
+	cudaStream_t GetStream();
 
 	/**
 	 * Retrieve the number of input layers to the network.
@@ -217,6 +92,7 @@ public:
 
 	std::vector<layerInfo> mInputs;
 	std::vector<layerInfo> mOutputs;
+	
 protected:
 	nvinfer1::ICudaEngine *mEngine;
 	nvinfer1::IRuntime *mInfer;
@@ -224,12 +100,6 @@ protected:
 	cudaStream_t mStream;
 
 	Obstacle obstacle;
-	cudaEvent_t mEventsGPU[PROFILER_TOTAL * 2];
-	timespec mEventsCPU[PROFILER_TOTAL * 2];
-
-	float2 mProfilerTimes[PROFILER_TOTAL + 1];
-	uint32_t mProfilerQueriesUsed;
-	uint32_t mProfilerQueriesDone;
 };
 
 #endif

@@ -1373,10 +1373,24 @@ CMakeFiles/camera-test.dir/util/logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/camera-test.dir/util/logger.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/util/logger.cpp -o CMakeFiles/camera-test.dir/util/logger.cpp.s
 
+CMakeFiles/camera-test.dir/util/PerfProfiler.cpp.o: CMakeFiles/camera-test.dir/flags.make
+CMakeFiles/camera-test.dir/util/PerfProfiler.cpp.o: util/PerfProfiler.cpp
+CMakeFiles/camera-test.dir/util/PerfProfiler.cpp.o: CMakeFiles/camera-test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/camera-test.dir/util/PerfProfiler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/camera-test.dir/util/PerfProfiler.cpp.o -MF CMakeFiles/camera-test.dir/util/PerfProfiler.cpp.o.d -o CMakeFiles/camera-test.dir/util/PerfProfiler.cpp.o -c /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/util/PerfProfiler.cpp
+
+CMakeFiles/camera-test.dir/util/PerfProfiler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/camera-test.dir/util/PerfProfiler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/util/PerfProfiler.cpp > CMakeFiles/camera-test.dir/util/PerfProfiler.cpp.i
+
+CMakeFiles/camera-test.dir/util/PerfProfiler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/camera-test.dir/util/PerfProfiler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/util/PerfProfiler.cpp -o CMakeFiles/camera-test.dir/util/PerfProfiler.cpp.s
+
 CMakeFiles/camera-test.dir/modules/perception/yolo/YoloV3.cpp.o: CMakeFiles/camera-test.dir/flags.make
 CMakeFiles/camera-test.dir/modules/perception/yolo/YoloV3.cpp.o: modules/perception/yolo/YoloV3.cpp
 CMakeFiles/camera-test.dir/modules/perception/yolo/YoloV3.cpp.o: CMakeFiles/camera-test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/camera-test.dir/modules/perception/yolo/YoloV3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/camera-test.dir/modules/perception/yolo/YoloV3.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/camera-test.dir/modules/perception/yolo/YoloV3.cpp.o -MF CMakeFiles/camera-test.dir/modules/perception/yolo/YoloV3.cpp.o.d -o CMakeFiles/camera-test.dir/modules/perception/yolo/YoloV3.cpp.o -c /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/perception/yolo/YoloV3.cpp
 
 CMakeFiles/camera-test.dir/modules/perception/yolo/YoloV3.cpp.i: cmake_force
@@ -1390,7 +1404,7 @@ CMakeFiles/camera-test.dir/modules/perception/yolo/YoloV3.cpp.s: cmake_force
 CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.o: CMakeFiles/camera-test.dir/flags.make
 CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.o: modules/perception/fastscnn/Fastscnn.cpp
 CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.o: CMakeFiles/camera-test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.o -MF CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.o.d -o CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.o -c /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/perception/fastscnn/Fastscnn.cpp
 
 CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.i: cmake_force
@@ -1404,7 +1418,7 @@ CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.s: cmake_for
 CMakeFiles/camera-test.dir/modules/perception/Perception.cpp.o: CMakeFiles/camera-test.dir/flags.make
 CMakeFiles/camera-test.dir/modules/perception/Perception.cpp.o: modules/perception/Perception.cpp
 CMakeFiles/camera-test.dir/modules/perception/Perception.cpp.o: CMakeFiles/camera-test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/camera-test.dir/modules/perception/Perception.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/camera-test.dir/modules/perception/Perception.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/camera-test.dir/modules/perception/Perception.cpp.o -MF CMakeFiles/camera-test.dir/modules/perception/Perception.cpp.o.d -o CMakeFiles/camera-test.dir/modules/perception/Perception.cpp.o -c /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/perception/Perception.cpp
 
 CMakeFiles/camera-test.dir/modules/perception/Perception.cpp.i: cmake_force
@@ -1418,7 +1432,7 @@ CMakeFiles/camera-test.dir/modules/perception/Perception.cpp.s: cmake_force
 CMakeFiles/camera-test.dir/modules/planning/Planning.cpp.o: CMakeFiles/camera-test.dir/flags.make
 CMakeFiles/camera-test.dir/modules/planning/Planning.cpp.o: modules/planning/Planning.cpp
 CMakeFiles/camera-test.dir/modules/planning/Planning.cpp.o: CMakeFiles/camera-test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/camera-test.dir/modules/planning/Planning.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/camera-test.dir/modules/planning/Planning.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/camera-test.dir/modules/planning/Planning.cpp.o -MF CMakeFiles/camera-test.dir/modules/planning/Planning.cpp.o.d -o CMakeFiles/camera-test.dir/modules/planning/Planning.cpp.o -c /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/planning/Planning.cpp
 
 CMakeFiles/camera-test.dir/modules/planning/Planning.cpp.i: cmake_force
@@ -1432,7 +1446,7 @@ CMakeFiles/camera-test.dir/modules/planning/Planning.cpp.s: cmake_force
 CMakeFiles/camera-test.dir/modules/communication/Comm.cpp.o: CMakeFiles/camera-test.dir/flags.make
 CMakeFiles/camera-test.dir/modules/communication/Comm.cpp.o: modules/communication/Comm.cpp
 CMakeFiles/camera-test.dir/modules/communication/Comm.cpp.o: CMakeFiles/camera-test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/camera-test.dir/modules/communication/Comm.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/camera-test.dir/modules/communication/Comm.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/camera-test.dir/modules/communication/Comm.cpp.o -MF CMakeFiles/camera-test.dir/modules/communication/Comm.cpp.o.d -o CMakeFiles/camera-test.dir/modules/communication/Comm.cpp.o -c /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/communication/Comm.cpp
 
 CMakeFiles/camera-test.dir/modules/communication/Comm.cpp.i: cmake_force
@@ -1446,7 +1460,7 @@ CMakeFiles/camera-test.dir/modules/communication/Comm.cpp.s: cmake_force
 CMakeFiles/camera-test.dir/modules/control/Control.cpp.o: CMakeFiles/camera-test.dir/flags.make
 CMakeFiles/camera-test.dir/modules/control/Control.cpp.o: modules/control/Control.cpp
 CMakeFiles/camera-test.dir/modules/control/Control.cpp.o: CMakeFiles/camera-test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/camera-test.dir/modules/control/Control.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/camera-test.dir/modules/control/Control.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/camera-test.dir/modules/control/Control.cpp.o -MF CMakeFiles/camera-test.dir/modules/control/Control.cpp.o.d -o CMakeFiles/camera-test.dir/modules/control/Control.cpp.o -c /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/modules/control/Control.cpp
 
 CMakeFiles/camera-test.dir/modules/control/Control.cpp.i: cmake_force
@@ -1461,6 +1475,7 @@ CMakeFiles/camera-test.dir/modules/control/Control.cpp.s: cmake_force
 camera__test_OBJECTS = \
 "CMakeFiles/camera-test.dir/camera-test.cpp.o" \
 "CMakeFiles/camera-test.dir/util/logger.cpp.o" \
+"CMakeFiles/camera-test.dir/util/PerfProfiler.cpp.o" \
 "CMakeFiles/camera-test.dir/modules/perception/yolo/YoloV3.cpp.o" \
 "CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.o" \
 "CMakeFiles/camera-test.dir/modules/perception/Perception.cpp.o" \
@@ -1477,6 +1492,7 @@ camera__test_EXTERNAL_OBJECTS = \
 
 camera-test: CMakeFiles/camera-test.dir/camera-test.cpp.o
 camera-test: CMakeFiles/camera-test.dir/util/logger.cpp.o
+camera-test: CMakeFiles/camera-test.dir/util/PerfProfiler.cpp.o
 camera-test: CMakeFiles/camera-test.dir/modules/perception/yolo/YoloV3.cpp.o
 camera-test: CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.o
 camera-test: CMakeFiles/camera-test.dir/modules/perception/Perception.cpp.o
@@ -1564,7 +1580,7 @@ camera-test: /usr/lib/aarch64-linux-gnu/libopencv_cudev.so.4.8.0
 camera-test: /usr/local/cuda/lib64/libcudart_static.a
 camera-test: /usr/lib/aarch64-linux-gnu/librt.so
 camera-test: CMakeFiles/camera-test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable camera-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable camera-test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/camera-test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

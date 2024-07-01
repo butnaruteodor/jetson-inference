@@ -30,6 +30,7 @@ cuda_add_library(yololayer SHARED ${PROJECT_SOURCE_DIR}/modules/perception/yolo/
 # compile the my-recognition program
 cuda_add_executable(camera-test camera-test.cpp 
                                 util/logger.cpp
+                                util/PerfProfiler.cpp
                                 modules/perception/ipm.cu 
                                 modules/perception/fastscnn/argmax.cu 
                                 modules/perception/yolo/YoloV3.cpp 

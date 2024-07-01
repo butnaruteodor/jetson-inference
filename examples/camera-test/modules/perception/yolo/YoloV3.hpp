@@ -95,13 +95,16 @@ public:
 	void Process();
 	void PostProcess(std::vector<Yolo::Detection>* out_detections);
 
+	cudaStream_t GetStream();
+
 	enum ClassLabels{
 		STOP_SIGN_LABEL_ID = 0,
 		PARK_SIGN_LABEL_ID = 1,
 		CHARGE_SIGN_LABEL_ID = 2,
 		CROSS_SIGN_LABEL_ID = 3,
 		YELLOW_LIGHT_LABEL_ID = 4,
-		RED_LIGHT_LABEL_ID = 5
+		RED_LIGHT_LABEL_ID = 5,
+		GREEN_LIGHT_LABEL_ID = 6
 	};
 
 private:

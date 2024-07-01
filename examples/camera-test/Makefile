@@ -310,6 +310,30 @@ modules/planning/Planning.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera-test.dir/build.make CMakeFiles/camera-test.dir/modules/planning/Planning.cpp.s
 .PHONY : modules/planning/Planning.cpp.s
 
+util/PerfProfiler.o: util/PerfProfiler.cpp.o
+.PHONY : util/PerfProfiler.o
+
+# target to build an object file
+util/PerfProfiler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera-test.dir/build.make CMakeFiles/camera-test.dir/util/PerfProfiler.cpp.o
+.PHONY : util/PerfProfiler.cpp.o
+
+util/PerfProfiler.i: util/PerfProfiler.cpp.i
+.PHONY : util/PerfProfiler.i
+
+# target to preprocess a source file
+util/PerfProfiler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera-test.dir/build.make CMakeFiles/camera-test.dir/util/PerfProfiler.cpp.i
+.PHONY : util/PerfProfiler.cpp.i
+
+util/PerfProfiler.s: util/PerfProfiler.cpp.s
+.PHONY : util/PerfProfiler.s
+
+# target to generate assembly for a file
+util/PerfProfiler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera-test.dir/build.make CMakeFiles/camera-test.dir/util/PerfProfiler.cpp.s
+.PHONY : util/PerfProfiler.cpp.s
+
 util/logger.o: util/logger.cpp.o
 .PHONY : util/logger.o
 
@@ -365,6 +389,9 @@ help:
 	@echo "... modules/planning/Planning.o"
 	@echo "... modules/planning/Planning.i"
 	@echo "... modules/planning/Planning.s"
+	@echo "... util/PerfProfiler.o"
+	@echo "... util/PerfProfiler.i"
+	@echo "... util/PerfProfiler.s"
 	@echo "... util/logger.o"
 	@echo "... util/logger.i"
 	@echo "... util/logger.s"

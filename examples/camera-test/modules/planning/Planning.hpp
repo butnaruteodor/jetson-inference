@@ -14,15 +14,14 @@ class Planning
 public:
     Planning();
     ~Planning();
-    void RunStateHandler();
-    /* Get the detected sign and the pointer to the segmap */
-    void GetPerceptionData(Perception *perception_module);
     /* Overlay lane center on image */
     void OverlayLanePoints(uchar3 *out_img);
     /* Get the lateral setpoint */
     int GetLateralSetpoint();
     /* Get the longitudinal setpoint */
     int GetLongitudinalSetpoint();
+    /* Process the module, get perception data and run state handler */
+    void Process(Perception *perception_module);
 
 private:
     enum State
@@ -47,6 +46,8 @@ private:
     Yolo::Detection detected_sign;
     WaitStruct wait_struct;
 
+    PerfProfiler *perf_profiler_ptr;
+
     /* Lane extremities x values, taken raw from perception module */
     int *left_lane_x_limits;
     int *right_lane_x_limits;
@@ -62,7 +63,11 @@ private:
     /* Pre processes the data from the perception module, gives the lane center points */
     void GetLaneCenterPoints();
     /* Get lane lateral setpoint by lane id */
-    int GetLaneCenter(int lane_idx, bool obstacle);
+    int GetLaneCenter(int lane_idx);
     /* Choose the free lane */
     bool IsObstacleOnLane();
+    /* Run the brain */
+    void RunStateHandler();
+    /* Get the detected sign and the pointer to the segmap */
+    void GetPerceptionData(Perception *perception_module);
 };

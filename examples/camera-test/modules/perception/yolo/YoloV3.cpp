@@ -141,7 +141,7 @@ void YoloV3::Process()
 	{
 		LogError("YoloV3: Failed to enqueue TensorRT context on device\n");
 	}
-	cudaStreamSynchronize(mStream);
+	//cudaStreamSynchronize(mStream);
 }
 
 void YoloV3::PostProcess(std::vector<Yolo::Detection> *out_detections)
@@ -149,4 +149,9 @@ void YoloV3::PostProcess(std::vector<Yolo::Detection> *out_detections)
 	detected_objects.clear();
 	nms(detected_objects, (float *)mBindings[1]); // 3us
 	*out_detections = detected_objects;
+}
+
+cudaStream_t YoloV3::GetStream()
+{
+    return mStream;
 }

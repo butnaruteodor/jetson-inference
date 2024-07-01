@@ -1,4 +1,5 @@
 #include "Perception.hpp"
+#include <chrono>
 
 /* Consecutive times a sign has to be detected to be trusted that it was actually detected */
 #define DETECTION_FILTER_THRESH 3
@@ -11,7 +12,7 @@ Perception::~Perception()
 	CUDA_FREE_HOST(charging_pad_center);
 }
 
-int Perception::InitModule()
+int Perception::InitNetworks()
 {
 	/* Initialize segmentation network */
 	int status_seg = seg_network.InitEngine();
@@ -30,31 +31,48 @@ int Perception::InitModule()
 	}
 	return 0;
 }
-int Perception::RunPerception(pixelType *imgInput, pixelType *imgOutput)
+int Perception::Process(pixelType *imgInput, pixelType *imgOutput)
 {
 	std::vector<Yolo::Detection> detections;
-
+	
+	perf_profiler_ptr->PROFILER_BEGIN(PROFILER_PREPROCESS_SEG, seg_network.GetStream());
 	seg_network.PreProcess(imgInput);
+	perf_profiler_ptr->PROFILER_END(PROFILER_PREPROCESS_SEG);
+	perf_profiler_ptr->PROFILER_BEGIN(PROFILER_NETWORK_SEG, seg_network.GetStream());
 	seg_network.Process(); // 60ms 62ms(Paddle)
-	InitializeLaneLimitsArray(left_lane_x_limits);
-	InitializeLaneLimitsArray(right_lane_x_limits);
-	InitializePadArray();
-	InitializeObstacleLimitsArray();
+	perf_profiler_ptr->PROFILER_END(PROFILER_NETWORK_SEG);
+	CUDA(cudaStreamSynchronize(seg_network.GetStream()));
+	perf_profiler_ptr->PROFILER_BEGIN(PROFILER_POSTPROCESS_SEG, seg_network.GetStream());
+	InitializeLimitsArrays();
 	seg_network.PostProcess(&classmap_ptr, left_lane_x_limits, right_lane_x_limits, charging_pad_center, obstacle_limits);
+	perf_profiler_ptr->PROFILER_END(PROFILER_POSTPROCESS_SEG);
 
+	perf_profiler_ptr->PROFILER_BEGIN(PROFILER_PREPROCESS_DET, det_network.GetStream());
 	det_network.PreProcess(imgInput);
-	det_network.Process();				  // run inference (22 ms)
+	perf_profiler_ptr->PROFILER_END(PROFILER_PREPROCESS_DET);
+	perf_profiler_ptr->PROFILER_BEGIN(PROFILER_NETWORK_DET, det_network.GetStream());
+	det_network.Process();	// run inference (22 ms)
+	perf_profiler_ptr->PROFILER_END(PROFILER_NETWORK_DET);
+	CUDA(cudaStreamSynchronize(det_network.GetStream()));
+	
+	perf_profiler_ptr->PROFILER_BEGIN(PROFILER_POSTPROCESS_DET, det_network.GetStream());
 	det_network.PostProcess(&detections); // nms (very fast)
-
 	FilterDetections(detections);
+	perf_profiler_ptr->PROFILER_END(PROFILER_POSTPROCESS_DET);
 
 #if VISUALIZATION_ENABLED
+	perf_profiler_ptr->PROFILER_BEGIN(PROFILER_VISUALIZE_SEG, seg_network.GetStream());
 	OverlaySegImage(imgOutput, IMG_WIDTH / 2); // 54 ms
+	perf_profiler_ptr->PROFILER_END(PROFILER_VISUALIZE_SEG);
+	perf_profiler_ptr->PROFILER_BEGIN(PROFILER_VISUALIZE_DET, det_network.GetStream());
 	GetDetImage(imgInput);
 	OverlayBBoxesOnVisImage(det_vis_image, DETECTION_ROI_W, DETECTION_ROI_H);
 	OverlayDetImage(imgOutput);
-	cudaDeviceSynchronize();
-#endif
+	perf_profiler_ptr->PROFILER_END(PROFILER_VISUALIZE_DET);
+	//cudaDeviceSynchronize();
+#endif	
+
+	//perf_profiler_ptr->PrintProfilerTimesPerception();
 }
 
 int Perception::GetDetection(Yolo::Detection *det)
@@ -208,25 +226,19 @@ void Perception::OverlaySegImage(pixelType *img, int middle_lane_x)
 	OverlaySegImageK(img, middle_lane_x, classmap_ptr, OUT_IMG_W, OUT_IMG_H);
 }
 
-void Perception::InitializeLaneLimitsArray(int *classes_extremities_x)
+void Perception::InitializeLimitsArrays()
 {
 	for (int i = 0; i < IMG_HEIGHT / CONTOUR_RES; i++)
 	{
-		classes_extremities_x[2 * i] = IMG_WIDTH;
-		classes_extremities_x[2 * i + 1] = 0;
+		left_lane_x_limits[2 * i] = IMG_WIDTH;
+		left_lane_x_limits[2 * i + 1] = 0;
+		right_lane_x_limits[2 * i] = IMG_WIDTH;
+		right_lane_x_limits[2 * i + 1] = 0;
 	}
-}
-
-void Perception::InitializePadArray()
-{
 	charging_pad_center[0] = 1024;
 	charging_pad_center[1] = 0;
 	charging_pad_center[2] = 512;
 	charging_pad_center[3] = 0;
-}
-
-void Perception::InitializeObstacleLimitsArray()
-{
 	obstacle_limits[0] = 1024;
 	obstacle_limits[1] = 0;
 	obstacle_limits[2] = 512;

@@ -66,19 +66,6 @@ FastScnn::FastScnn(const std::string &engineFilename)
 	mStream = NULL;
 	mClassMap = NULL;
 
-	mProfilerQueriesUsed = 0;
-	mProfilerQueriesDone = 0;
-
-	memset(mEventsCPU, 0, sizeof(mEventsCPU));
-	memset(mEventsGPU, 0, sizeof(mEventsGPU));
-	memset(mProfilerTimes, 0, sizeof(mProfilerTimes));
-
-	/*
-	 * create events for timing
-	 */
-	for (int n = 0; n < PROFILER_TOTAL * 2; n++)
-		CUDA(cudaEventCreate(&mEventsGPU[n]));
-
 	// De-serialize engine from file
 	std::ifstream engineFile(engineFilename, std::ios::binary);
 	if (engineFile.fail())
@@ -152,8 +139,6 @@ int FastScnn::InitEngine()
 	output_blobs.push_back("save_infer_model/scale_0.tmp_0");
 	output_blobs.push_back("save_infer_model/scale_1.tmp_0");
 	input_blobs.push_back("x");
-	// output_blobs.push_back("output");
-	// input_blobs.push_back("input");
 
 	const int numInputs = input_blobs.size();
 	int mMaxBatchSize = 1;
@@ -308,27 +293,21 @@ int FastScnn::InitEngine()
 
 void FastScnn::PreProcess(uchar3 *input_img)
 {
-	PROFILER_BEGIN(PROFILER_PREPROCESS);
 	warpImageK(input_img, (float *)mInputs[0].CUDA, uGrid, vGrid, IN_IMG_W, IN_IMG_H); // 3ms
-	PROFILER_END(PROFILER_PREPROCESS);
 }
 
 void FastScnn::Process()
 {
-	PROFILER_BEGIN(PROFILER_NETWORK);
 	if (!mContext->enqueueV2(mBindings, mStream, NULL))
 	{
 		LogError("Fastscnn: Failed to enqueue TensorRT context on device\n");
 	}
-	PROFILER_END(PROFILER_NETWORK);
-	CUDA(cudaStreamSynchronize(mStream));
+	//CUDA(cudaStreamSynchronize(mStream));
 }
 
 void FastScnn:: PostProcess(uint8_t **classmap_ptr, int* left_lane_x_limits, int* right_lane_x_limits, int* charging_pad_center, int* obstacle_limits)
 {
-	PROFILER_BEGIN(PROFILER_POSTPROCESS);
 	generateClassMap((float *)mOutputs[0].CUDA, mClassMap, left_lane_x_limits, right_lane_x_limits, charging_pad_center, obstacle_limits); // 1ms
-	PROFILER_END(PROFILER_POSTPROCESS);
 
 	*classmap_ptr = mClassMap;
 }
@@ -377,4 +356,9 @@ bool FastScnn::LoadGrid()
 	free(vGridBuffer);
 
 	return ret;
+}
+
+cudaStream_t FastScnn::GetStream()
+{
+    return mStream;
 }

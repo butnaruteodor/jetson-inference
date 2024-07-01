@@ -1,0 +1,2358 @@
+Pre-Process   CPU   0.10599ms  CUDA   3.20755ms  CPU   0.08907ms  CUDA   0.81109ms
+Network       CPU   4.88298ms  CUDA  53.82109ms  CPU  24.39510ms  CUDA  16.58036ms
+Post-Process  CPU   0.10365ms  CUDA   3.95740ms  CPU   0.07136ms  CUDA   0.05911ms
+Visualize     CPU   0.13417ms  CUDA   1.56786ms  CPU   0.12214ms  CUDA   4.76260ms
+Total         CPU   5.22679ms  CUDA  62.55391ms  CPU  24.66151ms  CUDA  23.89141ms
+
+Pre-Process   CPU   0.09281ms  CUDA   3.09010ms  CPU   0.09469ms  CUDA   0.80896ms
+Network       CPU   4.51422ms  CUDA  49.60557ms  CPU  21.04622ms  CUDA  19.80271ms
+Post-Process  CPU   0.12776ms  CUDA   3.70125ms  CPU   0.07766ms  CUDA   0.07219ms
+Visualize     CPU   0.16052ms  CUDA   1.60531ms  CPU   0.21433ms  CUDA   4.49276ms
+Total         CPU   4.89532ms  CUDA  58.00224ms  CPU  21.31138ms  CUDA  20.78187ms
+
+Pre-Process   CPU   0.11709ms  CUDA   3.91896ms  CPU   0.10104ms  CUDA   0.79745ms
+Network       CPU   4.92371ms  CUDA  50.94125ms  CPU  21.45628ms  CUDA  16.81661ms
+Post-Process  CPU   0.19188ms  CUDA   3.68031ms  CPU   0.12776ms  CUDA   0.07771ms
+Visualize     CPU   0.22016ms  CUDA   1.66995ms  CPU   0.27725ms  CUDA   4.47312ms
+Total         CPU   5.45284ms  CUDA  60.21047ms  CPU  21.80218ms  CUDA  22.08917ms
+
+Pre-Process   CPU   0.10172ms  CUDA   4.09391ms  CPU   0.10177ms  CUDA   0.81677ms
+Network       CPU   5.20470ms  CUDA  50.97865ms  CPU  21.05070ms  CUDA  17.22500ms
+Post-Process  CPU   0.23704ms  CUDA   3.70594ms  CPU   0.12198ms  CUDA   0.12844ms
+Visualize     CPU   0.28933ms  CUDA   1.67162ms  CPU   0.48277ms  CUDA   4.58714ms
+Total         CPU   5.83279ms  CUDA  60.45010ms  CPU  21.37617ms  CUDA  21.93484ms
+
+Pre-Process   CPU   0.13125ms  CUDA   4.36906ms  CPU   0.08792ms  CUDA   0.80068ms
+Network       CPU   5.77685ms  CUDA  50.86458ms  CPU  21.50248ms  CUDA  16.91870ms
+Post-Process  CPU   0.22344ms  CUDA   3.69740ms  CPU   0.11985ms  CUDA   0.12156ms
+Visualize     CPU   0.42017ms  CUDA   1.74453ms  CPU   0.40949ms  CUDA   4.49036ms
+Total         CPU   6.55172ms  CUDA  60.67557ms  CPU  21.84150ms  CUDA  22.62292ms
+
+Pre-Process   CPU   0.12360ms  CUDA   3.16995ms  CPU   0.05401ms  CUDA   0.80219ms
+Network       CPU   4.84907ms  CUDA  52.53130ms  CPU  21.31925ms  CUDA  17.33203ms
+Post-Process  CPU   0.14849ms  CUDA   3.66588ms  CPU   0.08360ms  CUDA   0.11964ms
+Visualize     CPU   0.15469ms  CUDA   1.55198ms  CPU   0.25928ms  CUDA   4.62885ms
+Total         CPU   5.27585ms  CUDA  60.91912ms  CPU  21.58045ms  CUDA  21.13151ms
+
+Pre-Process   CPU   0.14230ms  CUDA   3.38385ms  CPU   0.11370ms  CUDA   0.80984ms
+Network       CPU   5.43695ms  CUDA  52.02427ms  CPU  21.53691ms  CUDA  17.06771ms
+Post-Process  CPU   0.21891ms  CUDA   3.68458ms  CPU   0.16370ms  CUDA   0.08401ms
+Visualize     CPU   0.24032ms  CUDA   1.64146ms  CPU   0.26147ms  CUDA   4.40146ms
+Total         CPU   6.03848ms  CUDA  60.73416ms  CPU  21.95660ms  CUDA  21.72708ms
+
+Pre-Process   CPU   0.15938ms  CUDA   3.14073ms  CPU   0.08078ms  CUDA   0.82089ms
+Network       CPU   4.83699ms  CUDA  52.19302ms  CPU  21.35133ms  CUDA  17.39891ms
+Post-Process  CPU   0.19844ms  CUDA   3.71026ms  CPU   0.10922ms  CUDA   0.12344ms
+Visualize     CPU   0.22678ms  CUDA   1.60682ms  CPU   0.31829ms  CUDA   4.38729ms
+Total         CPU   5.42158ms  CUDA  60.65083ms  CPU  21.70072ms  CUDA  21.23063ms
+
+Pre-Process   CPU   0.12068ms  CUDA   3.28427ms  CPU   0.06984ms  CUDA   0.79198ms
+Network       CPU   4.88876ms  CUDA  52.39208ms  CPU  21.34800ms  CUDA  17.18682ms
+Post-Process  CPU   0.18323ms  CUDA   3.76979ms  CPU   0.10271ms  CUDA   0.11109ms
+Visualize     CPU   0.12151ms  CUDA   1.57375ms  CPU   0.19448ms  CUDA   4.45276ms
+Total         CPU   5.31419ms  CUDA  61.01989ms  CPU  21.64124ms  CUDA  21.24568ms
+
+Pre-Process   CPU   0.07693ms  CUDA   3.31177ms  CPU   0.05599ms  CUDA   0.84042ms
+Network       CPU   5.74102ms  CUDA  51.98943ms  CPU  20.94080ms  CUDA  17.01682ms
+Post-Process  CPU   0.09375ms  CUDA   3.66313ms  CPU   0.06094ms  CUDA   0.10417ms
+Visualize     CPU   0.10375ms  CUDA   1.61255ms  CPU   0.19256ms  CUDA   4.38495ms
+Total         CPU   6.01545ms  CUDA  60.57687ms  CPU  21.13466ms  CUDA  20.84854ms
+
+Pre-Process   CPU   0.13370ms  CUDA   3.17208ms  CPU   0.05547ms  CUDA   0.80526ms
+Network       CPU   4.80251ms  CUDA  52.24630ms  CPU  20.98028ms  CUDA  16.67125ms
+Post-Process  CPU   0.10006ms  CUDA   3.67948ms  CPU   0.06172ms  CUDA   0.06026ms
+Visualize     CPU   0.10797ms  CUDA   1.57714ms  CPU   0.21516ms  CUDA   4.42812ms
+Total         CPU   5.14424ms  CUDA  60.67500ms  CPU  21.23117ms  CUDA  20.74432ms
+
+Pre-Process   CPU   0.09979ms  CUDA   3.23370ms  CPU   0.08656ms  CUDA   0.82000ms
+Network       CPU   5.21096ms  CUDA  52.67151ms  CPU  21.37180ms  CUDA  16.69864ms
+Post-Process  CPU   0.13953ms  CUDA   3.68635ms  CPU   0.05490ms  CUDA   0.05359ms
+Visualize     CPU   0.10761ms  CUDA   1.62714ms  CPU   0.23704ms  CUDA   4.56099ms
+Total         CPU   5.55789ms  CUDA  61.21870ms  CPU  21.61306ms  CUDA  21.24328ms
+
+Pre-Process   CPU   0.14964ms  CUDA   3.15964ms  CPU   0.11198ms  CUDA   0.79286ms
+Network       CPU   4.88944ms  CUDA  50.75489ms  CPU  21.97619ms  CUDA  17.16161ms
+Post-Process  CPU   0.25506ms  CUDA   3.82453ms  CPU   0.19323ms  CUDA   0.05510ms
+Visualize     CPU   0.37902ms  CUDA   1.72839ms  CPU   0.36397ms  CUDA   4.65094ms
+Total         CPU   5.67315ms  CUDA  59.46745ms  CPU  22.43105ms  CUDA  21.85489ms
+
+Pre-Process   CPU   0.15933ms  CUDA   4.36432ms  CPU   0.12011ms  CUDA   0.83005ms
+Network       CPU   5.78060ms  CUDA  51.02880ms  CPU  21.74072ms  CUDA  17.67177ms
+Post-Process  CPU   0.28761ms  CUDA   3.80448ms  CPU   0.21313ms  CUDA   0.19344ms
+Visualize     CPU   0.29089ms  CUDA   1.63667ms  CPU   0.33746ms  CUDA   4.63818ms
+Total         CPU   6.51843ms  CUDA  60.83427ms  CPU  22.23328ms  CUDA  22.89338ms
+
+Pre-Process   CPU   0.15563ms  CUDA   4.42781ms  CPU   0.07063ms  CUDA   0.83755ms
+Network       CPU   5.14621ms  CUDA  52.76411ms  CPU  21.75822ms  CUDA  17.53740ms
+Post-Process  CPU   0.15349ms  CUDA   3.64484ms  CPU   0.12011ms  CUDA   0.15411ms
+Visualize     CPU   0.23579ms  CUDA   1.66974ms  CPU   0.27730ms  CUDA   4.40422ms
+Total         CPU   5.69112ms  CUDA  62.50651ms  CPU  22.10458ms  CUDA  22.87980ms
+
+Pre-Process   CPU   0.14068ms  CUDA   3.36057ms  CPU   0.08985ms  CUDA   0.82151ms
+Network       CPU   6.01353ms  CUDA  51.01854ms  CPU  21.32659ms  CUDA  17.51011ms
+Post-Process  CPU   0.16079ms  CUDA   3.68208ms  CPU   0.10672ms  CUDA   0.12037ms
+Visualize     CPU   0.19954ms  CUDA   1.58089ms  CPU   0.34402ms  CUDA   4.48104ms
+Total         CPU   6.51453ms  CUDA  59.64208ms  CPU  21.66384ms  CUDA  21.43396ms
+
+Pre-Process   CPU   0.23667ms  CUDA   4.18573ms  CPU   0.10865ms  CUDA   0.81589ms
+Network       CPU   4.48104ms  CUDA  51.18037ms  CPU  21.27716ms  CUDA  17.15068ms
+Post-Process  CPU   0.18506ms  CUDA   3.73500ms  CPU   0.12089ms  CUDA   0.10682ms
+Visualize     CPU   0.23902ms  CUDA   1.64714ms  CPU   0.27100ms  CUDA   4.38141ms
+Total         CPU   5.14179ms  CUDA  60.74823ms  CPU  21.74337ms  CUDA  22.20948ms
+
+Pre-Process   CPU   0.08537ms  CUDA   3.12469ms  CPU   0.11604ms  CUDA   0.83984ms
+Network       CPU   5.29236ms  CUDA  51.08651ms  CPU  21.77520ms  CUDA  17.06328ms
+Post-Process  CPU   0.19188ms  CUDA   3.76854ms  CPU   0.15615ms  CUDA   0.12062ms
+Visualize     CPU   0.29110ms  CUDA   1.65323ms  CPU   0.33256ms  CUDA   4.39995ms
+Total         CPU   5.86071ms  CUDA  59.63297ms  CPU  22.13276ms  CUDA  21.65344ms
+
+Pre-Process   CPU   0.13729ms  CUDA   4.30953ms  CPU   0.09823ms  CUDA   0.82599ms
+Network       CPU   5.90800ms  CUDA  51.09672ms  CPU  21.61931ms  CUDA  17.54750ms
+Post-Process  CPU   0.15203ms  CUDA   3.73995ms  CPU   0.13349ms  CUDA   0.15526ms
+Visualize     CPU   0.43647ms  CUDA   1.65880ms  CPU   0.34058ms  CUDA   4.46271ms
+Total         CPU   6.63380ms  CUDA  60.80500ms  CPU  21.98833ms  CUDA  22.63198ms
+
+Pre-Process   CPU   0.39610ms  CUDA   3.17016ms  CPU   0.07448ms  CUDA   0.81609ms
+Network       CPU   5.13069ms  CUDA  51.52911ms  CPU  21.03138ms  CUDA  17.37255ms
+Post-Process  CPU   0.12281ms  CUDA   3.68588ms  CPU   0.06703ms  CUDA   0.13380ms
+Visualize     CPU   0.13005ms  CUDA   1.64880ms  CPU   0.30261ms  CUDA   4.44854ms
+Total         CPU   5.77967ms  CUDA  60.03396ms  CPU  21.56899ms  CUDA  20.85755ms
+
+Pre-Process   CPU   2.76335ms  CUDA   3.22115ms  CPU   0.08443ms  CUDA   0.82135ms
+Network       CPU   4.41693ms  CUDA  52.16922ms  CPU  21.47264ms  CUDA  16.79724ms
+Post-Process  CPU   0.10781ms  CUDA   3.60672ms  CPU   0.12433ms  CUDA   0.06880ms
+Visualize     CPU   0.23881ms  CUDA   1.62406ms  CPU   0.27297ms  CUDA   4.53646ms
+Total         CPU   7.52690ms  CUDA  60.62115ms  CPU  24.44474ms  CUDA  21.40344ms
+
+Pre-Process   CPU   0.09261ms  CUDA   3.23568ms  CPU   0.05271ms  CUDA   0.81552ms
+Network       CPU   5.27366ms  CUDA  52.21917ms  CPU  21.20602ms  CUDA  17.24187ms
+Post-Process  CPU   0.09037ms  CUDA   3.62057ms  CPU   0.05167ms  CUDA   0.12490ms
+Visualize     CPU   0.10323ms  CUDA   1.60635ms  CPU   0.20000ms  CUDA   4.53927ms
+Total         CPU   5.55987ms  CUDA  60.68177ms  CPU  21.40300ms  CUDA  21.05125ms
+
+Pre-Process   CPU   0.15297ms  CUDA   4.33844ms  CPU   0.07740ms  CUDA   0.81307ms
+Network       CPU   5.86545ms  CUDA  52.11375ms  CPU  21.08247ms  CUDA  16.95104ms
+Post-Process  CPU   0.08651ms  CUDA   3.60714ms  CPU   0.05932ms  CUDA   0.05146ms
+Visualize     CPU   0.11683ms  CUDA   1.61214ms  CPU   0.23615ms  CUDA   4.52141ms
+Total         CPU   6.22176ms  CUDA  61.67146ms  CPU  21.37217ms  CUDA  22.07672ms
+
+Pre-Process   CPU   0.10631ms  CUDA   3.24474ms  CPU   0.05167ms  CUDA   0.79557ms
+Network       CPU   4.84386ms  CUDA  52.38318ms  CPU  21.00424ms  CUDA  16.88339ms
+Post-Process  CPU   0.08620ms  CUDA   3.63599ms  CPU   0.08563ms  CUDA   0.05932ms
+Visualize     CPU   0.20714ms  CUDA   1.60573ms  CPU   0.28949ms  CUDA   4.56984ms
+Total         CPU   5.24351ms  CUDA  60.86964ms  CPU  21.24784ms  CUDA  20.84589ms
+
+Pre-Process   CPU   0.08099ms  CUDA   3.23307ms  CPU   0.06354ms  CUDA   0.79729ms
+Network       CPU   5.31898ms  CUDA  52.92729ms  CPU  22.39094ms  CUDA  16.71797ms
+Post-Process  CPU   0.17933ms  CUDA   4.62568ms  CPU   0.12829ms  CUDA   0.08589ms
+Visualize     CPU   0.24027ms  CUDA   1.71516ms  CPU   0.27709ms  CUDA   4.57818ms
+Total         CPU   5.81956ms  CUDA  62.50120ms  CPU  22.66376ms  CUDA  21.31141ms
+
+Pre-Process   CPU   0.14417ms  CUDA   4.44187ms  CPU   0.11474ms  CUDA   0.80687ms
+Network       CPU   6.17978ms  CUDA  50.77813ms  CPU  21.16513ms  CUDA  17.14437ms
+Post-Process  CPU   0.26657ms  CUDA   3.76198ms  CPU   0.14719ms  CUDA   0.12708ms
+Visualize     CPU   0.26704ms  CUDA   1.63094ms  CPU   0.27006ms  CUDA   4.60005ms
+Total         CPU   6.85756ms  CUDA  60.61292ms  CPU  21.57123ms  CUDA  22.39203ms
+
+Pre-Process   CPU   0.11360ms  CUDA   3.28641ms  CPU   0.09432ms  CUDA   0.82661ms
+Network       CPU   5.04902ms  CUDA  52.24021ms  CPU  20.73533ms  CUDA  16.97797ms
+Post-Process  CPU   0.17704ms  CUDA   3.74458ms  CPU   0.06193ms  CUDA   0.14557ms
+Visualize     CPU   0.10563ms  CUDA   1.57589ms  CPU   0.38819ms  CUDA   4.43589ms
+Total         CPU   5.44528ms  CUDA  60.84708ms  CPU  21.00518ms  CUDA  20.72886ms
+
+Pre-Process   CPU   0.19391ms  CUDA   3.20708ms  CPU   0.08854ms  CUDA   0.79490ms
+Network       CPU   5.36862ms  CUDA  52.11604ms  CPU  21.19279ms  CUDA  16.58151ms
+Post-Process  CPU   0.12453ms  CUDA   3.59625ms  CPU   0.07120ms  CUDA   0.06604ms
+Visualize     CPU   0.10391ms  CUDA   1.57411ms  CPU   0.21745ms  CUDA   4.57906ms
+Total         CPU   5.79097ms  CUDA  60.49349ms  CPU  21.54644ms  CUDA  21.16245ms
+
+Pre-Process   CPU   0.13453ms  CUDA   3.35490ms  CPU   0.05151ms  CUDA   0.79776ms
+Network       CPU   5.15319ms  CUDA  52.11849ms  CPU  21.22242ms  CUDA  17.08661ms
+Post-Process  CPU   0.07959ms  CUDA   3.59802ms  CPU   0.06849ms  CUDA   0.07099ms
+Visualize     CPU   0.13526ms  CUDA   1.56828ms  CPU   0.18703ms  CUDA   4.57943ms
+Total         CPU   5.50258ms  CUDA  60.63969ms  CPU  21.47696ms  CUDA  21.21057ms
+
+Pre-Process   CPU   0.18599ms  CUDA   3.03833ms  CPU   0.07709ms  CUDA   0.80260ms
+Network       CPU   4.70886ms  CUDA  52.07708ms  CPU  21.25044ms  CUDA  16.98443ms
+Post-Process  CPU   0.18329ms  CUDA   3.73177ms  CPU   0.08396ms  CUDA   0.06865ms
+Visualize     CPU   0.09896ms  CUDA   1.64333ms  CPU   0.20620ms  CUDA   4.60094ms
+Total         CPU   5.17710ms  CUDA  60.49052ms  CPU  21.59748ms  CUDA  20.95662ms
+
+Pre-Process   CPU   0.13948ms  CUDA   3.29776ms  CPU   0.07146ms  CUDA   0.80521ms
+Network       CPU   5.54784ms  CUDA  52.08641ms  CPU  21.18039ms  CUDA  17.02375ms
+Post-Process  CPU   0.12787ms  CUDA   3.66974ms  CPU   0.09422ms  CUDA   0.08932ms
+Visualize     CPU   0.17620ms  CUDA   1.61526ms  CPU   0.19782ms  CUDA   4.67901ms
+Total         CPU   5.99139ms  CUDA  60.66917ms  CPU  21.48555ms  CUDA  21.13062ms
+
+Pre-Process   CPU   0.20641ms  CUDA   3.12745ms  CPU   0.08245ms  CUDA   0.78719ms
+Network       CPU   5.14595ms  CUDA  51.11641ms  CPU  20.78580ms  CUDA  16.95135ms
+Post-Process  CPU   0.15256ms  CUDA   3.68104ms  CPU   0.07000ms  CUDA   0.09432ms
+Visualize     CPU   0.12771ms  CUDA   1.57781ms  CPU   0.25995ms  CUDA   4.55953ms
+Total         CPU   5.63263ms  CUDA  59.50271ms  CPU  21.14466ms  CUDA  20.63297ms
+
+Pre-Process   CPU   0.14729ms  CUDA   3.20411ms  CPU   0.07406ms  CUDA   0.82151ms
+Network       CPU   5.35200ms  CUDA  52.22719ms  CPU  21.44910ms  CUDA  16.61312ms
+Post-Process  CPU   0.18469ms  CUDA   3.74365ms  CPU   0.15766ms  CUDA   0.07089ms
+Visualize     CPU   0.30365ms  CUDA   1.65339ms  CPU   0.27751ms  CUDA   4.41297ms
+Total         CPU   5.98764ms  CUDA  60.82833ms  CPU  21.82812ms  CUDA  21.30266ms
+
+Pre-Process   CPU   0.16292ms  CUDA   3.95302ms  CPU   0.09177ms  CUDA   0.80401ms
+Network       CPU   5.25622ms  CUDA  51.20443ms  CPU  21.22810ms  CUDA  17.13703ms
+Post-Process  CPU   0.17610ms  CUDA   3.71786ms  CPU   0.11584ms  CUDA   0.15750ms
+Visualize     CPU   0.19276ms  CUDA   1.60656ms  CPU   0.33772ms  CUDA   4.58755ms
+Total         CPU   5.78800ms  CUDA  60.48188ms  CPU  21.59863ms  CUDA  21.95042ms
+
+Pre-Process   CPU   0.16610ms  CUDA   3.14573ms  CPU   0.05021ms  CUDA   0.80641ms
+Network       CPU   5.08080ms  CUDA  52.37245ms  CPU  21.07716ms  CUDA  17.07224ms
+Post-Process  CPU   0.15636ms  CUDA   3.63974ms  CPU   0.04599ms  CUDA   0.11875ms
+Visualize     CPU   0.08162ms  CUDA   1.56974ms  CPU   0.28589ms  CUDA   4.43786ms
+Total         CPU   5.48487ms  CUDA  60.72766ms  CPU  21.33946ms  CUDA  20.87453ms
+
+Pre-Process   CPU   0.16485ms  CUDA   3.18427ms  CPU   0.07745ms  CUDA   0.79651ms
+Network       CPU   5.23606ms  CUDA  52.42776ms  CPU  20.92361ms  CUDA  16.88599ms
+Post-Process  CPU   0.12495ms  CUDA   3.64859ms  CPU   0.03318ms  CUDA   0.04630ms
+Visualize     CPU   0.05964ms  CUDA   1.56964ms  CPU   0.13329ms  CUDA   4.56943ms
+Total         CPU   5.58550ms  CUDA  60.83026ms  CPU  21.19909ms  CUDA  20.77073ms
+
+Pre-Process   CPU   0.10927ms  CUDA   3.18401ms  CPU   0.11834ms  CUDA   0.79688ms
+Network       CPU   5.27205ms  CUDA  52.04432ms  CPU  20.85033ms  CUDA  16.75609ms
+Post-Process  CPU   0.16349ms  CUDA   3.73750ms  CPU   0.07068ms  CUDA   0.03349ms
+Visualize     CPU   0.12302ms  CUDA   1.59380ms  CPU   0.26891ms  CUDA   4.72078ms
+Total         CPU   5.66784ms  CUDA  60.55964ms  CPU  21.14862ms  CUDA  20.74615ms
+
+Pre-Process   CPU   0.13370ms  CUDA   3.36401ms  CPU   0.11224ms  CUDA   0.82297ms
+Network       CPU   5.55284ms  CUDA  51.95906ms  CPU  21.70447ms  CUDA  16.66781ms
+Post-Process  CPU   0.26740ms  CUDA   3.71250ms  CPU   0.20787ms  CUDA   0.07135ms
+Visualize     CPU   0.37459ms  CUDA   1.72406ms  CPU   0.35063ms  CUDA   4.41224ms
+Total         CPU   6.32853ms  CUDA  60.75964ms  CPU  22.15828ms  CUDA  21.96073ms
+
+Pre-Process   CPU   0.15021ms  CUDA   4.17307ms  CPU   0.15485ms  CUDA   0.80052ms
+Network       CPU   5.25997ms  CUDA  50.94323ms  CPU  20.89757ms  CUDA  17.58828ms
+Post-Process  CPU   0.27303ms  CUDA   3.74359ms  CPU   0.09500ms  CUDA   0.20792ms
+Visualize     CPU   0.17735ms  CUDA   1.60005ms  CPU   0.24761ms  CUDA   4.61964ms
+Total         CPU   5.86055ms  CUDA  60.45995ms  CPU  21.29763ms  CUDA  22.03859ms
+
+Pre-Process   CPU   0.13219ms  CUDA   4.24333ms  CPU   0.12047ms  CUDA   0.79724ms
+Network       CPU   5.64315ms  CUDA  51.26333ms  CPU  22.49526ms  CUDA  16.97375ms
+Post-Process  CPU   0.15521ms  CUDA   3.76557ms  CPU   0.13516ms  CUDA   0.09453ms
+Visualize     CPU   0.25350ms  CUDA   1.64656ms  CPU   0.27438ms  CUDA   4.55646ms
+Total         CPU   6.18405ms  CUDA  60.91880ms  CPU  22.88309ms  CUDA  23.41854ms
+
+Pre-Process   CPU   0.11375ms  CUDA   4.36750ms  CPU   0.11433ms  CUDA   0.81844ms
+Network       CPU   5.09231ms  CUDA  50.71156ms  CPU  21.11841ms  CUDA  18.22167ms
+Post-Process  CPU   0.25870ms  CUDA   3.71615ms  CPU   0.07021ms  CUDA   0.13510ms
+Visualize     CPU   0.13224ms  CUDA   1.60963ms  CPU   0.40293ms  CUDA   4.54500ms
+Total         CPU   5.59701ms  CUDA  60.40484ms  CPU  21.41670ms  CUDA  22.30177ms
+
+Pre-Process   CPU   0.15875ms  CUDA   4.47651ms  CPU   0.11094ms  CUDA   0.79912ms
+Network       CPU   5.44700ms  CUDA  50.77380ms  CPU  21.11252ms  CUDA  17.06464ms
+Post-Process  CPU   0.28886ms  CUDA   3.73563ms  CPU   0.08188ms  CUDA   0.07052ms
+Visualize     CPU   0.15146ms  CUDA   1.56823ms  CPU   0.26678ms  CUDA   4.44776ms
+Total         CPU   6.04608ms  CUDA  60.55417ms  CPU  21.46409ms  CUDA  22.40729ms
+
+Pre-Process   CPU   0.16381ms  CUDA   3.30927ms  CPU   0.10584ms  CUDA   0.82333ms
+Network       CPU   5.13663ms  CUDA  52.05740ms  CPU  21.33138ms  CUDA  17.02531ms
+Post-Process  CPU   0.13125ms  CUDA   3.68776ms  CPU   0.08714ms  CUDA   0.08213ms
+Visualize     CPU   0.16464ms  CUDA   1.62542ms  CPU   0.32495ms  CUDA   4.34151ms
+Total         CPU   5.59633ms  CUDA  60.67984ms  CPU  21.68816ms  CUDA  21.35307ms
+
+Pre-Process   CPU   0.14162ms  CUDA   4.42630ms  CPU   0.38683ms  CUDA   0.82687ms
+Network       CPU   5.84930ms  CUDA  50.80687ms  CPU  20.99586ms  CUDA  17.12932ms
+Post-Process  CPU   0.34543ms  CUDA   3.76359ms  CPU   0.08485ms  CUDA   0.08760ms
+Visualize     CPU   0.16568ms  CUDA   1.58714ms  CPU   0.32600ms  CUDA   4.41338ms
+Total         CPU   6.50203ms  CUDA  60.58391ms  CPU  21.60915ms  CUDA  22.59677ms
+
+Pre-Process   CPU   0.38813ms  CUDA   3.27750ms  CPU   0.05729ms  CUDA   0.82182ms
+Network       CPU   5.34705ms  CUDA  51.98708ms  CPU  21.40076ms  CUDA  17.26328ms
+Post-Process  CPU   0.17943ms  CUDA   3.65411ms  CPU   0.04771ms  CUDA   0.08536ms
+Visualize     CPU   0.10292ms  CUDA   1.57448ms  CPU   0.24219ms  CUDA   4.38625ms
+Total         CPU   6.01754ms  CUDA  60.49318ms  CPU  21.89390ms  CUDA  21.35135ms
+
+Pre-Process   CPU   0.11412ms  CUDA   3.26536ms  CPU   0.06599ms  CUDA   0.80099ms
+Network       CPU   5.61195ms  CUDA  52.45906ms  CPU  21.47811ms  CUDA  17.22542ms
+Post-Process  CPU   0.16329ms  CUDA   3.71411ms  CPU   0.12396ms  CUDA   0.04745ms
+Visualize     CPU   0.28084ms  CUDA   1.65771ms  CPU   0.15172ms  CUDA   4.40245ms
+Total         CPU   6.17020ms  CUDA  61.09625ms  CPU  21.78218ms  CUDA  21.36485ms
+
+Pre-Process   CPU   0.12677ms  CUDA   3.30505ms  CPU   0.09552ms  CUDA   0.79094ms
+Network       CPU   5.50190ms  CUDA  50.92208ms  CPU  21.36112ms  CUDA  17.18464ms
+Post-Process  CPU   0.14729ms  CUDA   3.69333ms  CPU   0.12177ms  CUDA   0.12391ms
+Visualize     CPU   0.22688ms  CUDA   1.61125ms  CPU   0.23282ms  CUDA   4.40391ms
+Total         CPU   6.00285ms  CUDA  59.53172ms  CPU  21.70520ms  CUDA  21.35938ms
+
+Pre-Process   CPU   0.13370ms  CUDA   4.41031ms  CPU   0.16157ms  CUDA   0.80099ms
+Network       CPU   5.36179ms  CUDA  50.92432ms  CPU  21.49795ms  CUDA  17.13208ms
+Post-Process  CPU   0.19750ms  CUDA   3.87109ms  CPU   0.17323ms  CUDA   0.12125ms
+Visualize     CPU   0.26548ms  CUDA   1.66328ms  CPU   0.33324ms  CUDA   4.38474ms
+Total         CPU   5.95847ms  CUDA  60.86901ms  CPU  21.96645ms  CUDA  22.82276ms
+
+Pre-Process   CPU   0.15558ms  CUDA   4.56797ms  CPU   0.14907ms  CUDA   0.81927ms
+Network       CPU   5.58362ms  CUDA  50.87411ms  CPU  21.31618ms  CUDA  17.41266ms
+Post-Process  CPU   0.26673ms  CUDA   3.71172ms  CPU   0.08391ms  CUDA   0.18052ms
+Visualize     CPU   0.16688ms  CUDA   1.60573ms  CPU   0.34293ms  CUDA   4.38880ms
+Total         CPU   6.17280ms  CUDA  60.75954ms  CPU  21.70473ms  CUDA  22.86130ms
+
+Pre-Process   CPU   0.13422ms  CUDA   3.37646ms  CPU   0.05766ms  CUDA   0.81630ms
+Network       CPU   5.69961ms  CUDA  52.10209ms  CPU  21.54493ms  CUDA  17.39292ms
+Post-Process  CPU   0.16162ms  CUDA   3.71380ms  CPU   0.13662ms  CUDA   0.08411ms
+Visualize     CPU   0.23516ms  CUDA   1.62651ms  CPU   0.29423ms  CUDA   4.44406ms
+Total         CPU   6.23061ms  CUDA  60.81886ms  CPU  21.87343ms  CUDA  21.57370ms
+
+Pre-Process   CPU   0.13766ms  CUDA   4.45068ms  CPU   0.12068ms  CUDA   0.78698ms
+Network       CPU   5.46356ms  CUDA  50.90099ms  CPU  21.17237ms  CUDA  17.27464ms
+Post-Process  CPU   0.20256ms  CUDA   3.76542ms  CPU   0.06714ms  CUDA   0.13563ms
+Visualize     CPU   0.13172ms  CUDA   1.59057ms  CPU   0.22855ms  CUDA   4.41354ms
+Total         CPU   5.93550ms  CUDA  60.70765ms  CPU  21.49785ms  CUDA  22.47818ms
+
+Pre-Process   CPU   0.19599ms  CUDA   4.45474ms  CPU   0.13177ms  CUDA   0.83500ms
+Network       CPU   5.23835ms  CUDA  50.83375ms  CPU  21.38977ms  CUDA  17.12328ms
+Post-Process  CPU   0.20740ms  CUDA   3.68781ms  CPU   0.08313ms  CUDA   0.06922ms
+Visualize     CPU   0.24006ms  CUDA   1.63839ms  CPU   0.25563ms  CUDA   4.41979ms
+Total         CPU   5.88180ms  CUDA  60.61469ms  CPU  21.80067ms  CUDA  22.71729ms
+
+Pre-Process   CPU   0.12058ms  CUDA   4.45557ms  CPU   0.09714ms  CUDA   0.81818ms
+Network       CPU   5.02939ms  CUDA  51.04833ms  CPU  21.36977ms  CUDA  17.31453ms
+Post-Process  CPU   0.14141ms  CUDA   3.65677ms  CPU   0.10474ms  CUDA   0.12984ms
+Visualize     CPU   0.19125ms  CUDA   1.61005ms  CPU   0.33553ms  CUDA   4.45953ms
+Total         CPU   5.48263ms  CUDA  60.77073ms  CPU  21.69223ms  CUDA  22.57557ms
+
+Pre-Process   CPU   0.15355ms  CUDA   4.53276ms  CPU   0.09271ms  CUDA   0.82948ms
+Network       CPU   5.65649ms  CUDA  50.93359ms  CPU  21.12435ms  CUDA  17.18302ms
+Post-Process  CPU   0.23006ms  CUDA   3.74974ms  CPU   0.06146ms  CUDA   0.10750ms
+Visualize     CPU   0.14011ms  CUDA   1.57568ms  CPU   0.18891ms  CUDA   4.36984ms
+Total         CPU   6.18020ms  CUDA  60.79177ms  CPU  21.43207ms  CUDA  22.36146ms
+
+Pre-Process   CPU   0.13474ms  CUDA   4.41292ms  CPU   0.09453ms  CUDA   0.82615ms
+Network       CPU   5.28799ms  CUDA  52.55610ms  CPU  21.87812ms  CUDA  16.94089ms
+Post-Process  CPU   0.17808ms  CUDA   3.70177ms  CPU   0.25157ms  CUDA   0.06167ms
+Visualize     CPU   0.43813ms  CUDA   1.78385ms  CPU   0.33652ms  CUDA   4.39490ms
+Total         CPU   6.03894ms  CUDA  62.45464ms  CPU  22.35896ms  CUDA  23.06886ms
+
+Pre-Process   CPU   0.16193ms  CUDA   3.26234ms  CPU   0.06219ms  CUDA   0.80464ms
+Network       CPU   5.47815ms  CUDA  52.08656ms  CPU  21.21492ms  CUDA  17.67625ms
+Post-Process  CPU   0.13599ms  CUDA   3.67229ms  CPU   0.12688ms  CUDA   0.17505ms
+Visualize     CPU   0.23860ms  CUDA   1.64542ms  CPU   0.16454ms  CUDA   4.42651ms
+Total         CPU   6.01467ms  CUDA  60.66661ms  CPU  21.56592ms  CUDA  21.11838ms
+
+Pre-Process   CPU   0.12276ms  CUDA   3.15005ms  CPU   0.09391ms  CUDA   0.78859ms
+Network       CPU   5.38867ms  CUDA  52.23167ms  CPU  20.85283ms  CUDA  16.94146ms
+Post-Process  CPU   0.22490ms  CUDA   3.76057ms  CPU   0.06313ms  CUDA   0.12599ms
+Visualize     CPU   0.13058ms  CUDA   1.56526ms  CPU   0.26089ms  CUDA   4.43167ms
+Total         CPU   5.86691ms  CUDA  60.70755ms  CPU  21.13263ms  CUDA  20.68958ms
+
+Pre-Process   CPU   0.13703ms  CUDA   3.27745ms  CPU   0.04922ms  CUDA   0.81354ms
+Network       CPU   5.35622ms  CUDA  54.22136ms  CPU  20.82444ms  CUDA  16.66219ms
+Post-Process  CPU   0.14328ms  CUDA   3.66104ms  CPU   0.08563ms  CUDA   0.06380ms
+Visualize     CPU   0.15776ms  CUDA   1.54729ms  CPU   0.20308ms  CUDA   4.36557ms
+Total         CPU   5.79430ms  CUDA  62.70713ms  CPU  21.09632ms  CUDA  20.75495ms
+
+Pre-Process   CPU   0.15844ms  CUDA   3.43214ms  CPU   0.07740ms  CUDA   0.80953ms
+Network       CPU   5.86550ms  CUDA  52.29797ms  CPU  21.07310ms  CUDA  16.58161ms
+Post-Process  CPU   0.10344ms  CUDA   3.60833ms  CPU   0.06844ms  CUDA   0.08635ms
+Visualize     CPU   0.12990ms  CUDA   1.55552ms  CPU   0.26516ms  CUDA   4.43240ms
+Total         CPU   6.25728ms  CUDA  60.89396ms  CPU  21.37737ms  CUDA  21.19797ms
+
+Pre-Process   CPU   0.14162ms  CUDA   3.34927ms  CPU   0.08865ms  CUDA   0.79458ms
+Network       CPU   5.81722ms  CUDA  52.04922ms  CPU  21.05221ms  CUDA  16.90245ms
+Post-Process  CPU   0.21391ms  CUDA   3.67880ms  CPU   0.11240ms  CUDA   0.06880ms
+Visualize     CPU   0.21402ms  CUDA   1.62156ms  CPU   0.32115ms  CUDA   4.45630ms
+Total         CPU   6.38676ms  CUDA  60.69885ms  CPU  21.39487ms  CUDA  21.14745ms
+
+Pre-Process   CPU   0.31995ms  CUDA   3.40844ms  CPU   0.09542ms  CUDA   0.78708ms
+Network       CPU   6.33760ms  CUDA  52.90547ms  CPU  21.16221ms  CUDA  16.89635ms
+Post-Process  CPU   0.19021ms  CUDA   3.74458ms  CPU   0.04589ms  CUDA   0.11474ms
+Visualize     CPU   0.11459ms  CUDA   1.57010ms  CPU   0.24308ms  CUDA   4.40578ms
+Total         CPU   6.96235ms  CUDA  61.62860ms  CPU  21.62348ms  CUDA  21.20135ms
+
+Pre-Process   CPU   0.12511ms  CUDA   3.05641ms  CPU   0.11297ms  CUDA   0.81490ms
+Network       CPU   5.74529ms  CUDA  50.71604ms  CPU  21.47613ms  CUDA  16.93141ms
+Post-Process  CPU   0.26896ms  CUDA   3.76469ms  CPU   0.14547ms  CUDA   0.04661ms
+Visualize     CPU   0.28652ms  CUDA   1.67500ms  CPU   0.33636ms  CUDA   4.40443ms
+Total         CPU   6.42588ms  CUDA  59.21213ms  CPU  21.85968ms  CUDA  21.31193ms
+
+Pre-Process   CPU   0.17719ms  CUDA   4.44901ms  CPU   0.11964ms  CUDA   0.81594ms
+Network       CPU   5.50716ms  CUDA  50.71620ms  CPU  21.45113ms  CUDA  17.28750ms
+Post-Process  CPU   0.24756ms  CUDA   3.78578ms  CPU   0.09615ms  CUDA   0.15208ms
+Visualize     CPU   0.35475ms  CUDA   1.66448ms  CPU   0.33589ms  CUDA   4.39875ms
+Total         CPU   6.28666ms  CUDA  60.61547ms  CPU  21.84410ms  CUDA  22.74818ms
+
+Pre-Process   CPU   0.13479ms  CUDA   4.54005ms  CPU   0.11714ms  CUDA   0.80963ms
+Network       CPU   5.89076ms  CUDA  50.69213ms  CPU  21.47451ms  CUDA  17.33526ms
+Post-Process  CPU   0.27141ms  CUDA   3.75484ms  CPU   0.18412ms  CUDA   0.15427ms
+Visualize     CPU   0.33980ms  CUDA   1.65651ms  CPU   0.32844ms  CUDA   4.40635ms
+Total         CPU   6.63677ms  CUDA  60.64354ms  CPU  21.91056ms  CUDA  22.82214ms
+
+Pre-Process   CPU   0.18896ms  CUDA   3.28193ms  CPU   0.07959ms  CUDA   0.82396ms
+Network       CPU   5.21122ms  CUDA  52.03526ms  CPU  21.14799ms  CUDA  17.27354ms
+Post-Process  CPU   0.11688ms  CUDA   3.66365ms  CPU   0.12776ms  CUDA   0.18458ms
+Visualize     CPU   0.22870ms  CUDA   1.59953ms  CPU   0.23902ms  CUDA   4.33760ms
+Total         CPU   5.74576ms  CUDA  60.58036ms  CPU  21.54431ms  CUDA  21.06781ms
+
+Pre-Process   CPU   0.28990ms  CUDA   3.25771ms  CPU   0.10375ms  CUDA   0.78760ms
+Network       CPU   6.82266ms  CUDA  50.71584ms  CPU  21.35998ms  CUDA  16.87109ms
+Post-Process  CPU   0.21250ms  CUDA   3.70510ms  CPU   0.15985ms  CUDA   0.12719ms
+Visualize     CPU   0.30261ms  CUDA   1.63734ms  CPU   0.29709ms  CUDA   4.38219ms
+Total         CPU   7.62768ms  CUDA  59.31599ms  CPU  21.91348ms  CUDA  21.46338ms
+
+Pre-Process   CPU   0.24094ms  CUDA   3.54672ms  CPU   0.05125ms  CUDA   0.80885ms
+Network       CPU   6.00608ms  CUDA  52.08719ms  CPU  21.08862ms  CUDA  17.23859ms
+Post-Process  CPU   0.10474ms  CUDA   3.68141ms  CPU   0.04068ms  CUDA   0.15823ms
+Visualize     CPU   0.07828ms  CUDA   1.53599ms  CPU   0.17719ms  CUDA   4.37406ms
+Total         CPU   6.43005ms  CUDA  60.85131ms  CPU  21.42149ms  CUDA  21.18667ms
+
+Pre-Process   CPU   0.14532ms  CUDA   3.12088ms  CPU   0.13953ms  CUDA   0.80375ms
+Network       CPU   5.82597ms  CUDA  50.98536ms  CPU  21.21034ms  CUDA  16.79604ms
+Post-Process  CPU   0.22178ms  CUDA   3.71761ms  CPU   0.09745ms  CUDA   0.04016ms
+Visualize     CPU   0.16714ms  CUDA   1.60412ms  CPU   0.21047ms  CUDA   4.42469ms
+Total         CPU   6.36020ms  CUDA  59.42797ms  CPU  21.59264ms  CUDA  21.22078ms
+
+Pre-Process   CPU   0.13240ms  CUDA   4.37016ms  CPU   0.06281ms  CUDA   0.80906ms
+Network       CPU   5.49154ms  CUDA  52.21412ms  CPU  21.71796ms  CUDA  17.13641ms
+Post-Process  CPU   0.16646ms  CUDA   3.69089ms  CPU   0.09870ms  CUDA   0.15443ms
+Visualize     CPU   0.16349ms  CUDA   1.60349ms  CPU   0.20016ms  CUDA   4.42344ms
+Total         CPU   5.95389ms  CUDA  61.87864ms  CPU  22.01187ms  CUDA  22.59656ms
+
+Pre-Process   CPU   0.14433ms  CUDA   4.61349ms  CPU   0.07458ms  CUDA   0.78906ms
+Network       CPU   5.89243ms  CUDA  52.20589ms  CPU  21.27034ms  CUDA  17.33630ms
+Post-Process  CPU   0.18839ms  CUDA   3.72708ms  CPU   0.07834ms  CUDA   0.10104ms
+Visualize     CPU   0.17240ms  CUDA   1.63307ms  CPU   0.31813ms  CUDA   4.39969ms
+Total         CPU   6.39755ms  CUDA  62.17953ms  CPU  21.56759ms  CUDA  22.55229ms
+
+Pre-Process   CPU   0.37074ms  CUDA   3.24255ms  CPU   0.09318ms  CUDA   0.81578ms
+Network       CPU   5.74748ms  CUDA  52.21880ms  CPU  21.29670ms  CUDA  17.04464ms
+Post-Process  CPU   0.18558ms  CUDA   3.71927ms  CPU   0.07719ms  CUDA   0.07839ms
+Visualize     CPU   0.20313ms  CUDA   1.60240ms  CPU   0.16969ms  CUDA   4.42245ms
+Total         CPU   6.50692ms  CUDA  60.78302ms  CPU  21.83780ms  CUDA  21.23568ms
+
+Pre-Process   CPU   0.13016ms  CUDA   3.42328ms  CPU   0.12032ms  CUDA   0.81375ms
+Network       CPU   5.70753ms  CUDA  52.07453ms  CPU  21.12112ms  CUDA  17.05589ms
+Post-Process  CPU   0.22563ms  CUDA   3.76057ms  CPU   0.11406ms  CUDA   0.12349ms
+Visualize     CPU   0.22256ms  CUDA   1.57276ms  CPU   0.32074ms  CUDA   4.38026ms
+Total         CPU   6.28588ms  CUDA  60.83115ms  CPU  21.48566ms  CUDA  21.28828ms
+
+Pre-Process   CPU   0.15464ms  CUDA   3.39213ms  CPU   0.06714ms  CUDA   0.80719ms
+Network       CPU   5.82118ms  CUDA  52.06870ms  CPU  20.92122ms  CUDA  16.94292ms
+Post-Process  CPU   0.29266ms  CUDA   3.65193ms  CPU   0.08646ms  CUDA   0.11490ms
+Visualize     CPU   0.15594ms  CUDA   1.59615ms  CPU   0.25719ms  CUDA   4.37505ms
+Total         CPU   6.42442ms  CUDA  60.70891ms  CPU  21.22945ms  CUDA  21.15187ms
+
+Pre-Process   CPU   0.20792ms  CUDA   3.36031ms  CPU   0.11828ms  CUDA   0.80854ms
+Network       CPU   5.46856ms  CUDA  52.21130ms  CPU  21.46019ms  CUDA  16.87589ms
+Post-Process  CPU   0.15141ms  CUDA   3.74495ms  CPU   0.14938ms  CUDA   0.07531ms
+Visualize     CPU   0.29287ms  CUDA   1.66839ms  CPU   0.33782ms  CUDA   4.45000ms
+Total         CPU   6.12077ms  CUDA  60.98495ms  CPU  21.93577ms  CUDA  21.45917ms
+
+Pre-Process   CPU   0.12021ms  CUDA   3.25271ms  CPU   0.06604ms  CUDA   0.80547ms
+Network       CPU   5.68794ms  CUDA  52.13422ms  CPU  20.96466ms  CUDA  17.14370ms
+Post-Process  CPU   0.15933ms  CUDA   3.70802ms  CPU   0.13453ms  CUDA   0.14969ms
+Visualize     CPU   0.28475ms  CUDA   1.66281ms  CPU   0.16938ms  CUDA   4.40964ms
+Total         CPU   6.25223ms  CUDA  60.75776ms  CPU  21.28545ms  CUDA  20.86750ms
+
+Pre-Process   CPU   0.26532ms  CUDA   3.38719ms  CPU   0.06886ms  CUDA   0.80729ms
+Network       CPU   5.49877ms  CUDA  52.39078ms  CPU  21.35842ms  CUDA  16.67427ms
+Post-Process  CPU   0.17287ms  CUDA   3.67552ms  CPU   0.10531ms  CUDA   0.13323ms
+Visualize     CPU   0.28157ms  CUDA   1.63964ms  CPU   0.43506ms  CUDA   4.41427ms
+Total         CPU   6.21853ms  CUDA  61.09313ms  CPU  21.79790ms  CUDA  21.41432ms
+
+Pre-Process   CPU   0.10662ms  CUDA   4.44213ms  CPU   0.07276ms  CUDA   0.81490ms
+Network       CPU   4.97210ms  CUDA  51.37239ms  CPU  20.88601ms  CUDA  17.10766ms
+Post-Process  CPU   0.09933ms  CUDA   3.67443ms  CPU   0.06745ms  CUDA   0.10458ms
+Visualize     CPU   0.12875ms  CUDA   1.55813ms  CPU   0.26959ms  CUDA   4.38786ms
+Total         CPU   5.30679ms  CUDA  61.04708ms  CPU  21.13284ms  CUDA  21.94339ms
+
+Pre-Process   CPU   0.15276ms  CUDA   4.26990ms  CPU   0.14667ms  CUDA   0.78839ms
+Network       CPU   5.62774ms  CUDA  50.97057ms  CPU  21.26946ms  CUDA  16.64594ms
+Post-Process  CPU   0.20954ms  CUDA   3.76083ms  CPU   0.15480ms  CUDA   0.06693ms
+Visualize     CPU   0.29173ms  CUDA   1.63146ms  CPU   0.33345ms  CUDA   4.39130ms
+Total         CPU   6.28176ms  CUDA  60.63276ms  CPU  21.72369ms  CUDA  22.45860ms
+
+Pre-Process   CPU   0.15922ms  CUDA   4.14594ms  CPU   0.09594ms  CUDA   0.81250ms
+Network       CPU   5.39294ms  CUDA  51.25875ms  CPU  21.19659ms  CUDA  17.22042ms
+Post-Process  CPU   0.16787ms  CUDA   3.67755ms  CPU   0.10276ms  CUDA   0.15578ms
+Visualize     CPU   0.19646ms  CUDA   1.61797ms  CPU   0.32699ms  CUDA   4.39000ms
+Total         CPU   5.91649ms  CUDA  60.70021ms  CPU  21.55451ms  CUDA  22.11724ms
+
+Pre-Process   CPU   0.16578ms  CUDA   3.35906ms  CPU   0.06636ms  CUDA   0.80234ms
+Network       CPU   5.37705ms  CUDA  51.92297ms  CPU  21.14242ms  CUDA  17.06625ms
+Post-Process  CPU   0.23318ms  CUDA   3.75000ms  CPU   0.05865ms  CUDA   0.10271ms
+Visualize     CPU   0.12240ms  CUDA   1.57542ms  CPU   0.19881ms  CUDA   4.45318ms
+Total         CPU   5.89842ms  CUDA  60.60745ms  CPU  21.43321ms  CUDA  21.16000ms
+
+Pre-Process   CPU   0.15386ms  CUDA   4.24250ms  CPU   0.08344ms  CUDA   0.79297ms
+Network       CPU   5.73144ms  CUDA  51.25052ms  CPU  20.99336ms  CUDA  16.94917ms
+Post-Process  CPU   0.10583ms  CUDA   3.68578ms  CPU   0.07099ms  CUDA   0.05880ms
+Visualize     CPU   0.12995ms  CUDA   1.56255ms  CPU   0.26485ms  CUDA   4.41646ms
+Total         CPU   6.12108ms  CUDA  60.74136ms  CPU  21.30165ms  CUDA  21.86890ms
+
+Pre-Process   CPU   0.15594ms  CUDA   3.38880ms  CPU   0.05625ms  CUDA   0.81354ms
+Network       CPU   5.28611ms  CUDA  52.13724ms  CPU  21.04398ms  CUDA  16.74172ms
+Post-Process  CPU   0.08339ms  CUDA   3.65078ms  CPU   0.07094ms  CUDA   0.07114ms
+Visualize     CPU   0.12844ms  CUDA   1.56490ms  CPU   0.26693ms  CUDA   4.37687ms
+Total         CPU   5.65388ms  CUDA  60.74172ms  CPU  21.32711ms  CUDA  21.03083ms
+
+Pre-Process   CPU   0.14657ms  CUDA   4.28375ms  CPU   0.12735ms  CUDA   0.81234ms
+Network       CPU   5.49367ms  CUDA  51.07463ms  CPU  20.99747ms  CUDA  16.75833ms
+Post-Process  CPU   0.21464ms  CUDA   3.68120ms  CPU   0.10026ms  CUDA   0.07135ms
+Visualize     CPU   0.18954ms  CUDA   1.59896ms  CPU   0.32772ms  CUDA   4.36240ms
+Total         CPU   6.04441ms  CUDA  60.63854ms  CPU  21.37164ms  CUDA  22.12484ms
+
+Pre-Process   CPU   0.14021ms  CUDA   3.20484ms  CPU   0.10797ms  CUDA   0.81807ms
+Network       CPU   5.55154ms  CUDA  51.19416ms  CPU  21.63327ms  CUDA  16.92261ms
+Post-Process  CPU   0.21542ms  CUDA   3.73885ms  CPU   0.10573ms  CUDA   0.10042ms
+Visualize     CPU   0.21777ms  CUDA   1.58615ms  CPU   0.25042ms  CUDA   4.34870ms
+Total         CPU   6.12493ms  CUDA  59.72401ms  CPU  21.98718ms  CUDA  21.47573ms
+
+Pre-Process   CPU   0.18167ms  CUDA   4.34979ms  CPU   0.08271ms  CUDA   0.80922ms
+Network       CPU   5.33002ms  CUDA  52.31125ms  CPU  21.37097ms  CUDA  17.35526ms
+Post-Process  CPU   0.21428ms  CUDA   3.82318ms  CPU   0.15209ms  CUDA   0.10641ms
+Visualize     CPU   0.34475ms  CUDA   1.72849ms  CPU   0.45079ms  CUDA   4.38266ms
+Total         CPU   6.07072ms  CUDA  62.21271ms  CPU  21.78744ms  CUDA  22.40953ms
+
+Pre-Process   CPU   0.13099ms  CUDA   3.12484ms  CPU   0.06063ms  CUDA   0.80458ms
+Network       CPU   6.50911ms  CUDA  52.10302ms  CPU  21.24274ms  CUDA  17.10276ms
+Post-Process  CPU   0.12714ms  CUDA   3.64948ms  CPU   0.07375ms  CUDA   0.15240ms
+Visualize     CPU   0.13980ms  CUDA   1.60552ms  CPU   0.28391ms  CUDA   4.41729ms
+Total         CPU   6.90704ms  CUDA  60.48286ms  CPU  21.50811ms  CUDA  21.05474ms
+
+Pre-Process   CPU   0.15412ms  CUDA   3.12469ms  CPU   0.11985ms  CUDA   0.79641ms
+Network       CPU   5.01475ms  CUDA  50.77401ms  CPU  21.34071ms  CUDA  17.05932ms
+Post-Process  CPU   0.13964ms  CUDA   3.72958ms  CPU   0.16261ms  CUDA   0.07417ms
+Visualize     CPU   0.28860ms  CUDA   1.83177ms  CPU   0.26386ms  CUDA   4.41490ms
+Total         CPU   5.59711ms  CUDA  59.46005ms  CPU  21.77728ms  CUDA  21.36177ms
+
+Pre-Process   CPU   0.16516ms  CUDA   3.26583ms  CPU   0.07203ms  CUDA   0.80573ms
+Network       CPU   5.78378ms  CUDA  52.59844ms  CPU  21.29763ms  CUDA  17.26656ms
+Post-Process  CPU   0.12177ms  CUDA   3.71594ms  CPU   0.06557ms  CUDA   0.16479ms
+Visualize     CPU   0.12917ms  CUDA   1.58521ms  CPU   0.25959ms  CUDA   4.49031ms
+Total         CPU   6.19989ms  CUDA  61.16542ms  CPU  21.60040ms  CUDA  21.17568ms
+
+Pre-Process   CPU   0.13026ms  CUDA   4.20479ms  CPU   0.11099ms  CUDA   0.81766ms
+Network       CPU   5.70961ms  CUDA  51.13474ms  CPU  21.40019ms  CUDA  17.02615ms
+Post-Process  CPU   0.28896ms  CUDA   3.61760ms  CPU   0.39553ms  CUDA   0.06604ms
+Visualize     CPU   0.11802ms  CUDA   1.56297ms  CPU   0.27219ms  CUDA   4.41094ms
+Total         CPU   6.24687ms  CUDA  60.52010ms  CPU  22.03698ms  CUDA  22.87052ms
+
+Pre-Process   CPU   0.10568ms  CUDA   3.30552ms  CPU   0.08625ms  CUDA   0.80083ms
+Network       CPU   4.93090ms  CUDA  52.17276ms  CPU  21.43097ms  CUDA  17.46755ms
+Post-Process  CPU   0.16240ms  CUDA   3.67760ms  CPU   0.12078ms  CUDA   0.39734ms
+Visualize     CPU   0.20230ms  CUDA   1.69792ms  CPU   0.27126ms  CUDA   4.41146ms
+Total         CPU   5.40127ms  CUDA  60.85380ms  CPU  21.74368ms  CUDA  21.44073ms
+
+Pre-Process   CPU   0.16651ms  CUDA   3.30078ms  CPU   0.12052ms  CUDA   0.79260ms
+Network       CPU   6.49135ms  CUDA  52.77875ms  CPU  21.05893ms  CUDA  17.22198ms
+Post-Process  CPU   0.24662ms  CUDA   3.78568ms  CPU   0.06818ms  CUDA   0.12062ms
+Visualize     CPU   0.12995ms  CUDA   1.57042ms  CPU   0.26412ms  CUDA   4.39260ms
+Total         CPU   7.03444ms  CUDA  61.43563ms  CPU  21.41415ms  CUDA  21.18672ms
+
+Pre-Process   CPU   0.14235ms  CUDA   4.53641ms  CPU   0.09094ms  CUDA   0.82089ms
+Network       CPU   5.99113ms  CUDA  50.98271ms  CPU  21.41217ms  CUDA  16.99688ms
+Post-Process  CPU   0.17677ms  CUDA   3.66443ms  CPU   0.12651ms  CUDA   0.06818ms
+Visualize     CPU   0.23771ms  CUDA   1.64240ms  CPU   0.42657ms  CUDA   4.41307ms
+Total         CPU   6.54796ms  CUDA  60.82594ms  CPU  21.77197ms  CUDA  22.73823ms
+
+Pre-Process   CPU   0.13495ms  CUDA   3.17755ms  CPU   0.07505ms  CUDA   0.81380ms
+Network       CPU   5.18049ms  CUDA  52.65771ms  CPU  21.41383ms  CUDA  17.26266ms
+Post-Process  CPU   0.12177ms  CUDA   3.62953ms  CPU   0.04375ms  CUDA   0.12537ms
+Visualize     CPU   0.07604ms  CUDA   1.54833ms  CPU   0.17396ms  CUDA   4.44083ms
+Total         CPU   5.51326ms  CUDA  61.01312ms  CPU  21.66759ms  CUDA  21.39786ms
+
+Pre-Process   CPU   0.11110ms  CUDA   4.40130ms  CPU   0.04495ms  CUDA   0.81536ms
+Network       CPU   5.79670ms  CUDA  52.57807ms  CPU  21.12857ms  CUDA  17.36125ms
+Post-Process  CPU   0.08183ms  CUDA   3.57656ms  CPU   0.04599ms  CUDA   0.04370ms
+Visualize     CPU   0.08433ms  CUDA   1.56287ms  CPU   0.27365ms  CUDA   4.39240ms
+Total         CPU   6.07394ms  CUDA  62.11880ms  CPU  21.33061ms  CUDA  22.11474ms
+
+Pre-Process   CPU   0.18146ms  CUDA   3.12781ms  CPU   0.08110ms  CUDA   0.80125ms
+Network       CPU   5.45674ms  CUDA  51.28182ms  CPU  21.48493ms  CUDA  16.86599ms
+Post-Process  CPU   0.19964ms  CUDA   3.70406ms  CPU   0.12407ms  CUDA   0.04620ms
+Visualize     CPU   0.23089ms  CUDA   1.60156ms  CPU   0.26834ms  CUDA   4.41713ms
+Total         CPU   6.06874ms  CUDA  59.71526ms  CPU  21.87155ms  CUDA  21.32891ms
+
+Pre-Process   CPU   0.14058ms  CUDA   4.34542ms  CPU   0.06677ms  CUDA   0.81422ms
+Network       CPU   5.75326ms  CUDA  52.18734ms  CPU  21.83264ms  CUDA  17.26344ms
+Post-Process  CPU   0.16881ms  CUDA   3.70297ms  CPU   0.11912ms  CUDA   0.12344ms
+Visualize     CPU   0.23261ms  CUDA   1.65573ms  CPU   0.26881ms  CUDA   4.33031ms
+Total         CPU   6.29525ms  CUDA  61.89146ms  CPU  22.15911ms  CUDA  22.82172ms
+
+Pre-Process   CPU   0.20626ms  CUDA   4.64177ms  CPU   0.09755ms  CUDA   0.81948ms
+Network       CPU   6.75172ms  CUDA  50.72526ms  CPU  21.18253ms  CUDA  17.53760ms
+Post-Process  CPU   0.16834ms  CUDA   3.67224ms  CPU   0.06120ms  CUDA   0.11922ms
+Visualize     CPU   0.11146ms  CUDA   1.57479ms  CPU   0.22672ms  CUDA   4.40656ms
+Total         CPU   7.23777ms  CUDA  60.61406ms  CPU  21.54753ms  CUDA  22.59604ms
+
+Pre-Process   CPU   0.21099ms  CUDA   4.50490ms  CPU   0.07698ms  CUDA   0.83505ms
+Network       CPU   5.96410ms  CUDA  51.07792ms  CPU  21.32175ms  CUDA  17.05740ms
+Post-Process  CPU   0.17391ms  CUDA   3.77047ms  CPU   0.08604ms  CUDA   0.06182ms
+Visualize     CPU   0.17454ms  CUDA   1.63495ms  CPU   0.27048ms  CUDA   4.40479ms
+Total         CPU   6.52354ms  CUDA  60.98823ms  CPU  21.69577ms  CUDA  22.47026ms
+
+Pre-Process   CPU   0.14776ms  CUDA   4.44740ms  CPU   0.15698ms  CUDA   0.82938ms
+Network       CPU   5.61055ms  CUDA  51.00198ms  CPU  21.56129ms  CUDA  17.04963ms
+Post-Process  CPU   0.26902ms  CUDA   3.73010ms  CPU   0.25428ms  CUDA   0.08635ms
+Visualize     CPU   0.25693ms  CUDA   1.70239ms  CPU   0.33928ms  CUDA   4.45078ms
+Total         CPU   6.28426ms  CUDA  60.88187ms  CPU  22.12031ms  CUDA  22.96359ms
+
+Pre-Process   CPU   0.15886ms  CUDA   4.25042ms  CPU   0.13172ms  CUDA   0.82948ms
+Network       CPU   5.29366ms  CUDA  50.86880ms  CPU  21.67967ms  CUDA  17.50656ms
+Post-Process  CPU   0.22834ms  CUDA   3.72969ms  CPU   0.09641ms  CUDA   0.18016ms
+Visualize     CPU   0.25662ms  CUDA   1.75047ms  CPU   0.32933ms  CUDA   4.36385ms
+Total         CPU   5.93748ms  CUDA  60.59937ms  CPU  22.06666ms  CUDA  22.80932ms
+
+Pre-Process   CPU   0.14886ms  CUDA   3.22547ms  CPU   0.06537ms  CUDA   0.81687ms
+Network       CPU   5.37179ms  CUDA  52.36557ms  CPU  21.61332ms  CUDA  17.58854ms
+Post-Process  CPU   0.20438ms  CUDA   3.75396ms  CPU   0.14099ms  CUDA   0.15349ms
+Visualize     CPU   0.16417ms  CUDA   1.58479ms  CPU   0.20829ms  CUDA   4.37286ms
+Total         CPU   5.88920ms  CUDA  60.92979ms  CPU  21.96853ms  CUDA  21.49141ms
+
+Pre-Process   CPU   0.14318ms  CUDA   4.56948ms  CPU   0.07542ms  CUDA   0.82927ms
+Network       CPU   5.13074ms  CUDA  50.81276ms  CPU  21.20279ms  CUDA  17.29510ms
+Post-Process  CPU   0.14302ms  CUDA   3.67750ms  CPU   0.06583ms  CUDA   0.14156ms
+Visualize     CPU   0.12115ms  CUDA   1.55125ms  CPU   0.21360ms  CUDA   4.45906ms
+Total         CPU   5.53810ms  CUDA  60.61099ms  CPU  21.48722ms  CUDA  22.40073ms
+
+Pre-Process   CPU   0.12667ms  CUDA   3.26667ms  CPU   0.10490ms  CUDA   0.80807ms
+Network       CPU   5.78618ms  CUDA  50.91813ms  CPU  21.38086ms  CUDA  16.95578ms
+Post-Process  CPU   0.14735ms  CUDA   3.64422ms  CPU   0.10917ms  CUDA   0.06740ms
+Visualize     CPU   0.18844ms  CUDA   1.62781ms  CPU   0.32938ms  CUDA   4.43250ms
+Total         CPU   6.24864ms  CUDA  59.45682ms  CPU  21.72160ms  CUDA  21.43349ms
+
+Pre-Process   CPU   0.12063ms  CUDA   3.27823ms  CPU   0.05985ms  CUDA   0.80063ms
+Network       CPU   5.54555ms  CUDA  52.03714ms  CPU  21.23211ms  CUDA  17.25807ms
+Post-Process  CPU   0.16391ms  CUDA   3.69120ms  CPU   0.07891ms  CUDA   0.10813ms
+Visualize     CPU   0.16177ms  CUDA   1.57661ms  CPU   0.47131ms  CUDA   4.40385ms
+Total         CPU   5.99186ms  CUDA  60.58318ms  CPU  21.49150ms  CUDA  21.16198ms
+
+Pre-Process   CPU   0.11823ms  CUDA   3.32021ms  CPU   0.13417ms  CUDA   0.80734ms
+Network       CPU   5.98337ms  CUDA  50.86578ms  CPU  21.69223ms  CUDA  16.99698ms
+Post-Process  CPU   0.22256ms  CUDA   3.74734ms  CPU   0.25725ms  CUDA   0.07943ms
+Visualize     CPU   0.33871ms  CUDA   1.67292ms  CPU   0.33136ms  CUDA   4.38698ms
+Total         CPU   6.66286ms  CUDA  59.60625ms  CPU  22.20187ms  CUDA  21.78547ms
+
+Pre-Process   CPU   0.15016ms  CUDA   4.39531ms  CPU   0.12802ms  CUDA   0.82490ms
+Network       CPU   5.30799ms  CUDA  50.77448ms  CPU  22.33886ms  CUDA  17.45797ms
+Post-Process  CPU   0.20266ms  CUDA   3.72911ms  CPU   0.03146ms  CUDA   0.18240ms
+Visualize     CPU   0.06276ms  CUDA   1.54490ms  CPU   0.12032ms  CUDA   4.41271ms
+Total         CPU   5.72357ms  CUDA  60.44380ms  CPU  22.64850ms  CUDA  23.52859ms
+
+Pre-Process   CPU   0.23844ms  CUDA   3.11130ms  CPU   0.05922ms  CUDA   0.83630ms
+Network       CPU   4.46761ms  CUDA  52.28229ms  CPU  21.45764ms  CUDA  18.26510ms
+Post-Process  CPU   0.08156ms  CUDA   3.59802ms  CPU   0.09005ms  CUDA   0.03187ms
+Visualize     CPU   0.18636ms  CUDA   1.55427ms  CPU   0.23183ms  CUDA   4.43031ms
+Total         CPU   4.97397ms  CUDA  60.54588ms  CPU  21.84535ms  CUDA  21.20917ms
+
+Pre-Process   CPU   0.14104ms  CUDA   3.21208ms  CPU   0.11005ms  CUDA   0.79500ms
+Network       CPU   5.72477ms  CUDA  52.95349ms  CPU  21.15310ms  CUDA  17.21344ms
+Post-Process  CPU   0.13537ms  CUDA   3.67734ms  CPU   0.04573ms  CUDA   0.08943ms
+Visualize     CPU   0.08698ms  CUDA   1.52609ms  CPU   0.18777ms  CUDA   4.39500ms
+Total         CPU   6.08816ms  CUDA  61.36901ms  CPU  21.44993ms  CUDA  21.10979ms
+
+Pre-Process   CPU   0.13537ms  CUDA   4.07974ms  CPU   0.06490ms  CUDA   0.82490ms
+Network       CPU   5.48237ms  CUDA  52.50292ms  CPU  21.21946ms  CUDA  17.02693ms
+Post-Process  CPU   0.18042ms  CUDA   3.73099ms  CPU   0.06651ms  CUDA   0.04589ms
+Visualize     CPU   0.15032ms  CUDA   1.72307ms  CPU   0.27120ms  CUDA   4.37448ms
+Total         CPU   5.94847ms  CUDA  62.03672ms  CPU  21.48623ms  CUDA  21.92979ms
+
+Pre-Process   CPU   0.12922ms  CUDA   4.46083ms  CPU   0.08276ms  CUDA   0.81687ms
+Network       CPU   5.55799ms  CUDA  52.44057ms  CPU  21.33821ms  CUDA  16.96500ms
+Post-Process  CPU   0.18657ms  CUDA   3.68563ms  CPU   0.08698ms  CUDA   0.06818ms
+Visualize     CPU   0.15917ms  CUDA   1.55964ms  CPU   0.26641ms  CUDA   4.41875ms
+Total         CPU   6.03295ms  CUDA  62.14667ms  CPU  21.63717ms  CUDA  22.56250ms
+
+Pre-Process   CPU   0.13063ms  CUDA   4.03786ms  CPU   0.10875ms  CUDA   0.78443ms
+Network       CPU   5.36434ms  CUDA  51.00958ms  CPU  21.18320ms  CUDA  17.22891ms
+Post-Process  CPU   0.22584ms  CUDA   3.74307ms  CPU   0.08479ms  CUDA   0.08833ms
+Visualize     CPU   0.17120ms  CUDA   1.60995ms  CPU   0.32678ms  CUDA   4.36156ms
+Total         CPU   5.89201ms  CUDA  60.40047ms  CPU  21.50738ms  CUDA  21.97828ms
+
+Pre-Process   CPU   0.13714ms  CUDA   3.43443ms  CPU   0.05104ms  CUDA   0.82125ms
+Network       CPU   5.95035ms  CUDA  52.85453ms  CPU  21.23039ms  CUDA  17.03370ms
+Post-Process  CPU   0.14360ms  CUDA   3.72240ms  CPU   0.10209ms  CUDA   0.08547ms
+Visualize     CPU   0.20844ms  CUDA   1.62224ms  CPU   0.27355ms  CUDA   4.44276ms
+Total         CPU   6.43953ms  CUDA  61.63359ms  CPU  21.52066ms  CUDA  21.19849ms
+
+Pre-Process   CPU   0.15625ms  CUDA   3.17729ms  CPU   0.08990ms  CUDA   0.80198ms
+Network       CPU   5.55643ms  CUDA  52.21542ms  CPU  21.07982ms  CUDA  16.85979ms
+Post-Process  CPU   0.12094ms  CUDA   3.65417ms  CPU   0.04104ms  CUDA   0.10229ms
+Visualize     CPU   0.07573ms  CUDA   1.50797ms  CPU   0.17334ms  CUDA   4.44156ms
+Total         CPU   5.90936ms  CUDA  60.55484ms  CPU  21.36701ms  CUDA  20.92526ms
+
+Pre-Process   CPU   0.11703ms  CUDA   3.09557ms  CPU   0.11485ms  CUDA   0.81255ms
+Network       CPU   5.98655ms  CUDA  50.96661ms  CPU  21.56733ms  CUDA  16.89448ms
+Post-Process  CPU   0.22714ms  CUDA   3.73891ms  CPU   0.04927ms  CUDA   0.04094ms
+Visualize     CPU   0.12115ms  CUDA   1.57823ms  CPU   0.27188ms  CUDA   4.38052ms
+Total         CPU   6.45187ms  CUDA  59.37932ms  CPU  21.84848ms  CUDA  21.40318ms
+
+Pre-Process   CPU   0.14115ms  CUDA   3.16411ms  CPU   0.06802ms  CUDA   0.82578ms
+Network       CPU   4.89241ms  CUDA  52.25864ms  CPU  21.13305ms  CUDA  17.43219ms
+Post-Process  CPU   0.18266ms  CUDA   3.68833ms  CPU   0.13479ms  CUDA   0.04964ms
+Visualize     CPU   0.21808ms  CUDA   1.62823ms  CPU   0.27438ms  CUDA   5.65203ms
+Total         CPU   5.43429ms  CUDA  60.73932ms  CPU  21.47701ms  CUDA  20.98844ms
+
+Pre-Process   CPU   0.15584ms  CUDA   3.46062ms  CPU   0.11396ms  CUDA   0.80089ms
+Network       CPU   6.15192ms  CUDA  50.88776ms  CPU  21.20867ms  CUDA  16.88839ms
+Post-Process  CPU   0.20224ms  CUDA   3.71510ms  CPU   0.14151ms  CUDA   0.13505ms
+Visualize     CPU   0.29199ms  CUDA   1.70505ms  CPU   0.32272ms  CUDA   4.37724ms
+Total         CPU   6.80198ms  CUDA  59.76854ms  CPU  21.61998ms  CUDA  21.49969ms
+
+Pre-Process   CPU   0.26287ms  CUDA   3.54609ms  CPU   0.04922ms  CUDA   0.81156ms
+Network       CPU   5.98587ms  CUDA  52.20802ms  CPU  21.01210ms  CUDA  17.08667ms
+Post-Process  CPU   0.14365ms  CUDA   3.66651ms  CPU   0.09313ms  CUDA   0.14083ms
+Visualize     CPU   0.21308ms  CUDA   1.61875ms  CPU   0.20829ms  CUDA   4.45937ms
+Total         CPU   6.60547ms  CUDA  61.03938ms  CPU  21.41732ms  CUDA  21.16870ms
+
+Pre-Process   CPU   0.34308ms  CUDA   3.21896ms  CPU   0.10745ms  CUDA   0.82380ms
+Network       CPU   4.81558ms  CUDA  52.23719ms  CPU  20.83179ms  CUDA  16.70557ms
+Post-Process  CPU   0.13860ms  CUDA   3.63609ms  CPU   0.05333ms  CUDA   0.09323ms
+Visualize     CPU   0.09599ms  CUDA   1.58755ms  CPU   0.19641ms  CUDA   4.42344ms
+Total         CPU   5.39325ms  CUDA  60.67979ms  CPU  21.33566ms  CUDA  20.80338ms
+
+Pre-Process   CPU   0.15506ms  CUDA   4.43630ms  CPU   0.10505ms  CUDA   0.79568ms
+Network       CPU   5.81644ms  CUDA  51.02672ms  CPU  20.98846ms  CUDA  16.73557ms
+Post-Process  CPU   0.12948ms  CUDA   3.66182ms  CPU   0.08271ms  CUDA   0.05318ms
+Visualize     CPU   0.26657ms  CUDA   1.68521ms  CPU   0.33589ms  CUDA   4.39771ms
+Total         CPU   6.36755ms  CUDA  60.81005ms  CPU  21.33128ms  CUDA  22.14266ms
+
+Pre-Process   CPU   0.14532ms  CUDA   4.67047ms  CPU   0.16568ms  CUDA   0.82292ms
+Network       CPU   6.14567ms  CUDA  50.77114ms  CPU  21.08617ms  CUDA  16.80109ms
+Post-Process  CPU   0.13412ms  CUDA   3.65630ms  CPU   0.05870ms  CUDA   0.08234ms
+Visualize     CPU   0.12526ms  CUDA   1.53755ms  CPU   0.30568ms  CUDA   4.35177ms
+Total         CPU   6.55036ms  CUDA  60.63547ms  CPU  21.45587ms  CUDA  22.54453ms
+
+Pre-Process   CPU   0.12594ms  CUDA   3.18068ms  CPU   0.08063ms  CUDA   0.82693ms
+Network       CPU   5.93623ms  CUDA  52.22896ms  CPU  21.13924ms  CUDA  16.98724ms
+Post-Process  CPU   0.18881ms  CUDA   3.68547ms  CPU   0.08110ms  CUDA   0.05990ms
+Visualize     CPU   0.16881ms  CUDA   1.68083ms  CPU   0.38767ms  CUDA   4.35693ms
+Total         CPU   6.41979ms  CUDA  60.77594ms  CPU  21.42691ms  CUDA  21.03901ms
+
+Pre-Process   CPU   0.15219ms  CUDA   3.37333ms  CPU   0.05875ms  CUDA   0.79224ms
+Network       CPU   6.13243ms  CUDA  52.03474ms  CPU  21.16346ms  CUDA  16.98463ms
+Post-Process  CPU   0.13490ms  CUDA   3.76016ms  CPU   0.10797ms  CUDA   0.08146ms
+Visualize     CPU   0.13261ms  CUDA   1.58198ms  CPU   0.15631ms  CUDA   4.45281ms
+Total         CPU   6.55213ms  CUDA  60.75021ms  CPU  21.48238ms  CUDA  21.11312ms
+
+Pre-Process   CPU   0.16068ms  CUDA   3.39672ms  CPU   0.11068ms  CUDA   0.80115ms
+Network       CPU   5.85149ms  CUDA  52.02682ms  CPU  21.42008ms  CUDA  16.83094ms
+Post-Process  CPU   0.13120ms  CUDA   3.65188ms  CPU   0.10490ms  CUDA   0.10771ms
+Visualize     CPU   0.19500ms  CUDA   1.60891ms  CPU   0.32943ms  CUDA   4.44141ms
+Total         CPU   6.33838ms  CUDA  60.68432ms  CPU  21.79634ms  CUDA  21.57573ms
+
+Pre-Process   CPU   0.13063ms  CUDA   4.21917ms  CPU   0.07735ms  CUDA   0.80302ms
+Network       CPU   6.23650ms  CUDA  52.22760ms  CPU  21.06117ms  CUDA  17.27052ms
+Post-Process  CPU   0.10318ms  CUDA   3.61776ms  CPU   0.09016ms  CUDA   0.10547ms
+Visualize     CPU   0.18724ms  CUDA   1.59474ms  CPU   0.24334ms  CUDA   4.39995ms
+Total         CPU   6.65755ms  CUDA  61.65927ms  CPU  21.35930ms  CUDA  21.95625ms
+
+Pre-Process   CPU   0.14052ms  CUDA   4.23719ms  CPU   0.14334ms  CUDA   0.79781ms
+Network       CPU   5.66461ms  CUDA  50.90911ms  CPU  20.57032ms  CUDA  16.84927ms
+Post-Process  CPU   0.19745ms  CUDA   3.73344ms  CPU   0.08912ms  CUDA   0.09000ms
+Visualize     CPU   0.16683ms  CUDA   1.57583ms  CPU   0.34381ms  CUDA   4.41495ms
+Total         CPU   6.16941ms  CUDA  60.45557ms  CPU  20.94330ms  CUDA  21.86854ms
+
+Pre-Process   CPU   0.14130ms  CUDA   4.41156ms  CPU   0.07505ms  CUDA   0.82385ms
+Network       CPU   5.70383ms  CUDA  52.49979ms  CPU  21.10414ms  CUDA  16.71885ms
+Post-Process  CPU   0.11266ms  CUDA   3.65266ms  CPU   0.08646ms  CUDA   0.08865ms
+Visualize     CPU   0.15245ms  CUDA   1.59521ms  CPU   0.27063ms  CUDA   4.39286ms
+Total         CPU   6.11025ms  CUDA  62.15922ms  CPU  21.40696ms  CUDA  22.18078ms
+
+Pre-Process   CPU   0.14719ms  CUDA   3.37271ms  CPU   0.05245ms  CUDA   0.78823ms
+Network       CPU   6.04181ms  CUDA  52.11385ms  CPU  21.26758ms  CUDA  16.89490ms
+Post-Process  CPU   0.09683ms  CUDA   3.62151ms  CPU   0.11016ms  CUDA   0.08609ms
+Visualize     CPU   0.18750ms  CUDA   1.60641ms  CPU   0.23724ms  CUDA   4.44073ms
+Total         CPU   6.47333ms  CUDA  60.71448ms  CPU  21.57738ms  CUDA  21.27490ms
+
+Pre-Process   CPU   0.15047ms  CUDA   3.17177ms  CPU   0.07531ms  CUDA   0.79734ms
+Network       CPU   5.02178ms  CUDA  52.34536ms  CPU  20.96122ms  CUDA  16.99375ms
+Post-Process  CPU   0.19006ms  CUDA   3.76547ms  CPU   0.08276ms  CUDA   0.11109ms
+Visualize     CPU   0.15761ms  CUDA   1.61224ms  CPU   0.38220ms  CUDA   4.41172ms
+Total         CPU   5.51992ms  CUDA  60.89484ms  CPU  21.26977ms  CUDA  20.81166ms
+
+Pre-Process   CPU   0.16714ms  CUDA   3.29516ms  CPU   0.07396ms  CUDA   0.80281ms
+Network       CPU   5.17163ms  CUDA  52.16443ms  CPU  21.36316ms  CUDA  16.75260ms
+Post-Process  CPU   0.23021ms  CUDA   3.78370ms  CPU   0.07469ms  CUDA   0.08448ms
+Visualize     CPU   0.16433ms  CUDA   1.62719ms  CPU   0.28662ms  CUDA   4.41656ms
+Total         CPU   5.73331ms  CUDA  60.87047ms  CPU  21.67895ms  CUDA  21.36146ms
+
+Pre-Process   CPU   0.15428ms  CUDA   3.13974ms  CPU   0.05646ms  CUDA   0.80422ms
+Network       CPU   5.15543ms  CUDA  52.34323ms  CPU  21.06930ms  CUDA  17.17823ms
+Post-Process  CPU   0.16677ms  CUDA   3.72109ms  CPU   0.05339ms  CUDA   0.08385ms
+Visualize     CPU   0.09750ms  CUDA   1.56677ms  CPU   0.22579ms  CUDA   5.34234ms
+Total         CPU   5.57398ms  CUDA  60.77084ms  CPU  21.33342ms  CUDA  20.80115ms
+
+Pre-Process   CPU   0.13323ms  CUDA   3.13880ms  CPU   0.05542ms  CUDA   0.79958ms
+Network       CPU   5.21747ms  CUDA  52.19333ms  CPU  21.27237ms  CUDA  16.80787ms
+Post-Process  CPU   0.08985ms  CUDA   3.64339ms  CPU   0.08318ms  CUDA   0.05396ms
+Visualize     CPU   0.15328ms  CUDA   1.63802ms  CPU   0.26329ms  CUDA   4.41344ms
+Total         CPU   5.59383ms  CUDA  60.61354ms  CPU  21.54420ms  CUDA  21.01828ms
+
+Pre-Process   CPU   0.12964ms  CUDA   3.25370ms  CPU   0.05318ms  CUDA   0.80047ms
+Network       CPU   5.76571ms  CUDA  52.92786ms  CPU  21.05575ms  CUDA  16.99401ms
+Post-Process  CPU   0.14896ms  CUDA   3.68167ms  CPU   0.10698ms  CUDA   0.08500ms
+Visualize     CPU   0.19834ms  CUDA   1.57698ms  CPU   0.20896ms  CUDA   4.45776ms
+Total         CPU   6.24265ms  CUDA  61.44021ms  CPU  21.34555ms  CUDA  20.92354ms
+
+Pre-Process   CPU   0.15797ms  CUDA   4.16271ms  CPU   0.11412ms  CUDA   0.81703ms
+Network       CPU   5.17887ms  CUDA  51.20813ms  CPU  20.97565ms  CUDA  16.74495ms
+Post-Process  CPU   0.11401ms  CUDA   3.66302ms  CPU   0.06906ms  CUDA   0.10786ms
+Visualize     CPU   0.13339ms  CUDA   1.53750ms  CPU   0.26386ms  CUDA   4.39391ms
+Total         CPU   5.58425ms  CUDA  60.57135ms  CPU  21.31680ms  CUDA  21.83979ms
+
+Pre-Process   CPU   0.14209ms  CUDA   3.28464ms  CPU   0.06130ms  CUDA   0.80266ms
+Network       CPU   5.64055ms  CUDA  52.17958ms  CPU  21.19164ms  CUDA  16.80495ms
+Post-Process  CPU   0.08099ms  CUDA   3.61844ms  CPU   0.04953ms  CUDA   0.06948ms
+Visualize     CPU   0.09120ms  CUDA   1.52984ms  CPU   0.19813ms  CUDA   4.39927ms
+Total         CPU   5.95483ms  CUDA  60.61250ms  CPU  21.44456ms  CUDA  21.09083ms
+
+Pre-Process   CPU   0.18506ms  CUDA   3.14151ms  CPU   0.11516ms  CUDA   0.78479ms
+Network       CPU   5.85206ms  CUDA  51.22172ms  CPU  21.31128ms  CUDA  16.97187ms
+Post-Process  CPU   0.26173ms  CUDA   3.74568ms  CPU   0.24329ms  CUDA   0.04953ms
+Visualize     CPU   0.24912ms  CUDA   1.68094ms  CPU   0.34579ms  CUDA   4.35750ms
+Total         CPU   6.54797ms  CUDA  59.78984ms  CPU  21.85478ms  CUDA  21.26000ms
+
+Pre-Process   CPU   0.11360ms  CUDA   4.04870ms  CPU   0.09313ms  CUDA   0.81667ms
+Network       CPU   5.61195ms  CUDA  51.28896ms  CPU  21.49686ms  CUDA  17.11734ms
+Post-Process  CPU   0.18099ms  CUDA   3.79651ms  CPU   0.09505ms  CUDA   0.18448ms
+Visualize     CPU   0.29292ms  CUDA   1.69302ms  CPU   0.32032ms  CUDA   4.40547ms
+Total         CPU   6.19947ms  CUDA  60.82719ms  CPU  21.79863ms  CUDA  22.30198ms
+
+Pre-Process   CPU   0.24381ms  CUDA   3.50412ms  CPU   0.09448ms  CUDA   0.82271ms
+Network       CPU   6.06650ms  CUDA  52.24328ms  CPU  21.29107ms  CUDA  17.27573ms
+Post-Process  CPU   0.13860ms  CUDA   3.69109ms  CPU   0.05740ms  CUDA   0.15484ms
+Visualize     CPU   0.09625ms  CUDA   1.55547ms  CPU   0.20162ms  CUDA   4.43583ms
+Total         CPU   6.54515ms  CUDA  60.99396ms  CPU  21.68676ms  CUDA  21.45594ms
+
+Pre-Process   CPU   0.10078ms  CUDA   3.18109ms  CPU   0.07063ms  CUDA   0.82021ms
+Network       CPU   5.77185ms  CUDA  52.38562ms  CPU  21.16747ms  CUDA  17.07344ms
+Post-Process  CPU   0.11214ms  CUDA   3.66672ms  CPU   0.07813ms  CUDA   0.05818ms
+Visualize     CPU   0.16839ms  CUDA   1.57026ms  CPU   0.40121ms  CUDA   4.42589ms
+Total         CPU   6.15317ms  CUDA  60.80370ms  CPU  21.41701ms  CUDA  20.99750ms
+
+Pre-Process   CPU   0.13130ms  CUDA   3.21177ms  CPU   0.09052ms  CUDA   0.80839ms
+Network       CPU   6.07066ms  CUDA  50.88120ms  CPU  21.12976ms  CUDA  16.92865ms
+Post-Process  CPU   0.22714ms  CUDA   3.77552ms  CPU   0.07792ms  CUDA   0.07937ms
+Visualize     CPU   0.16667ms  CUDA   1.59432ms  CPU   0.32693ms  CUDA   4.40625ms
+Total         CPU   6.59578ms  CUDA  59.46281ms  CPU  21.42951ms  CUDA  21.10443ms
+
+Pre-Process   CPU   0.13188ms  CUDA   4.46083ms  CPU   0.06750ms  CUDA   0.82901ms
+Network       CPU   5.64919ms  CUDA  52.28588ms  CPU  21.11419ms  CUDA  16.98547ms
+Post-Process  CPU   0.20527ms  CUDA   3.70849ms  CPU   0.08422ms  CUDA   0.07818ms
+Visualize     CPU   0.13443ms  CUDA   1.60016ms  CPU   0.27214ms  CUDA   4.41453ms
+Total         CPU   6.12077ms  CUDA  62.05536ms  CPU  21.39779ms  CUDA  22.25625ms
+
+Pre-Process   CPU   0.15860ms  CUDA   3.35078ms  CPU   0.06224ms  CUDA   0.79750ms
+Network       CPU   5.81743ms  CUDA  52.91161ms  CPU  21.21925ms  CUDA  16.90573ms
+Post-Process  CPU   0.12328ms  CUDA   3.67625ms  CPU   0.08063ms  CUDA   0.09219ms
+Visualize     CPU   0.15308ms  CUDA   1.65062ms  CPU   0.26204ms  CUDA   4.36000ms
+Total         CPU   6.25239ms  CUDA  61.58927ms  CPU  21.52071ms  CUDA  21.19568ms
+
+Pre-Process   CPU   0.59251ms  CUDA   3.17672ms  CPU   0.04854ms  CUDA   0.80469ms
+Network       CPU   5.51190ms  CUDA  51.09307ms  CPU  20.91174ms  CUDA  16.95911ms
+Post-Process  CPU   0.08474ms  CUDA   3.64911ms  CPU   0.05115ms  CUDA   0.08109ms
+Visualize     CPU   0.10339ms  CUDA   1.55854ms  CPU   0.19740ms  CUDA   4.45094ms
+Total         CPU   6.29254ms  CUDA  59.47745ms  CPU  21.60394ms  CUDA  20.66349ms
+
+Pre-Process   CPU   0.15599ms  CUDA   3.19948ms  CPU   0.13761ms  CUDA   0.78781ms
+Network       CPU   5.41606ms  CUDA  52.49578ms  CPU  20.87512ms  CUDA  16.64802ms
+Post-Process  CPU   0.08906ms  CUDA   3.63578ms  CPU   0.07380ms  CUDA   0.05094ms
+Visualize     CPU   0.21433ms  CUDA   1.57078ms  CPU   0.24370ms  CUDA   4.39104ms
+Total         CPU   5.87545ms  CUDA  60.90182ms  CPU  21.24253ms  CUDA  20.77516ms
+
+Pre-Process   CPU   0.22797ms  CUDA   3.15630ms  CPU   0.06495ms  CUDA   0.81458ms
+Network       CPU   6.27239ms  CUDA  52.94797ms  CPU  21.52498ms  CUDA  16.68151ms
+Post-Process  CPU   0.17068ms  CUDA   3.66714ms  CPU   0.10636ms  CUDA   0.07958ms
+Visualize     CPU   0.12662ms  CUDA   1.60193ms  CPU   0.22443ms  CUDA   4.38739ms
+Total         CPU   6.79766ms  CUDA  61.37333ms  CPU  21.92426ms  CUDA  21.39255ms
+
+Pre-Process   CPU   0.09573ms  CUDA   3.40401ms  CPU   0.07495ms  CUDA   0.80083ms
+Network       CPU   5.78357ms  CUDA  51.01234ms  CPU  21.41868ms  CUDA  17.37109ms
+Post-Process  CPU   0.16401ms  CUDA   3.65812ms  CPU   0.13901ms  CUDA   0.06432ms
+Visualize     CPU   0.26662ms  CUDA   1.66672ms  CPU   0.37808ms  CUDA   5.65667ms
+Total         CPU   6.30994ms  CUDA  59.74120ms  CPU  21.72837ms  CUDA  21.52266ms
+
+Pre-Process   CPU   0.13724ms  CUDA   3.12240ms  CPU   0.06526ms  CUDA   0.80078ms
+Network       CPU   5.24283ms  CUDA  52.42615ms  CPU  21.01752ms  CUDA  17.17995ms
+Post-Process  CPU   0.08787ms  CUDA   3.66589ms  CPU   0.06891ms  CUDA   0.13792ms
+Visualize     CPU   0.23990ms  CUDA   1.53104ms  CPU   0.26995ms  CUDA   4.42891ms
+Total         CPU   5.70784ms  CUDA  60.74547ms  CPU  21.28894ms  CUDA  20.73750ms
+
+Pre-Process   CPU   0.16303ms  CUDA   3.36130ms  CPU   0.05672ms  CUDA   0.80698ms
+Network       CPU   5.77863ms  CUDA  51.99849ms  CPU  21.13378ms  CUDA  16.73865ms
+Post-Process  CPU   0.16823ms  CUDA   3.66885ms  CPU   0.07521ms  CUDA   0.06948ms
+Visualize     CPU   0.35225ms  CUDA   1.65214ms  CPU   0.27969ms  CUDA   4.39214ms
+Total         CPU   6.46213ms  CUDA  60.68078ms  CPU  21.42873ms  CUDA  21.16964ms
+
+Pre-Process   CPU   0.12297ms  CUDA   3.30656ms  CPU   0.17745ms  CUDA   0.79568ms
+Network       CPU   5.75316ms  CUDA  51.14463ms  CPU  21.12685ms  CUDA  16.93417ms
+Post-Process  CPU   0.21829ms  CUDA   3.64594ms  CPU   0.19829ms  CUDA   0.07849ms
+Visualize     CPU   0.27053ms  CUDA   1.60979ms  CPU   0.26860ms  CUDA   4.40583ms
+Total         CPU   6.36494ms  CUDA  59.70693ms  CPU  21.62556ms  CUDA  21.32318ms
+
+Pre-Process   CPU   0.14120ms  CUDA   4.03891ms  CPU   0.11396ms  CUDA   0.79885ms
+Network       CPU   5.66836ms  CUDA  51.24552ms  CPU  21.40810ms  CUDA  17.07948ms
+Post-Process  CPU   0.25547ms  CUDA   3.69208ms  CPU   0.17386ms  CUDA   0.13828ms
+Visualize     CPU   0.33032ms  CUDA   1.66135ms  CPU   0.33542ms  CUDA   4.37193ms
+Total         CPU   6.39536ms  CUDA  60.63786ms  CPU  21.83712ms  CUDA  22.29265ms
+
+Pre-Process   CPU   0.10266ms  CUDA   3.28208ms  CPU   0.08615ms  CUDA   0.83865ms
+Network       CPU   5.17423ms  CUDA  52.31260ms  CPU  21.42139ms  CUDA  17.23922ms
+Post-Process  CPU   0.13328ms  CUDA   3.65276ms  CPU   0.25594ms  CUDA   0.17589ms
+Visualize     CPU   0.33605ms  CUDA   1.66937ms  CPU   0.33240ms  CUDA   4.36255ms
+Total         CPU   5.74623ms  CUDA  60.91682ms  CPU  21.86614ms  CUDA  21.61036ms
+
+Pre-Process   CPU   0.15381ms  CUDA   4.18005ms  CPU   0.15235ms  CUDA   0.82724ms
+Network       CPU   5.85425ms  CUDA  51.35656ms  CPU  21.07080ms  CUDA  17.32458ms
+Post-Process  CPU   0.27902ms  CUDA   3.76536ms  CPU   0.10542ms  CUDA   0.17646ms
+Visualize     CPU   0.18709ms  CUDA   1.60698ms  CPU   0.32798ms  CUDA   4.36245ms
+Total         CPU   6.47416ms  CUDA  60.90896ms  CPU  21.48238ms  CUDA  22.18865ms
+
+Pre-Process   CPU   0.15131ms  CUDA   3.29802ms  CPU   0.07302ms  CUDA   0.82234ms
+Network       CPU   5.89217ms  CUDA  52.34885ms  CPU  21.00086ms  CUDA  17.08042ms
+Post-Process  CPU   0.15980ms  CUDA   3.68250ms  CPU   0.09849ms  CUDA   0.10583ms
+Visualize     CPU   0.18224ms  CUDA   1.60464ms  CPU   0.23084ms  CUDA   4.41156ms
+Total         CPU   6.38551ms  CUDA  60.93401ms  CPU  21.32368ms  CUDA  21.00109ms
+
+Pre-Process   CPU   0.20594ms  CUDA   3.12635ms  CPU   0.07063ms  CUDA   0.81141ms
+Network       CPU   6.09790ms  CUDA  51.34448ms  CPU  21.25159ms  CUDA  16.79302ms
+Post-Process  CPU   0.10985ms  CUDA   3.65891ms  CPU   0.07839ms  CUDA   0.09865ms
+Visualize     CPU   0.16599ms  CUDA   1.62167ms  CPU   0.33193ms  CUDA   4.37755ms
+Total         CPU   6.57969ms  CUDA  59.75140ms  CPU  21.60655ms  CUDA  21.02687ms
+
+Pre-Process   CPU   0.16151ms  CUDA   4.08484ms  CPU   0.07406ms  CUDA   0.80880ms
+Network       CPU   6.14405ms  CUDA  51.25068ms  CPU  21.95525ms  CUDA  17.01307ms
+Post-Process  CPU   0.16537ms  CUDA   3.73943ms  CPU   0.10104ms  CUDA   0.07865ms
+Visualize     CPU   0.21782ms  CUDA   1.67984ms  CPU   0.40855ms  CUDA   4.40615ms
+Total         CPU   6.68875ms  CUDA  60.75479ms  CPU  22.29187ms  CUDA  22.69214ms
+
+Pre-Process   CPU   0.13927ms  CUDA   3.25177ms  CPU   0.11245ms  CUDA   0.81995ms
+Network       CPU   5.13121ms  CUDA  52.40625ms  CPU  21.06695ms  CUDA  17.68578ms
+Post-Process  CPU   0.14782ms  CUDA   3.63844ms  CPU   0.09094ms  CUDA   0.10156ms
+Visualize     CPU   0.17297ms  CUDA   1.58557ms  CPU   0.20193ms  CUDA   4.43000ms
+Total         CPU   5.59128ms  CUDA  60.88203ms  CPU  21.40961ms  CUDA  21.04182ms
+
+Pre-Process   CPU   0.13063ms  CUDA   3.28172ms  CPU   0.11459ms  CUDA   0.80005ms
+Network       CPU   5.24085ms  CUDA  51.99833ms  CPU  21.00153ms  CUDA  16.89880ms
+Post-Process  CPU   0.22933ms  CUDA   3.69974ms  CPU   0.06787ms  CUDA   0.09120ms
+Visualize     CPU   0.13542ms  CUDA   1.56182ms  CPU   0.27042ms  CUDA   4.45156ms
+Total         CPU   5.73623ms  CUDA  60.54162ms  CPU  21.31461ms  CUDA  21.07969ms
+
+Pre-Process   CPU   0.13662ms  CUDA   4.29052ms  CPU   0.08682ms  CUDA   0.80443ms
+Network       CPU   6.01472ms  CUDA  51.06464ms  CPU  21.08471ms  CUDA  16.92547ms
+Post-Process  CPU   0.10464ms  CUDA   3.63839ms  CPU   0.05917ms  CUDA   0.06807ms
+Visualize     CPU   0.13724ms  CUDA   1.56016ms  CPU   0.26464ms  CUDA   4.40198ms
+Total         CPU   6.39322ms  CUDA  60.55370ms  CPU  21.36732ms  CUDA  22.04620ms
+
+Pre-Process   CPU   0.13130ms  CUDA   3.23276ms  CPU   0.05635ms  CUDA   0.78411ms
+Network       CPU   4.93855ms  CUDA  52.28172ms  CPU  21.01627ms  CUDA  16.91219ms
+Post-Process  CPU   0.13729ms  CUDA   3.64646ms  CPU   0.05063ms  CUDA   0.05937ms
+Visualize     CPU   0.10146ms  CUDA   1.54703ms  CPU   0.20047ms  CUDA   4.47062ms
+Total         CPU   5.30861ms  CUDA  60.70797ms  CPU  21.25456ms  CUDA  20.88698ms
+
+Pre-Process   CPU   0.15042ms  CUDA   3.22089ms  CPU   0.05401ms  CUDA   0.80724ms
+Network       CPU   5.39497ms  CUDA  52.33109ms  CPU  20.99122ms  CUDA  16.79646ms
+Post-Process  CPU   0.07610ms  CUDA   3.60458ms  CPU   0.04089ms  CUDA   0.05052ms
+Visualize     CPU   0.10078ms  CUDA   1.61359ms  CPU   0.20068ms  CUDA   4.45193ms
+Total         CPU   5.72227ms  CUDA  60.77016ms  CPU  21.23654ms  CUDA  20.81682ms
+
+Pre-Process   CPU   0.13120ms  CUDA   4.65271ms  CPU   0.08901ms  CUDA   0.82437ms
+Network       CPU   5.96905ms  CUDA  50.97005ms  CPU  21.22737ms  CUDA  16.73083ms
+Post-Process  CPU   0.21646ms  CUDA   3.69219ms  CPU   0.12308ms  CUDA   0.04073ms
+Visualize     CPU   0.23105ms  CUDA   1.62328ms  CPU   0.36501ms  CUDA   5.43563ms
+Total         CPU   6.54776ms  CUDA  60.93823ms  CPU  21.57066ms  CUDA  22.68667ms
+
+Pre-Process   CPU   0.12646ms  CUDA   4.59797ms  CPU   0.11375ms  CUDA   0.79953ms
+Network       CPU   5.84982ms  CUDA  50.97588ms  CPU  21.59488ms  CUDA  17.11151ms
+Post-Process  CPU   0.20558ms  CUDA   3.68365ms  CPU   0.09438ms  CUDA   0.12292ms
+Visualize     CPU   0.28902ms  CUDA   1.64286ms  CPU   0.32219ms  CUDA   4.43078ms
+Total         CPU   6.47088ms  CUDA  60.90036ms  CPU  21.92947ms  CUDA  23.04563ms
+
+Pre-Process   CPU   0.12026ms  CUDA   3.21917ms  CPU   0.04677ms  CUDA   0.80349ms
+Network       CPU   5.80764ms  CUDA  52.27787ms  CPU  21.19706ms  CUDA  17.49063ms
+Post-Process  CPU   0.13927ms  CUDA   3.67177ms  CPU   0.10615ms  CUDA   0.15354ms
+Visualize     CPU   0.22568ms  CUDA   1.60854ms  CPU   0.16480ms  CUDA   4.37589ms
+Total         CPU   6.29286ms  CUDA  60.77735ms  CPU  21.47024ms  CUDA  21.01625ms
+
+Pre-Process   CPU   0.11292ms  CUDA   3.46891ms  CPU   0.07333ms  CUDA   0.81797ms
+Network       CPU   5.74394ms  CUDA  51.96672ms  CPU  20.99263ms  CUDA  16.87318ms
+Post-Process  CPU   0.15433ms  CUDA   3.65359ms  CPU   0.08427ms  CUDA   0.10594ms
+Visualize     CPU   0.25021ms  CUDA   1.55245ms  CPU   0.28412ms  CUDA   4.38219ms
+Total         CPU   6.26140ms  CUDA  60.64167ms  CPU  21.26315ms  CUDA  21.17516ms
+
+Pre-Process   CPU   0.11854ms  CUDA   3.27505ms  CPU   0.06386ms  CUDA   0.80031ms
+Network       CPU   5.12314ms  CUDA  52.09026ms  CPU  21.13190ms  CUDA  16.82130ms
+Post-Process  CPU   0.11177ms  CUDA   3.69062ms  CPU   0.07709ms  CUDA   0.08464ms
+Visualize     CPU   0.15203ms  CUDA   1.62292ms  CPU   0.26298ms  CUDA   4.39510ms
+Total         CPU   5.50549ms  CUDA  60.67885ms  CPU  21.39139ms  CUDA  21.05156ms
+
+Pre-Process   CPU   0.12063ms  CUDA   3.12276ms  CPU   0.11401ms  CUDA   0.80500ms
+Network       CPU   5.94253ms  CUDA  50.90500ms  CPU  21.37269ms  CUDA  16.88333ms
+Post-Process  CPU   0.19438ms  CUDA   3.70286ms  CPU   0.08495ms  CUDA   0.08818ms
+Visualize     CPU   0.16302ms  CUDA   1.60484ms  CPU   0.31886ms  CUDA   4.43307ms
+Total         CPU   6.42057ms  CUDA  59.33547ms  CPU  21.69228ms  CUDA  21.31604ms
+
+Pre-Process   CPU   0.12261ms  CUDA   4.50432ms  CPU   0.11005ms  CUDA   0.80656ms
+Network       CPU   5.66420ms  CUDA  50.81130ms  CPU  21.28977ms  CUDA  17.30141ms
+Post-Process  CPU   0.39022ms  CUDA   3.90870ms  CPU   0.09375ms  CUDA   0.08531ms
+Visualize     CPU   0.28157ms  CUDA   1.66323ms  CPU   0.32542ms  CUDA   4.37891ms
+Total         CPU   6.45859ms  CUDA  60.88755ms  CPU  21.61618ms  CUDA  22.55563ms
+
+Pre-Process   CPU   0.13318ms  CUDA   4.53552ms  CPU   0.11229ms  CUDA   0.81505ms
+Network       CPU   5.30096ms  CUDA  50.68140ms  CPU  20.89398ms  CUDA  17.08417ms
+Post-Process  CPU   0.27042ms  CUDA   3.70125ms  CPU   0.06313ms  CUDA   0.15208ms
+Visualize     CPU   0.13563ms  CUDA   1.56656ms  CPU   0.26428ms  CUDA   4.40562ms
+Total         CPU   5.84019ms  CUDA  60.48474ms  CPU  21.20258ms  CUDA  22.26255ms
+
+Pre-Process   CPU   0.14964ms  CUDA   4.51714ms  CPU   0.07651ms  CUDA   0.81443ms
+Network       CPU   6.14535ms  CUDA  52.38792ms  CPU  21.22383ms  CUDA  16.84917ms
+Post-Process  CPU   0.14058ms  CUDA   3.68401ms  CPU   0.05802ms  CUDA   0.06344ms
+Visualize     CPU   0.12406ms  CUDA   1.56411ms  CPU   0.27183ms  CUDA   4.51052ms
+Total         CPU   6.55963ms  CUDA  62.15318ms  CPU  21.50800ms  CUDA  22.42703ms
+
+Pre-Process   CPU   0.12412ms  CUDA   4.15479ms  CPU   0.06787ms  CUDA   0.79281ms
+Network       CPU   5.45132ms  CUDA  51.35193ms  CPU  21.11690ms  CUDA  17.05807ms
+Post-Process  CPU   0.17198ms  CUDA   3.67760ms  CPU   0.10433ms  CUDA   0.05901ms
+Visualize     CPU   0.20693ms  CUDA   1.65125ms  CPU   0.26745ms  CUDA   4.59484ms
+Total         CPU   5.95436ms  CUDA  60.83558ms  CPU  21.41321ms  CUDA  21.93745ms
+
+Pre-Process   CPU   0.12302ms  CUDA   4.31958ms  CPU   0.09479ms  CUDA   0.81687ms
+Network       CPU   5.68617ms  CUDA  50.97344ms  CPU  21.07586ms  CUDA  16.86167ms
+Post-Process  CPU   0.11828ms  CUDA   3.73062ms  CPU   0.06177ms  CUDA   0.10412ms
+Visualize     CPU   0.12000ms  CUDA   1.60859ms  CPU   0.25891ms  CUDA   4.54750ms
+Total         CPU   6.04749ms  CUDA  60.63224ms  CPU  21.35545ms  CUDA  21.99641ms
+
+Pre-Process   CPU   0.26324ms  CUDA   3.07120ms  CPU   0.17485ms  CUDA   0.81089ms
+Network       CPU   5.28460ms  CUDA  52.28099ms  CPU  21.22654ms  CUDA  16.80380ms
+Post-Process  CPU   0.11526ms  CUDA   3.66193ms  CPU   0.08542ms  CUDA   0.06213ms
+Visualize     CPU   0.16334ms  CUDA   1.60620ms  CPU   0.32641ms  CUDA   4.49453ms
+Total         CPU   5.82644ms  CUDA  60.62031ms  CPU  21.75004ms  CUDA  21.06406ms
+
+Pre-Process   CPU   0.11105ms  CUDA   4.63609ms  CPU   0.05339ms  CUDA   0.78979ms
+Network       CPU   5.57372ms  CUDA  52.29005ms  CPU  21.21581ms  CUDA  17.11755ms
+Post-Process  CPU   0.12433ms  CUDA   3.81849ms  CPU   0.03787ms  CUDA   0.08552ms
+Visualize     CPU   0.06630ms  CUDA   1.58302ms  CPU   2.08151ms  CUDA   4.39604ms
+Total         CPU   5.87540ms  CUDA  62.32765ms  CPU  21.41811ms  CUDA  22.29224ms
+
+Pre-Process   CPU   0.07453ms  CUDA   3.32151ms  CPU   0.07886ms  CUDA   0.84495ms
+Network       CPU   5.64461ms  CUDA  51.09422ms  CPU  21.09461ms  CUDA  16.77266ms
+Post-Process  CPU   0.09849ms  CUDA   3.70021ms  CPU   0.08599ms  CUDA   0.03854ms
+Visualize     CPU   0.15453ms  CUDA   1.60750ms  CPU   0.26329ms  CUDA   5.07125ms
+Total         CPU   5.97217ms  CUDA  59.72344ms  CPU  21.33399ms  CUDA  21.01578ms
+
+Pre-Process   CPU   0.10339ms  CUDA   4.16083ms  CPU   0.06016ms  CUDA   0.80609ms
+Network       CPU   5.25054ms  CUDA  52.31682ms  CPU  22.93824ms  CUDA  16.79995ms
+Post-Process  CPU   0.12558ms  CUDA   3.67417ms  CPU   0.17245ms  CUDA   0.08823ms
+Visualize     CPU   0.26011ms  CUDA   1.81698ms  CPU   0.23501ms  CUDA   4.56771ms
+Total         CPU   5.73961ms  CUDA  61.96880ms  CPU  23.27424ms  CUDA  23.76995ms
+
+Pre-Process   CPU   0.16886ms  CUDA   3.29490ms  CPU   0.06240ms  CUDA   0.81380ms
+Network       CPU   5.27971ms  CUDA  52.11641ms  CPU  21.15279ms  CUDA  18.67281ms
+Post-Process  CPU   0.23818ms  CUDA   3.77302ms  CPU   0.12339ms  CUDA   0.12250ms
+Visualize     CPU   0.24907ms  CUDA   1.64411ms  CPU   0.27105ms  CUDA   4.50568ms
+Total         CPU   5.93581ms  CUDA  60.82844ms  CPU  21.50743ms  CUDA  21.14844ms
+
+Pre-Process   CPU   0.18219ms  CUDA   3.19490ms  CPU   0.07209ms  CUDA   0.80990ms
+Network       CPU   4.84027ms  CUDA  52.95995ms  CPU  21.26847ms  CUDA  16.91844ms
+Post-Process  CPU   0.11365ms  CUDA   3.66354ms  CPU   0.13157ms  CUDA   0.12521ms
+Visualize     CPU   0.25261ms  CUDA   1.64615ms  CPU   0.26386ms  CUDA   4.59891ms
+Total         CPU   5.38872ms  CUDA  61.46453ms  CPU  21.65431ms  CUDA  21.19526ms
+
+Pre-Process   CPU   0.13084ms  CUDA   3.22443ms  CPU   0.08099ms  CUDA   0.81042ms
+Network       CPU   5.82613ms  CUDA  52.33136ms  CPU  20.96070ms  CUDA  17.05865ms
+Post-Process  CPU   0.10906ms  CUDA   3.63667ms  CPU   0.05354ms  CUDA   0.13130ms
+Visualize     CPU   0.09719ms  CUDA   1.60016ms  CPU   0.22292ms  CUDA   4.58859ms
+Total         CPU   6.16322ms  CUDA  60.79260ms  CPU  21.22606ms  CUDA  20.86630ms
+
+Pre-Process   CPU   0.16011ms  CUDA   4.26219ms  CPU   0.08787ms  CUDA   0.80365ms
+Network       CPU   5.91394ms  CUDA  51.20146ms  CPU  21.64842ms  CUDA  16.78474ms
+Post-Process  CPU   0.11115ms  CUDA   3.67927ms  CPU   0.09464ms  CUDA   0.05349ms
+Visualize     CPU   0.19573ms  CUDA   1.63885ms  CPU   0.27370ms  CUDA   4.51682ms
+Total         CPU   6.38093ms  CUDA  60.78177ms  CPU  21.99104ms  CUDA  22.54182ms
+
+Pre-Process   CPU   0.11177ms  CUDA   3.23427ms  CPU   0.09771ms  CUDA   0.80349ms
+Network       CPU   5.94727ms  CUDA  51.12354ms  CPU  21.75942ms  CUDA  17.38125ms
+Post-Process  CPU   0.22698ms  CUDA   3.69990ms  CPU   0.19344ms  CUDA   0.09490ms
+Visualize     CPU   0.34490ms  CUDA   1.74240ms  CPU   0.35324ms  CUDA   4.60250ms
+Total         CPU   6.63094ms  CUDA  59.80011ms  CPU  22.16234ms  CUDA  21.88422ms
+
+Pre-Process   CPU   0.14537ms  CUDA   4.27646ms  CPU   0.09745ms  CUDA   0.82719ms
+Network       CPU   5.72232ms  CUDA  51.10807ms  CPU  21.31399ms  CUDA  17.62932ms
+Post-Process  CPU   0.13729ms  CUDA   3.72984ms  CPU   0.10292ms  CUDA   0.19344ms
+Visualize     CPU   0.19094ms  CUDA   1.57917ms  CPU   0.32678ms  CUDA   4.60573ms
+Total         CPU   6.19593ms  CUDA  60.69354ms  CPU  21.65973ms  CUDA  22.26224ms
+
+Pre-Process   CPU   0.13250ms  CUDA   3.20750ms  CPU   0.07474ms  CUDA   0.81719ms
+Network       CPU   5.88253ms  CUDA  52.16703ms  CPU  21.54201ms  CUDA  17.06359ms
+Post-Process  CPU   0.17901ms  CUDA   3.64766ms  CPU   0.12688ms  CUDA   0.10500ms
+Visualize     CPU   0.27886ms  CUDA   1.63406ms  CPU   0.33022ms  CUDA   4.38260ms
+Total         CPU   6.47291ms  CUDA  60.65625ms  CPU  21.87614ms  CUDA  21.46641ms
+
+Pre-Process   CPU   0.16823ms  CUDA   3.32354ms  CPU   0.04516ms  CUDA   0.81292ms
+Network       CPU   5.77888ms  CUDA  51.57516ms  CPU  21.39732ms  CUDA  17.31922ms
+Post-Process  CPU   0.08365ms  CUDA   3.64620ms  CPU   0.05807ms  CUDA   0.12677ms
+Visualize     CPU   0.11203ms  CUDA   1.53224ms  CPU   0.18813ms  CUDA   4.42057ms
+Total         CPU   6.14280ms  CUDA  60.07714ms  CPU  21.66879ms  CUDA  21.29328ms
+
+Pre-Process   CPU   0.14099ms  CUDA   3.14188ms  CPU   0.08542ms  CUDA   0.79536ms
+Network       CPU   5.23908ms  CUDA  52.19167ms  CPU  21.26831ms  CUDA  17.11260ms
+Post-Process  CPU   0.14271ms  CUDA   3.71745ms  CPU   0.10797ms  CUDA   0.06177ms
+Visualize     CPU   0.19500ms  CUDA   1.58995ms  CPU   0.32735ms  CUDA   4.47495ms
+Total         CPU   5.71779ms  CUDA  60.64094ms  CPU  21.60269ms  CUDA  21.09912ms
+
+Pre-Process   CPU   0.13422ms  CUDA   3.08625ms  CPU   0.06037ms  CUDA   0.81042ms
+Network       CPU   5.31424ms  CUDA  52.30073ms  CPU  21.29966ms  CUDA  17.03490ms
+Post-Process  CPU   0.09052ms  CUDA   3.60979ms  CPU   0.08563ms  CUDA   0.11193ms
+Visualize     CPU   0.09104ms  CUDA   1.57370ms  CPU   0.19422ms  CUDA   4.41187ms
+Total         CPU   5.63003ms  CUDA  60.57047ms  CPU  21.57988ms  CUDA  21.05135ms
+
+Pre-Process   CPU   1.32925ms  CUDA   3.18130ms  CPU   0.07448ms  CUDA   0.80802ms
+Network       CPU   5.15272ms  CUDA  52.89385ms  CPU  21.10721ms  CUDA  17.06974ms
+Post-Process  CPU   0.19469ms  CUDA   3.69953ms  CPU   0.06406ms  CUDA   0.08734ms
+Visualize     CPU   0.13683ms  CUDA   1.55271ms  CPU   0.26516ms  CUDA   4.46521ms
+Total         CPU   6.81349ms  CUDA  61.32739ms  CPU  22.57501ms  CUDA  20.97719ms
+
+Pre-Process   CPU   0.13537ms  CUDA   3.24510ms  CPU   0.04469ms  CUDA   0.79526ms
+Network       CPU   5.23726ms  CUDA  52.49995ms  CPU  21.17674ms  CUDA  16.93667ms
+Post-Process  CPU   0.07391ms  CUDA   3.64458ms  CPU   0.09745ms  CUDA   0.06396ms
+Visualize     CPU   0.17480ms  CUDA   1.57594ms  CPU   0.18995ms  CUDA   4.43302ms
+Total         CPU   5.62133ms  CUDA  60.96557ms  CPU  21.45425ms  CUDA  20.97089ms
+
+Pre-Process   CPU   0.38923ms  CUDA   3.40646ms  CPU   0.08807ms  CUDA   0.79813ms
+Network       CPU   5.80701ms  CUDA  50.90953ms  CPU  21.61431ms  CUDA  16.83078ms
+Post-Process  CPU   0.19063ms  CUDA   3.73026ms  CPU   0.14365ms  CUDA   0.09687ms
+Visualize     CPU   0.26553ms  CUDA   1.62255ms  CPU   0.27001ms  CUDA   4.39984ms
+Total         CPU   6.65240ms  CUDA  59.66880ms  CPU  22.23526ms  CUDA  21.76948ms
+
+Pre-Process   CPU   0.11693ms  CUDA   4.41651ms  CPU   0.10891ms  CUDA   0.79536ms
+Network       CPU   5.12028ms  CUDA  50.84792ms  CPU  21.15997ms  CUDA  17.42479ms
+Post-Process  CPU   0.26912ms  CUDA   3.71130ms  CPU   0.06172ms  CUDA   0.14287ms
+Visualize     CPU   0.12943ms  CUDA   1.57958ms  CPU   0.25995ms  CUDA   4.42984ms
+Total         CPU   5.63576ms  CUDA  60.55531ms  CPU  21.44753ms  CUDA  22.39411ms
+
+Pre-Process   CPU   0.12256ms  CUDA   4.26646ms  CPU   0.08750ms  CUDA   0.82552ms
+Network       CPU   5.40429ms  CUDA  52.57682ms  CPU  21.49451ms  CUDA  17.08958ms
+Post-Process  CPU   0.19105ms  CUDA   3.67641ms  CPU   0.20131ms  CUDA   0.06250ms
+Visualize     CPU   0.35095ms  CUDA   1.72917ms  CPU   0.26771ms  CUDA   4.47406ms
+Total         CPU   6.06884ms  CUDA  62.24886ms  CPU  21.90588ms  CUDA  22.49203ms
+
+Pre-Process   CPU   0.14370ms  CUDA   4.24219ms  CPU   0.13646ms  CUDA   0.82995ms
+Network       CPU   5.41158ms  CUDA  51.26021ms  CPU  20.96846ms  CUDA  17.25630ms
+Post-Process  CPU   0.15839ms  CUDA   3.70370ms  CPU   0.07109ms  CUDA   0.13932ms
+Visualize     CPU   0.13881ms  CUDA   1.59083ms  CPU   0.26725ms  CUDA   4.43630ms
+Total         CPU   5.85248ms  CUDA  60.79693ms  CPU  21.31972ms  CUDA  22.07635ms
+
+Pre-Process   CPU   0.11823ms  CUDA   4.21552ms  CPU   0.15438ms  CUDA   0.79490ms
+Network       CPU   5.47919ms  CUDA  51.17052ms  CPU  21.30586ms  CUDA  16.96713ms
+Post-Process  CPU   0.29459ms  CUDA   3.76432ms  CPU   0.10115ms  CUDA   0.07214ms
+Visualize     CPU   0.19240ms  CUDA   1.59292ms  CPU   0.35480ms  CUDA   4.41974ms
+Total         CPU   6.08441ms  CUDA  60.74328ms  CPU  21.67962ms  CUDA  22.49166ms
+
+Pre-Process   CPU   0.12568ms  CUDA   4.15641ms  CPU   0.11016ms  CUDA   0.85318ms
+Network       CPU   5.41054ms  CUDA  50.98432ms  CPU  21.47436ms  CUDA  17.32187ms
+Post-Process  CPU   0.19704ms  CUDA   3.69646ms  CPU   0.15641ms  CUDA   0.10109ms
+Visualize     CPU   0.30537ms  CUDA   1.64260ms  CPU   0.32725ms  CUDA   4.39276ms
+Total         CPU   6.03863ms  CUDA  60.47979ms  CPU  21.86660ms  CUDA  22.45740ms
+
+Pre-Process   CPU   0.11636ms  CUDA   4.45234ms  CPU   0.09526ms  CUDA   0.79151ms
+Network       CPU   8.80156ms  CUDA  51.24344ms  CPU  21.19695ms  CUDA  17.35469ms
+Post-Process  CPU   0.12610ms  CUDA   3.69104ms  CPU   0.08453ms  CUDA   0.15479ms
+Visualize     CPU   0.16495ms  CUDA   1.58833ms  CPU   0.41991ms  CUDA   4.43161ms
+Total         CPU   9.20897ms  CUDA  60.97515ms  CPU  21.49311ms  CUDA  22.33453ms
+
+Pre-Process   CPU   0.13912ms  CUDA   3.24042ms  CPU   0.08735ms  CUDA   0.83240ms
+Network       CPU   5.47424ms  CUDA  52.50234ms  CPU  21.03638ms  CUDA  16.96479ms
+Post-Process  CPU   0.13104ms  CUDA   3.69125ms  CPU   0.06156ms  CUDA   0.08500ms
+Visualize     CPU   0.13052ms  CUDA   1.56297ms  CPU   0.26813ms  CUDA   4.42349ms
+Total         CPU   5.87493ms  CUDA  60.99698ms  CPU  21.32440ms  CUDA  20.95359ms
+
+Pre-Process   CPU   0.12339ms  CUDA   3.13443ms  CPU   0.07729ms  CUDA   0.83995ms
+Network       CPU   5.85915ms  CUDA  52.68625ms  CPU  20.92523ms  CUDA  16.81088ms
+Post-Process  CPU   0.20553ms  CUDA   3.66281ms  CPU   0.04464ms  CUDA   0.06234ms
+Visualize     CPU   0.11104ms  CUDA   1.54385ms  CPU   0.16605ms  CUDA   4.39724ms
+Total         CPU   6.29911ms  CUDA  61.02734ms  CPU  21.17055ms  CUDA  20.79354ms
+
+Pre-Process   CPU   0.13078ms  CUDA   4.52203ms  CPU   0.11016ms  CUDA   0.79146ms
+Network       CPU   5.51190ms  CUDA  50.91813ms  CPU  21.06976ms  CUDA  16.82281ms
+Post-Process  CPU   0.23787ms  CUDA   3.76813ms  CPU   0.08974ms  CUDA   0.04484ms
+Visualize     CPU   0.16042ms  CUDA   1.61396ms  CPU   0.32834ms  CUDA   4.37615ms
+Total         CPU   6.04097ms  CUDA  60.82224ms  CPU  21.40045ms  CUDA  22.34495ms
+
+Pre-Process   CPU   0.13703ms  CUDA   3.42234ms  CPU   0.15381ms  CUDA   0.82380ms
+Network       CPU   5.48628ms  CUDA  52.43969ms  CPU  20.81991ms  CUDA  16.90875ms
+Post-Process  CPU   0.12730ms  CUDA   3.66948ms  CPU   0.06261ms  CUDA   0.09037ms
+Visualize     CPU   0.13167ms  CUDA   1.59031ms  CPU   0.26032ms  CUDA   4.35984ms
+Total         CPU   5.88227ms  CUDA  61.12182ms  CPU  21.17336ms  CUDA  20.98635ms
+
+Pre-Process   CPU   0.13354ms  CUDA   3.32859ms  CPU   0.05599ms  CUDA   0.78974ms
+Network       CPU   5.74191ms  CUDA  52.61338ms  CPU  21.16669ms  CUDA  16.71037ms
+Post-Process  CPU   0.08427ms  CUDA   3.62156ms  CPU   0.06979ms  CUDA   0.06391ms
+Visualize     CPU   0.13297ms  CUDA   1.57729ms  CPU   0.26443ms  CUDA   4.43437ms
+Total         CPU   6.09269ms  CUDA  61.14083ms  CPU  21.42602ms  CUDA  21.11875ms
+
+Pre-Process   CPU   0.10625ms  CUDA   3.46438ms  CPU   0.05391ms  CUDA   0.81677ms
+Network       CPU   6.19874ms  CUDA  52.39120ms  CPU  21.06325ms  CUDA  16.90344ms
+Post-Process  CPU   0.18146ms  CUDA   3.69292ms  CPU   0.10860ms  CUDA   0.06995ms
+Visualize     CPU   0.20250ms  CUDA   1.60635ms  CPU   0.20907ms  CUDA   4.39844ms
+Total         CPU   6.68896ms  CUDA  61.15484ms  CPU  21.33201ms  CUDA  21.16021ms
+
+Pre-Process   CPU   0.17292ms  CUDA   4.56714ms  CPU   0.13469ms  CUDA   0.78234ms
+Network       CPU   5.86613ms  CUDA  50.86979ms  CPU  21.11659ms  CUDA  16.80500ms
+Post-Process  CPU   0.23027ms  CUDA   3.75531ms  CPU   0.10500ms  CUDA   0.10849ms
+Visualize     CPU   0.18407ms  CUDA   1.57193ms  CPU   0.32433ms  CUDA   4.38271ms
+Total         CPU   6.45338ms  CUDA  60.76417ms  CPU  21.52920ms  CUDA  22.55828ms
+
+Pre-Process   CPU   0.12792ms  CUDA   3.12714ms  CPU   0.10047ms  CUDA   0.81937ms
+Network       CPU   5.22856ms  CUDA  52.31953ms  CPU  21.03138ms  CUDA  17.06495ms
+Post-Process  CPU   0.18396ms  CUDA   3.68677ms  CPU   0.13110ms  CUDA   0.10682ms
+Visualize     CPU   0.34928ms  CUDA   1.71953ms  CPU   0.26725ms  CUDA   4.37656ms
+Total         CPU   5.88972ms  CUDA  60.85297ms  CPU  21.39086ms  CUDA  20.95312ms
+
+Pre-Process   CPU   0.08084ms  CUDA   3.27328ms  CPU   0.11287ms  CUDA   0.83016ms
+Network       CPU   4.78928ms  CUDA  52.49839ms  CPU  20.93101ms  CUDA  16.86505ms
+Post-Process  CPU   0.27313ms  CUDA   3.78286ms  CPU   0.08370ms  CUDA   0.13078ms
+Visualize     CPU   0.15245ms  CUDA   1.64552ms  CPU   0.26449ms  CUDA   4.41187ms
+Total         CPU   5.29570ms  CUDA  61.20005ms  CPU  21.20841ms  CUDA  21.01885ms
+
+Pre-Process   CPU   0.14803ms  CUDA   4.37912ms  CPU   0.10448ms  CUDA   0.79802ms
+Network       CPU   7.47669ms  CUDA  51.00312ms  CPU  22.08677ms  CUDA  16.86213ms
+Post-Process  CPU   0.12177ms  CUDA   3.63604ms  CPU   0.12349ms  CUDA   0.08542ms
+Visualize     CPU   0.12469ms  CUDA   1.64432ms  CPU   0.22563ms  CUDA   4.62469ms
+Total         CPU   7.87117ms  CUDA  60.66261ms  CPU  22.46276ms  CUDA  23.21818ms
+
+Pre-Process   CPU   0.11849ms  CUDA   3.34849ms  CPU   0.10432ms  CUDA   0.80031ms
+Network       CPU   5.61378ms  CUDA  53.45677ms  CPU  21.26654ms  CUDA  17.92141ms
+Post-Process  CPU   0.14506ms  CUDA   3.66812ms  CPU   0.05313ms  CUDA   0.11734ms
+Visualize     CPU   0.10005ms  CUDA   1.60141ms  CPU   0.25021ms  CUDA   4.61146ms
+Total         CPU   5.97738ms  CUDA  62.07479ms  CPU  21.54248ms  CUDA  21.34203ms
+
+Pre-Process   CPU   0.12709ms  CUDA   3.11089ms  CPU   0.08891ms  CUDA   0.81458ms
+Network       CPU   5.14679ms  CUDA  52.40547ms  CPU  21.78139ms  CUDA  17.12458ms
+Post-Process  CPU   0.15865ms  CUDA   3.65245ms  CPU   0.11110ms  CUDA   0.05438ms
+Visualize     CPU   0.22089ms  CUDA   1.63833ms  CPU   0.28131ms  CUDA   4.58583ms
+Total         CPU   5.65341ms  CUDA  60.80713ms  CPU  22.10849ms  CUDA  21.68333ms
+
+Pre-Process   CPU   0.11599ms  CUDA   3.17198ms  CPU   0.08063ms  CUDA   0.80766ms
+Network       CPU   5.17257ms  CUDA  52.57057ms  CPU  21.40581ms  CUDA  17.65359ms
+Post-Process  CPU   0.17141ms  CUDA   3.66344ms  CPU   0.09844ms  CUDA   0.11120ms
+Visualize     CPU   0.17782ms  CUDA   1.61526ms  CPU   0.43485ms  CUDA   4.60490ms
+Total         CPU   5.63779ms  CUDA  61.02125ms  CPU  21.70087ms  CUDA  21.24781ms
+
+Pre-Process   CPU   0.21464ms  CUDA   3.31047ms  CPU   0.08063ms  CUDA   0.79047ms
+Network       CPU   5.52784ms  CUDA  52.19453ms  CPU  20.88231ms  CUDA  17.18724ms
+Post-Process  CPU   0.14839ms  CUDA   3.70745ms  CPU   0.05672ms  CUDA   0.09813ms
+Visualize     CPU   0.10787ms  CUDA   1.61281ms  CPU   0.24251ms  CUDA   4.55161ms
+Total         CPU   5.99873ms  CUDA  60.82526ms  CPU  21.23430ms  CUDA  20.87865ms
+
+Pre-Process   CPU   0.10245ms  CUDA   3.18839ms  CPU   0.05880ms  CUDA   0.80974ms
+Network       CPU   5.04402ms  CUDA  52.76390ms  CPU  21.66801ms  CUDA  16.70078ms
+Post-Process  CPU   0.09120ms  CUDA   3.62797ms  CPU   0.22745ms  CUDA   0.05766ms
+Visualize     CPU   0.28995ms  CUDA   1.72344ms  CPU   0.29714ms  CUDA   4.59198ms
+Total         CPU   5.52763ms  CUDA  61.30370ms  CPU  22.05672ms  CUDA  21.64797ms
+
+Pre-Process   CPU   0.15094ms  CUDA   3.23630ms  CPU   0.06495ms  CUDA   0.81974ms
+Network       CPU   5.33075ms  CUDA  52.01068ms  CPU  21.22180ms  CUDA  17.41635ms
+Post-Process  CPU   0.24198ms  CUDA   3.72927ms  CPU   0.10974ms  CUDA   0.22349ms
+Visualize     CPU   0.21068ms  CUDA   1.64172ms  CPU   0.28355ms  CUDA   4.63073ms
+Total         CPU   5.93436ms  CUDA  60.61797ms  CPU  21.54743ms  CUDA  21.20542ms
+
+Pre-Process   CPU   0.11271ms  CUDA   3.13344ms  CPU   0.05307ms  CUDA   0.80693ms
+Network       CPU   5.08475ms  CUDA  53.03453ms  CPU  21.33185ms  CUDA  17.05089ms
+Post-Process  CPU   0.13782ms  CUDA   3.66021ms  CPU   0.09953ms  CUDA   0.11130ms
+Visualize     CPU   0.32902ms  CUDA   1.74729ms  CPU   0.19797ms  CUDA   4.56984ms
+Total         CPU   5.66430ms  CUDA  61.57547ms  CPU  21.59717ms  CUDA  21.13088ms
+
+Pre-Process   CPU   0.13063ms  CUDA   3.21755ms  CPU   0.09677ms  CUDA   0.82573ms
+Network       CPU   5.61758ms  CUDA  50.84750ms  CPU  21.39482ms  CUDA  17.07490ms
+Post-Process  CPU   0.18089ms  CUDA   3.70448ms  CPU   0.14287ms  CUDA   0.09682ms
+Visualize     CPU   0.13698ms  CUDA   1.60521ms  CPU   0.30751ms  CUDA   4.58021ms
+Total         CPU   6.06608ms  CUDA  59.37474ms  CPU  21.76509ms  CUDA  21.46052ms
+
+Pre-Process   CPU   0.21469ms  CUDA   3.18078ms  CPU   0.08261ms  CUDA   0.81682ms
+Network       CPU   5.50706ms  CUDA  52.31396ms  CPU  21.23440ms  CUDA  17.25557ms
+Post-Process  CPU   0.14849ms  CUDA   3.65703ms  CPU   0.14813ms  CUDA   0.17057ms
+Visualize     CPU   0.26698ms  CUDA   1.69214ms  CPU   0.26818ms  CUDA   4.61182ms
+Total         CPU   6.13723ms  CUDA  60.84391ms  CPU  21.67983ms  CUDA  21.18349ms
+
+Pre-Process   CPU   0.13255ms  CUDA   3.20375ms  CPU   0.08662ms  CUDA   0.81823ms
+Network       CPU   5.87852ms  CUDA  51.08021ms  CPU  21.05273ms  CUDA  17.03583ms
+Post-Process  CPU   0.11037ms  CUDA   3.65172ms  CPU   0.07136ms  CUDA   0.14864ms
+Visualize     CPU   0.13417ms  CUDA   1.62344ms  CPU   0.26850ms  CUDA   4.57255ms
+Total         CPU   6.25561ms  CUDA  59.55911ms  CPU  21.34326ms  CUDA  20.93505ms
+
+Pre-Process   CPU   0.13828ms  CUDA   4.53010ms  CPU   0.09120ms  CUDA   0.79557ms
+Network       CPU   5.52752ms  CUDA  50.69297ms  CPU  21.04940ms  CUDA  16.86401ms
+Post-Process  CPU   0.13584ms  CUDA   3.67292ms  CPU   0.09625ms  CUDA   0.07172ms
+Visualize     CPU   0.18151ms  CUDA   1.64089ms  CPU   0.36449ms  CUDA   4.61969ms
+Total         CPU   5.98316ms  CUDA  60.53688ms  CPU  21.37514ms  CUDA  22.30281ms
+
+Pre-Process   CPU   0.13162ms  CUDA   3.27396ms  CPU   0.07500ms  CUDA   0.79906ms
+Network       CPU   5.62425ms  CUDA  52.07141ms  CPU  21.47717ms  CUDA  16.87713ms
+Post-Process  CPU   0.11948ms  CUDA   3.73271ms  CPU   0.10990ms  CUDA   0.09651ms
+Visualize     CPU   0.32782ms  CUDA   1.76651ms  CPU   0.23287ms  CUDA   4.65292ms
+Total         CPU   6.20317ms  CUDA  60.84458ms  CPU  21.79368ms  CUDA  21.40526ms
+
+Pre-Process   CPU   0.11214ms  CUDA   3.07656ms  CPU   0.11021ms  CUDA   0.79411ms
+Network       CPU   4.87699ms  CUDA  50.77531ms  CPU  21.68624ms  CUDA  17.22792ms
+Post-Process  CPU   0.17964ms  CUDA   3.73224ms  CPU   0.19058ms  CUDA   0.10927ms
+Visualize     CPU   0.36266ms  CUDA   1.76755ms  CPU   0.36126ms  CUDA   4.61479ms
+Total         CPU   5.53143ms  CUDA  59.35167ms  CPU  22.09916ms  CUDA  21.43766ms
+
+Pre-Process   CPU   0.13089ms  CUDA   3.28000ms  CPU   0.07167ms  CUDA   0.80656ms
+Network       CPU   5.97087ms  CUDA  52.11786ms  CPU  20.97757ms  CUDA  17.36359ms
+Post-Process  CPU   0.10151ms  CUDA   3.69302ms  CPU   0.06219ms  CUDA   0.19094ms
+Visualize     CPU   0.11683ms  CUDA   1.59036ms  CPU   1.30612ms  CUDA   4.58714ms
+Total         CPU   6.32010ms  CUDA  60.68124ms  CPU  21.24232ms  CUDA  20.85042ms
+
+Pre-Process   CPU   0.12620ms  CUDA   4.49318ms  CPU   0.06646ms  CUDA   0.82906ms
+Network       CPU   5.75784ms  CUDA  51.16823ms  CPU  21.16550ms  CUDA  16.67896ms
+Post-Process  CPU   0.09740ms  CUDA   3.69229ms  CPU   0.07146ms  CUDA   0.06240ms
+Visualize     CPU   0.13615ms  CUDA   1.60443ms  CPU   0.57887ms  CUDA   4.52995ms
+Total         CPU   6.11759ms  CUDA  60.95812ms  CPU  21.42962ms  CUDA  22.24911ms
+
+Pre-Process   CPU   0.15094ms  CUDA   4.38292ms  CPU   0.07802ms  CUDA   0.81849ms
+Network       CPU   5.37648ms  CUDA  52.18500ms  CPU  21.49482ms  CUDA  16.86516ms
+Post-Process  CPU   0.23985ms  CUDA   3.68307ms  CPU   0.15943ms  CUDA   0.07229ms
+Visualize     CPU   0.30188ms  CUDA   1.69500ms  CPU   0.23344ms  CUDA   4.59365ms
+Total         CPU   6.06915ms  CUDA  61.94599ms  CPU  21.88322ms  CUDA  22.65219ms
+
+Pre-Process   CPU   0.13599ms  CUDA   3.19339ms  CPU   0.12844ms  CUDA   0.81031ms
+Network       CPU   5.93587ms  CUDA  51.31047ms  CPU  21.52790ms  CUDA  17.29995ms
+Post-Process  CPU   0.24725ms  CUDA   3.79370ms  CPU   0.18178ms  CUDA   0.15901ms
+Visualize     CPU   0.26897ms  CUDA   1.69667ms  CPU   0.33808ms  CUDA   4.59594ms
+Total         CPU   6.58807ms  CUDA  59.99422ms  CPU  21.97411ms  CUDA  21.64156ms
+
+Pre-Process   CPU   0.12552ms  CUDA   4.12828ms  CPU   0.05865ms  CUDA   0.82521ms
+Network       CPU   5.30804ms  CUDA  50.98959ms  CPU  21.21544ms  CUDA  17.43693ms
+Post-Process  CPU   0.09625ms  CUDA   3.64313ms  CPU   0.11386ms  CUDA   0.18604ms
+Visualize     CPU   0.23855ms  CUDA   1.62693ms  CPU   0.23157ms  CUDA   4.41344ms
+Total         CPU   5.76836ms  CUDA  60.38792ms  CPU  21.51347ms  CUDA  21.95953ms
+
+Pre-Process   CPU   0.14589ms  CUDA   3.13135ms  CPU   0.08729ms  CUDA   0.80859ms
+Network       CPU   5.22944ms  CUDA  52.34276ms  CPU  21.34029ms  CUDA  16.90927ms
+Post-Process  CPU   0.12130ms  CUDA   3.61016ms  CPU   0.12172ms  CUDA   0.11339ms
+Visualize     CPU   0.26178ms  CUDA   1.87609ms  CPU   0.27350ms  CUDA   4.42036ms
+Total         CPU   5.75842ms  CUDA  60.96037ms  CPU  21.69519ms  CUDA  21.21198ms
+
+Pre-Process   CPU   0.19224ms  CUDA   3.31719ms  CPU   0.04833ms  CUDA   0.79281ms
+Network       CPU   7.24001ms  CUDA  52.01464ms  CPU  20.79762ms  CUDA  17.16615ms
+Post-Process  CPU   0.16443ms  CUDA   3.64859ms  CPU   0.04828ms  CUDA   0.12167ms
+Visualize     CPU   0.09630ms  CUDA   1.55943ms  CPU   0.18266ms  CUDA   4.56271ms
+Total         CPU   7.69299ms  CUDA  60.53984ms  CPU  21.08648ms  CUDA  20.75271ms
+
+Pre-Process   CPU   0.14125ms  CUDA   3.17026ms  CPU   0.08208ms  CUDA   0.84365ms
+Network       CPU   5.18897ms  CUDA  52.34005ms  CPU  21.06883ms  CUDA  16.54333ms
+Post-Process  CPU   0.10594ms  CUDA   3.68375ms  CPU   0.18839ms  CUDA   0.04854ms
+Visualize     CPU   0.17516ms  CUDA   1.63333ms  CPU   0.40277ms  CUDA   4.54266ms
+Total         CPU   5.61133ms  CUDA  60.82740ms  CPU  21.48056ms  CUDA  20.97917ms
+
+Pre-Process   CPU   0.12016ms  CUDA   3.17833ms  CPU   0.10474ms  CUDA   0.81156ms
+Network       CPU   5.27268ms  CUDA  52.14953ms  CPU  21.71426ms  CUDA  16.81292ms
+Post-Process  CPU   0.16849ms  CUDA   3.71906ms  CPU   0.17318ms  CUDA   0.18443ms
+Visualize     CPU   0.31464ms  CUDA   1.70818ms  CPU   0.36506ms  CUDA   4.58797ms
+Total         CPU   5.87597ms  CUDA  60.75510ms  CPU  22.11234ms  CUDA  21.72589ms
+
+Pre-Process   CPU   0.20740ms  CUDA   3.22604ms  CPU   0.06859ms  CUDA   0.81859ms
+Network       CPU   5.17689ms  CUDA  52.10432ms  CPU  21.19414ms  CUDA  17.55635ms
+Post-Process  CPU   0.14329ms  CUDA   3.64380ms  CPU   0.04761ms  CUDA   0.17260ms
+Visualize     CPU   0.11172ms  CUDA   1.59458ms  CPU   0.27105ms  CUDA   4.61349ms
+Total         CPU   5.63930ms  CUDA  60.56875ms  CPU  21.51774ms  CUDA  21.11885ms
+
+Pre-Process   CPU   0.19584ms  CUDA   4.48141ms  CPU   0.13500ms  CUDA   0.81359ms
+Network       CPU   5.31090ms  CUDA  50.75328ms  CPU  21.61410ms  CUDA  17.03214ms
+Post-Process  CPU   0.13906ms  CUDA   3.67750ms  CPU   0.18927ms  CUDA   0.04708ms
+Visualize     CPU   0.36746ms  CUDA   1.76891ms  CPU   0.34084ms  CUDA   4.61865ms
+Total         CPU   6.01326ms  CUDA  60.68110ms  CPU  22.13422ms  CUDA  22.95432ms
+
+Pre-Process   CPU   0.22204ms  CUDA   4.55896ms  CPU   0.08266ms  CUDA   0.84083ms
+Network       CPU   5.49101ms  CUDA  50.99396ms  CPU  21.23529ms  CUDA  17.44297ms
+Post-Process  CPU   0.12021ms  CUDA   3.70932ms  CPU   0.12354ms  CUDA   0.18911ms
+Visualize     CPU   0.33954ms  CUDA   1.64750ms  CPU   0.28204ms  CUDA   4.68802ms
+Total         CPU   6.17280ms  CUDA  60.90974ms  CPU  21.66353ms  CUDA  22.42062ms
+
+Pre-Process   CPU   0.10537ms  CUDA   4.42542ms  CPU   0.11860ms  CUDA   0.81375ms
+Network       CPU   5.36643ms  CUDA  50.79583ms  CPU  21.30274ms  CUDA  16.92443ms
+Post-Process  CPU   0.19849ms  CUDA   3.70135ms  CPU   0.25933ms  CUDA   0.12349ms
+Visualize     CPU   0.09808ms  CUDA   1.56604ms  CPU   0.22027ms  CUDA   4.55719ms
+Total         CPU   5.76836ms  CUDA  60.48865ms  CPU  21.78603ms  CUDA  22.74146ms
+
+Pre-Process   CPU   0.12755ms  CUDA   4.43932ms  CPU   0.05182ms  CUDA   0.80339ms
+Network       CPU   5.52518ms  CUDA  52.25021ms  CPU  21.52717ms  CUDA  17.25172ms
+Post-Process  CPU   0.12245ms  CUDA   3.70031ms  CPU   0.14240ms  CUDA   0.26094ms
+Visualize     CPU   0.17928ms  CUDA   1.70490ms  CPU   0.20537ms  CUDA   4.58552ms
+Total         CPU   5.95446ms  CUDA  62.09474ms  CPU  21.84895ms  CUDA  22.60104ms
+
+Pre-Process   CPU   0.13985ms  CUDA   4.13807ms  CPU   0.10360ms  CUDA   0.81927ms
+Network       CPU   5.45549ms  CUDA  51.28083ms  CPU  21.42784ms  CUDA  17.20021ms
+Post-Process  CPU   0.20240ms  CUDA   3.77120ms  CPU   0.04510ms  CUDA   0.14224ms
+Visualize     CPU   0.11130ms  CUDA   1.58557ms  CPU   0.26558ms  CUDA   4.51786ms
+Total         CPU   5.90905ms  CUDA  60.77568ms  CPU  21.71639ms  CUDA  22.28401ms
+
+Pre-Process   CPU   0.16011ms  CUDA   3.29339ms  CPU   0.06859ms  CUDA   0.83458ms
+Network       CPU   5.89910ms  CUDA  51.97349ms  CPU  21.40571ms  CUDA  17.26583ms
+Post-Process  CPU   0.10880ms  CUDA   3.66109ms  CPU   0.13651ms  CUDA   0.04552ms
+Visualize     CPU   0.25188ms  CUDA   1.71146ms  CPU   0.27084ms  CUDA   4.58693ms
+Total         CPU   6.41989ms  CUDA  60.63942ms  CPU  21.77092ms  CUDA  21.36166ms
+
+Pre-Process   CPU   0.10802ms  CUDA   3.16995ms  CPU   0.06849ms  CUDA   0.80458ms
+Network       CPU   5.02632ms  CUDA  52.26115ms  CPU  22.10041ms  CUDA  17.12703ms
+Post-Process  CPU   0.10125ms  CUDA   3.69130ms  CPU   0.04880ms  CUDA   0.13667ms
+Visualize     CPU   0.08703ms  CUDA   1.57823ms  CPU   0.16407ms  CUDA   4.65271ms
+Total         CPU   5.32263ms  CUDA  60.70063ms  CPU  22.32573ms  CUDA  21.84031ms
+
+Pre-Process   CPU   0.13052ms  CUDA   3.30865ms  CPU   0.13881ms  CUDA   0.81005ms
+Network       CPU   5.22215ms  CUDA  52.02573ms  CPU  20.76569ms  CUDA  17.81151ms
+Post-Process  CPU   0.15651ms  CUDA   3.72057ms  CPU   0.07907ms  CUDA   0.04880ms
+Visualize     CPU   0.14099ms  CUDA   1.56016ms  CPU   0.26199ms  CUDA   4.58766ms
+Total         CPU   5.65018ms  CUDA  60.61511ms  CPU  21.11409ms  CUDA  20.82589ms
+
+Pre-Process   CPU   0.15172ms  CUDA   4.32099ms  CPU   0.10771ms  CUDA   0.81125ms
+Network       CPU   5.46742ms  CUDA  50.96922ms  CPU  20.95752ms  CUDA  16.62177ms
+Post-Process  CPU   0.25256ms  CUDA   3.69318ms  CPU   0.05047ms  CUDA   0.08422ms
+Visualize     CPU   0.11016ms  CUDA   1.58021ms  CPU   0.27506ms  CUDA   4.44755ms
+Total         CPU   5.98186ms  CUDA  60.56359ms  CPU  21.26742ms  CUDA  22.08719ms
+
+Pre-Process   CPU   0.13141ms  CUDA   3.14964ms  CPU   0.08755ms  CUDA   0.77838ms
+Network       CPU   5.37388ms  CUDA  52.26703ms  CPU  21.47279ms  CUDA  16.93609ms
+Post-Process  CPU   0.20724ms  CUDA   3.72740ms  CPU   0.15396ms  CUDA   0.05172ms
+Visualize     CPU   0.12896ms  CUDA   1.58604ms  CPU   0.29037ms  CUDA   4.55271ms
+Total         CPU   5.84149ms  CUDA  60.73010ms  CPU  21.84572ms  CUDA  21.32240ms
+
+Pre-Process   CPU   0.39105ms  CUDA   3.32443ms  CPU   0.05037ms  CUDA   0.79922ms
+Network       CPU   5.27419ms  CUDA  52.05323ms  CPU  21.46576ms  CUDA  17.31463ms
+Post-Process  CPU   0.13521ms  CUDA   3.66969ms  CPU   0.12063ms  CUDA   0.05891ms
+Visualize     CPU   0.08526ms  CUDA   1.63333ms  CPU   0.17401ms  CUDA   4.59714ms
+Total         CPU   5.88571ms  CUDA  60.68068ms  CPU  22.02781ms  CUDA  21.45849ms
+
+Pre-Process   CPU   0.13271ms  CUDA   4.35693ms  CPU   0.07037ms  CUDA   0.81406ms
+Network       CPU   5.45711ms  CUDA  50.76708ms  CPU  21.13492ms  CUDA  17.19802ms
+Post-Process  CPU   0.14849ms  CUDA   3.71500ms  CPU   0.13042ms  CUDA   0.12198ms
+Visualize     CPU   0.24188ms  CUDA   1.64021ms  CPU   0.31032ms  CUDA   4.62687ms
+Total         CPU   5.98019ms  CUDA  60.47922ms  CPU  21.46842ms  CUDA  22.22265ms
+
+Pre-Process   CPU   0.12099ms  CUDA   3.24089ms  CPU   0.06167ms  CUDA   0.81802ms
+Network       CPU   5.34809ms  CUDA  52.12885ms  CPU  21.00737ms  CUDA  16.91359ms
+Post-Process  CPU   0.10339ms  CUDA   3.60120ms  CPU   0.05458ms  CUDA   0.13411ms
+Visualize     CPU   0.09448ms  CUDA   1.60516ms  CPU   0.19709ms  CUDA   4.61000ms
+Total         CPU   5.66696ms  CUDA  60.57609ms  CPU  21.24461ms  CUDA  20.95708ms
+
+Pre-Process   CPU   0.28469ms  CUDA   3.15849ms  CPU   0.06943ms  CUDA   0.80979ms
+Network       CPU   4.77844ms  CUDA  52.34031ms  CPU  21.66978ms  CUDA  16.85193ms
+Post-Process  CPU   0.23256ms  CUDA   3.74708ms  CPU   0.10464ms  CUDA   0.05448ms
+Visualize     CPU   0.20011ms  CUDA   1.65417ms  CPU   0.31938ms  CUDA   4.59906ms
+Total         CPU   5.49581ms  CUDA  60.90005ms  CPU  22.12854ms  CUDA  21.60375ms
+
+Pre-Process   CPU   0.14912ms  CUDA   3.12521ms  CPU   0.07729ms  CUDA   0.81563ms
+Network       CPU   5.08918ms  CUDA  52.50125ms  CPU  21.32373ms  CUDA  17.52453ms
+Post-Process  CPU   0.25610ms  CUDA   3.75578ms  CPU   0.13193ms  CUDA   0.10510ms
+Visualize     CPU   0.23938ms  CUDA   1.65146ms  CPU   0.28396ms  CUDA   4.64719ms
+Total         CPU   5.73378ms  CUDA  61.03370ms  CPU  21.68207ms  CUDA  21.15073ms
+
+Pre-Process   CPU   0.14391ms  CUDA   3.15422ms  CPU   0.07880ms  CUDA   0.82646ms
+Network       CPU   5.79738ms  CUDA  52.33635ms  CPU  21.27065ms  CUDA  17.06776ms
+Post-Process  CPU   0.10860ms  CUDA   3.68500ms  CPU   0.06823ms  CUDA   0.13130ms
+Visualize     CPU   0.13500ms  CUDA   1.60891ms  CPU   0.26594ms  CUDA   4.56713ms
+Total         CPU   6.18488ms  CUDA  60.78448ms  CPU  21.56160ms  CUDA  21.10042ms
+
+Pre-Process   CPU   0.09568ms  CUDA   4.50313ms  CPU   0.08823ms  CUDA   0.79912ms
+Network       CPU   5.66555ms  CUDA  50.87776ms  CPU  21.24284ms  CUDA  17.07844ms
+Post-Process  CPU   0.11802ms  CUDA   3.59854ms  CPU   0.05333ms  CUDA   0.06865ms
+Visualize     CPU   0.09693ms  CUDA   1.55630ms  CPU   0.21047ms  CUDA   4.64740ms
+Total         CPU   5.97618ms  CUDA  60.53573ms  CPU  21.48009ms  CUDA  22.47240ms
+
+Pre-Process   CPU   0.17224ms  CUDA   3.18427ms  CPU   0.08917ms  CUDA   0.80677ms
+Network       CPU   6.06551ms  CUDA  52.33130ms  CPU  21.22227ms  CUDA  17.10802ms
+Post-Process  CPU   0.13547ms  CUDA   3.69156ms  CPU   0.08615ms  CUDA   0.05448ms
+Visualize     CPU   0.17412ms  CUDA   1.65156ms  CPU   0.36568ms  CUDA   4.47609ms
+Total         CPU   6.54734ms  CUDA  60.85870ms  CPU  21.56983ms  CUDA  21.10297ms
+
+Pre-Process   CPU   0.18141ms  CUDA   3.25302ms  CPU   0.07953ms  CUDA   0.83161ms
+Network       CPU   5.07845ms  CUDA  52.39995ms  CPU  21.70566ms  CUDA  16.99958ms
+Post-Process  CPU   0.18589ms  CUDA   3.68026ms  CPU   0.15401ms  CUDA   0.08750ms
+Visualize     CPU   0.28792ms  CUDA   1.70411ms  CPU   0.28855ms  CUDA   4.63271ms
+Total         CPU   5.73368ms  CUDA  61.03734ms  CPU  22.12062ms  CUDA  21.64750ms
+
+Pre-Process   CPU   0.07672ms  CUDA   4.23130ms  CPU   0.10172ms  CUDA   0.80187ms
+Network       CPU   5.43414ms  CUDA  51.10474ms  CPU  21.81978ms  CUDA  17.43776ms
+Post-Process  CPU   0.23855ms  CUDA   3.71161ms  CPU   0.07641ms  CUDA   0.15484ms
+Visualize     CPU   0.12469ms  CUDA   1.61167ms  CPU   0.23433ms  CUDA   4.63271ms
+Total         CPU   5.87409ms  CUDA  60.65932ms  CPU  22.07463ms  CUDA  22.80260ms
+
+Pre-Process   CPU   0.11235ms  CUDA   3.24734ms  CPU   0.06578ms  CUDA   0.81479ms
+Network       CPU   5.37653ms  CUDA  52.08146ms  CPU  21.09877ms  CUDA  17.66484ms
+Post-Process  CPU   0.16308ms  CUDA   3.70989ms  CPU   0.11526ms  CUDA   0.09167ms
+Visualize     CPU   0.25042ms  CUDA   1.69568ms  CPU   0.22469ms  CUDA   4.63031ms
+Total         CPU   5.90238ms  CUDA  60.73438ms  CPU  21.39217ms  CUDA  21.02953ms
+
+Pre-Process   CPU   0.18594ms  CUDA   3.29740ms  CPU   0.11443ms  CUDA   0.81963ms
+Network       CPU   5.77826ms  CUDA  52.02229ms  CPU  22.36406ms  CUDA  16.84786ms
+Post-Process  CPU   0.26641ms  CUDA   3.71375ms  CPU   0.10792ms  CUDA   0.11469ms
+Visualize     CPU   0.24511ms  CUDA   1.63729ms  CPU   0.28480ms  CUDA   4.62297ms
+Total         CPU   6.47573ms  CUDA  60.67073ms  CPU  22.77235ms  CUDA  22.48880ms
+
+Pre-Process   CPU   0.19912ms  CUDA   4.09448ms  CPU   0.05776ms  CUDA   0.82234ms
+Network       CPU   6.01884ms  CUDA  51.27453ms  CPU  21.68868ms  CUDA  18.26213ms
+Post-Process  CPU   0.14063ms  CUDA   3.67620ms  CPU   0.07307ms  CUDA   0.10693ms
+Visualize     CPU   0.13433ms  CUDA   1.62896ms  CPU   0.29485ms  CUDA   4.56708ms
+Total         CPU   6.49291ms  CUDA  60.67417ms  CPU  22.01864ms  CUDA  22.40734ms
+
+Pre-Process   CPU   0.36574ms  CUDA   4.19412ms  CPU   0.12907ms  CUDA   0.80729ms
+Network       CPU   5.19971ms  CUDA  50.94255ms  CPU  21.87536ms  CUDA  17.43141ms
+Post-Process  CPU   0.29522ms  CUDA   3.74661ms  CPU   0.18761ms  CUDA   0.07417ms
+Visualize     CPU   0.34110ms  CUDA   1.68552ms  CPU   0.36199ms  CUDA   4.61583ms
+Total         CPU   6.20176ms  CUDA  60.56880ms  CPU  22.55777ms  CUDA  22.92755ms
+
+Pre-Process   CPU   0.19954ms  CUDA   4.19646ms  CPU   0.11073ms  CUDA   0.81302ms
+Network       CPU   5.55294ms  CUDA  51.03578ms  CPU  21.41904ms  CUDA  17.73198ms
+Post-Process  CPU   0.22615ms  CUDA   3.75333ms  CPU   0.20355ms  CUDA   0.18844ms
+Visualize     CPU   0.26313ms  CUDA   1.71474ms  CPU   0.35615ms  CUDA   4.63365ms
+Total         CPU   6.24176ms  CUDA  60.70031ms  CPU  21.93286ms  CUDA  22.40813ms
+
+Pre-Process   CPU   0.15011ms  CUDA   3.93245ms  CPU   0.08297ms  CUDA   0.81719ms
+Network       CPU   5.16694ms  CUDA  51.34114ms  CPU  21.82504ms  CUDA  17.19000ms
+Post-Process  CPU   0.13802ms  CUDA   3.68891ms  CPU   0.13974ms  CUDA   0.20448ms
+Visualize     CPU   0.29798ms  CUDA   1.68422ms  CPU   0.42001ms  CUDA   4.57927ms
+Total         CPU   5.75305ms  CUDA  60.64672ms  CPU  22.19786ms  CUDA  22.48812ms
+
+Pre-Process   CPU   0.11167ms  CUDA   3.29219ms  CPU   0.10157ms  CUDA   0.82641ms
+Network       CPU   5.09236ms  CUDA  52.17792ms  CPU  21.19044ms  CUDA  17.56979ms
+Post-Process  CPU   0.14474ms  CUDA   3.61901ms  CPU   0.10282ms  CUDA   0.15948ms
+Visualize     CPU   0.19407ms  CUDA   1.60687ms  CPU   0.47053ms  CUDA   4.56807ms
+Total         CPU   5.54284ms  CUDA  60.69599ms  CPU  21.50649ms  CUDA  21.28141ms
+
+Pre-Process   CPU   0.13052ms  CUDA   3.25750ms  CPU   0.09281ms  CUDA   0.82198ms
+Network       CPU   5.16554ms  CUDA  52.12750ms  CPU  21.78129ms  CUDA  17.06562ms
+Post-Process  CPU   0.12870ms  CUDA   3.69740ms  CPU   0.10932ms  CUDA   0.10161ms
+Visualize     CPU   0.22553ms  CUDA   1.65083ms  CPU   0.37938ms  CUDA   4.47787ms
+Total         CPU   5.65029ms  CUDA  60.73323ms  CPU  22.11396ms  CUDA  21.73182ms
+
+Pre-Process   CPU   0.14068ms  CUDA   3.25734ms  CPU   0.08557ms  CUDA   0.81146ms
+Network       CPU   5.58805ms  CUDA  51.25474ms  CPU  21.00153ms  CUDA  17.55365ms
+Post-Process  CPU   0.27219ms  CUDA   3.84151ms  CPU   0.50543ms  CUDA   0.10922ms
+Visualize     CPU   0.21912ms  CUDA   1.71677ms  CPU   0.27865ms  CUDA   4.57620ms
+Total         CPU   6.22004ms  CUDA  60.07036ms  CPU  21.73322ms  CUDA  20.89130ms
+
+Pre-Process   CPU   0.11823ms  CUDA   3.21771ms  CPU   0.10922ms  CUDA   0.82510ms
+Network       CPU   5.56107ms  CUDA  52.12766ms  CPU  21.21648ms  CUDA  16.74849ms
+Post-Process  CPU   0.24688ms  CUDA   3.70417ms  CPU   0.12979ms  CUDA   0.06036ms
+Visualize     CPU   0.21589ms  CUDA   1.66719ms  CPU   0.25282ms  CUDA   4.62823ms
+Total         CPU   6.14207ms  CUDA  60.71672ms  CPU  21.57373ms  CUDA  21.30442ms
+
+Pre-Process   CPU   0.13776ms  CUDA   4.24526ms  CPU   0.07860ms  CUDA   0.79703ms
+Network       CPU   5.83738ms  CUDA  51.06760ms  CPU  21.60618ms  CUDA  17.16036ms
+Post-Process  CPU   0.15651ms  CUDA   3.76677ms  CPU   0.17219ms  CUDA   0.12932ms
+Visualize     CPU   0.32558ms  CUDA   1.67339ms  CPU   0.36136ms  CUDA   4.54391ms
+Total         CPU   6.45723ms  CUDA  60.75302ms  CPU  21.99473ms  CUDA  22.52104ms
+
+Pre-Process   CPU   0.14579ms  CUDA   3.28578ms  CPU   0.09537ms  CUDA   0.81016ms
+Network       CPU   5.76347ms  CUDA  52.30437ms  CPU  20.68455ms  CUDA  17.29266ms
+Post-Process  CPU   0.23188ms  CUDA   3.73677ms  CPU   0.05365ms  CUDA   0.17297ms
+Visualize     CPU   0.11740ms  CUDA   1.58838ms  CPU   0.34391ms  CUDA   4.62146ms
+Total         CPU   6.25853ms  CUDA  60.91531ms  CPU  20.97935ms  CUDA  20.69146ms
+
+Pre-Process   CPU   0.14151ms  CUDA   4.30870ms  CPU   0.07495ms  CUDA   0.78979ms
+Network       CPU   5.68977ms  CUDA  51.14193ms  CPU  21.80171ms  CUDA  16.56146ms
+Post-Process  CPU   0.19261ms  CUDA   3.66599ms  CPU   0.08386ms  CUDA   0.05443ms
+Visualize     CPU   0.16730ms  CUDA   1.63615ms  CPU   0.28360ms  CUDA   4.57380ms
+Total         CPU   6.19119ms  CUDA  60.75276ms  CPU  22.10203ms  CUDA  22.85135ms
+
+Pre-Process   CPU   0.16386ms  CUDA   4.18865ms  CPU   0.11813ms  CUDA   0.81635ms
+Network       CPU   5.58560ms  CUDA  51.24213ms  CPU  21.07044ms  CUDA  17.63229ms
+Post-Process  CPU   0.27516ms  CUDA   3.70500ms  CPU   0.09146ms  CUDA   0.09401ms
+Visualize     CPU   0.17401ms  CUDA   1.59016ms  CPU   0.34579ms  CUDA   4.60375ms
+Total         CPU   6.19864ms  CUDA  60.72594ms  CPU  21.44388ms  CUDA  22.18661ms
+
+Pre-Process   CPU   0.14756ms  CUDA   3.14760ms  CPU   0.17084ms  CUDA   0.79786ms
+Network       CPU   5.53883ms  CUDA  51.22328ms  CPU  21.59493ms  CUDA  17.10745ms
+Post-Process  CPU   0.28834ms  CUDA   3.75266ms  CPU   0.28313ms  CUDA   0.09266ms
+Visualize     CPU   0.38324ms  CUDA   1.73250ms  CPU   0.37365ms  CUDA   4.57406ms
+Total         CPU   6.35796ms  CUDA  59.85604ms  CPU  22.19646ms  CUDA  21.74411ms
+
+Pre-Process   CPU   0.15162ms  CUDA   4.24417ms  CPU   0.27511ms  CUDA   0.82167ms
+Network       CPU   5.78904ms  CUDA  51.02745ms  CPU  20.84252ms  CUDA  17.57391ms
+Post-Process  CPU   0.16454ms  CUDA   3.68729ms  CPU   0.07792ms  CUDA   0.20094ms
+Visualize     CPU   0.17750ms  CUDA   1.61963ms  CPU   0.36756ms  CUDA   4.58948ms
+Total         CPU   6.28270ms  CUDA  60.57854ms  CPU  21.34716ms  CUDA  22.04646ms
+
+Pre-Process   CPU   0.14891ms  CUDA   4.03312ms  CPU   0.07063ms  CUDA   0.82656ms
+Network       CPU   5.36684ms  CUDA  52.39797ms  CPU  22.83522ms  CUDA  16.89729ms
+Post-Process  CPU   0.11537ms  CUDA   3.67891ms  CPU   0.05802ms  CUDA   0.07844ms
+Visualize     CPU   0.11943ms  CUDA   1.68594ms  CPU   0.24271ms  CUDA   4.58146ms
+Total         CPU   5.75055ms  CUDA  61.79594ms  CPU  23.11278ms  CUDA  23.48646ms
+
+Pre-Process   CPU   0.14084ms  CUDA   3.24292ms  CPU   0.05839ms  CUDA   0.78880ms
+Network       CPU   5.33893ms  CUDA  52.02662ms  CPU  21.71613ms  CUDA  18.60568ms
+Post-Process  CPU   0.10094ms  CUDA   3.60698ms  CPU   0.09526ms  CUDA   0.05885ms
+Visualize     CPU   0.16625ms  CUDA   1.63719ms  CPU   0.24980ms  CUDA   4.58088ms
+Total         CPU   5.74696ms  CUDA  60.51370ms  CPU  22.01062ms  CUDA  21.63026ms
+
+Pre-Process   CPU   0.10927ms  CUDA   3.14177ms  CPU   0.07432ms  CUDA   0.78490ms
+Network       CPU   5.17153ms  CUDA  52.47328ms  CPU  21.20716ms  CUDA  17.50115ms
+Post-Process  CPU   0.23771ms  CUDA   3.81953ms  CPU   0.07089ms  CUDA   0.10130ms
+Visualize     CPU   0.14417ms  CUDA   1.59203ms  CPU   0.27719ms  CUDA   4.61031ms
+Total         CPU   5.66268ms  CUDA  61.02662ms  CPU  21.46165ms  CUDA  20.96927ms
+
+Pre-Process   CPU   0.12787ms  CUDA   3.27656ms  CPU   0.05537ms  CUDA   0.82281ms
+Network       CPU   5.49247ms  CUDA  52.16755ms  CPU  21.39456ms  CUDA  16.93328ms
+Post-Process  CPU   0.16553ms  CUDA   3.62630ms  CPU   0.10495ms  CUDA   0.07141ms
+Visualize     CPU   0.16407ms  CUDA   1.65307ms  CPU   0.24798ms  CUDA   4.60109ms
+Total         CPU   5.94993ms  CUDA  60.72349ms  CPU  21.68275ms  CUDA  21.41036ms
+
+Pre-Process   CPU   0.12302ms  CUDA   3.16823ms  CPU   0.10750ms  CUDA   0.80208ms
+Network       CPU   5.44497ms  CUDA  51.20432ms  CPU  21.48389ms  CUDA  17.22401ms
+Post-Process  CPU   0.25047ms  CUDA   3.70193ms  CPU   0.16693ms  CUDA   0.10771ms
+Visualize     CPU   0.18276ms  CUDA   1.58953ms  CPU   0.26735ms  CUDA   4.48573ms
+Total         CPU   6.00124ms  CUDA  59.66401ms  CPU  21.88135ms  CUDA  21.48401ms
+
+Pre-Process   CPU   0.15834ms  CUDA   3.18995ms  CPU   0.10943ms  CUDA   0.81693ms
+Network       CPU   6.24264ms  CUDA  52.27489ms  CPU  21.71785ms  CUDA  17.32724ms
+Post-Process  CPU   0.19303ms  CUDA   3.74911ms  CPU   0.13250ms  CUDA   0.17161ms
+Visualize     CPU   0.13255ms  CUDA   1.61286ms  CPU   0.20292ms  CUDA   4.60266ms
+Total         CPU   6.72656ms  CUDA  60.82682ms  CPU  22.11812ms  CUDA  21.69969ms
+
+Pre-Process   CPU   0.14495ms  CUDA   4.12328ms  CPU   0.09974ms  CUDA   0.84662ms
+Network       CPU   5.17903ms  CUDA  51.42958ms  CPU  21.44748ms  CUDA  17.50792ms
+Post-Process  CPU   0.26042ms  CUDA   3.76771ms  CPU   0.15323ms  CUDA   0.15521ms
+Visualize     CPU   0.33095ms  CUDA   1.66990ms  CPU   0.43392ms  CUDA   4.61536ms
+Total         CPU   5.91535ms  CUDA  60.99047ms  CPU  21.84541ms  CUDA  22.45630ms
+
+Pre-Process   CPU   0.12729ms  CUDA   4.28047ms  CPU   0.08552ms  CUDA   0.80641ms
+Network       CPU   5.44440ms  CUDA  51.07818ms  CPU  21.57076ms  CUDA  17.37203ms
+Post-Process  CPU   0.20636ms  CUDA   3.66974ms  CPU   0.17500ms  CUDA   0.15458ms
+Visualize     CPU   0.31688ms  CUDA   1.70839ms  CPU   0.36016ms  CUDA   4.63099ms
+Total         CPU   6.09493ms  CUDA  60.73677ms  CPU  21.95858ms  CUDA  22.63927ms
+
+Pre-Process   CPU   0.13282ms  CUDA   3.14854ms  CPU   0.10974ms  CUDA   0.82240ms
+Network       CPU   5.66867ms  CUDA  51.16953ms  CPU  20.94507ms  CUDA  17.36156ms
+Post-Process  CPU   0.24870ms  CUDA   3.70182ms  CPU   0.08380ms  CUDA   0.17484ms
+Visualize     CPU   0.17891ms  CUDA   1.65859ms  CPU   0.37615ms  CUDA   4.61635ms
+Total         CPU   6.22910ms  CUDA  59.67849ms  CPU  21.27143ms  CUDA  20.91974ms
+
+Pre-Process   CPU   0.15912ms  CUDA   3.09146ms  CPU   0.06250ms  CUDA   0.83427ms
+Network       CPU   5.05996ms  CUDA  52.30750ms  CPU  21.03742ms  CUDA  16.85276ms
+Post-Process  CPU   0.16245ms  CUDA   3.66984ms  CPU   0.07745ms  CUDA   0.08417ms
+Visualize     CPU   0.14052ms  CUDA   1.61203ms  CPU   0.29188ms  CUDA   4.57443ms
+Total         CPU   5.52206ms  CUDA  60.68083ms  CPU  21.33649ms  CUDA  20.80589ms
+
+Pre-Process   CPU   0.08912ms  CUDA   3.11641ms  CPU   0.07052ms  CUDA   0.80813ms
+Network       CPU   5.52820ms  CUDA  50.94542ms  CPU  21.24070ms  CUDA  16.82781ms
+Post-Process  CPU   0.11974ms  CUDA   3.70161ms  CPU   0.08912ms  CUDA   0.07849ms
+Visualize     CPU   0.17282ms  CUDA   1.60708ms  CPU   0.34225ms  CUDA   4.60995ms
+Total         CPU   5.90988ms  CUDA  59.37052ms  CPU  21.48946ms  CUDA  20.99818ms
+
+Pre-Process   CPU   0.18891ms  CUDA   4.10682ms  CPU   0.07552ms  CUDA   0.81266ms
+Network       CPU   5.37929ms  CUDA  51.38229ms  CPU  21.39102ms  CUDA  16.97922ms
+Post-Process  CPU   0.11865ms  CUDA   3.64005ms  CPU   0.11183ms  CUDA   0.08990ms
+Visualize     CPU   0.24808ms  CUDA   1.66255ms  CPU   0.29209ms  CUDA   4.61667ms
+Total         CPU   5.93493ms  CUDA  60.79172ms  CPU  21.76728ms  CUDA  22.17781ms
+
+Pre-Process   CPU   0.37209ms  CUDA   3.13995ms  CPU   0.09198ms  CUDA   0.80526ms
+Network       CPU   5.82383ms  CUDA  51.22911ms  CPU  21.07169ms  CUDA  17.15344ms
+Post-Process  CPU   0.12490ms  CUDA   3.70271ms  CPU   0.06594ms  CUDA   0.11229ms
+Visualize     CPU   0.12761ms  CUDA   1.64688ms  CPU   0.28834ms  CUDA   4.62599ms
+Total         CPU   6.44843ms  CUDA  59.71865ms  CPU  21.60170ms  CUDA  20.86104ms
+
+Pre-Process   CPU   0.16485ms  CUDA   3.19833ms  CPU   0.05516ms  CUDA   0.82146ms
+Network       CPU   5.67248ms  CUDA  52.12370ms  CPU  21.40191ms  CUDA  16.83281ms
+Post-Process  CPU   0.14235ms  CUDA   3.67802ms  CPU   0.12875ms  CUDA   0.06682ms
+Visualize     CPU   0.26652ms  CUDA   1.66552ms  CPU   0.25558ms  CUDA   4.61620ms
+Total         CPU   6.24619ms  CUDA  60.66557ms  CPU  21.75067ms  CUDA  21.23109ms
+
+Pre-Process   CPU   0.30048ms  CUDA   3.34943ms  CPU   0.07636ms  CUDA   0.82333ms
+Network       CPU   5.82092ms  CUDA  52.07292ms  CPU  21.23430ms  CUDA  17.08177ms
+Post-Process  CPU   0.16735ms  CUDA   3.60432ms  CPU   0.12026ms  CUDA   0.12766ms
+Visualize     CPU   0.29667ms  CUDA   1.65292ms  CPU   0.37839ms  CUDA   4.57510ms
+Total         CPU   6.58541ms  CUDA  60.67958ms  CPU  21.73139ms  CUDA  21.36234ms
+
+Pre-Process   CPU   0.25386ms  CUDA   3.25359ms  CPU   0.07927ms  CUDA   0.81104ms
+Network       CPU   6.13738ms  CUDA  52.84261ms  CPU  22.46402ms  CUDA  17.08266ms
+Post-Process  CPU   0.10771ms  CUDA   3.75719ms  CPU   0.08276ms  CUDA   0.11922ms
+Visualize     CPU   0.17490ms  CUDA   1.77026ms  CPU   0.18375ms  CUDA   4.59562ms
+Total         CPU   6.67385ms  CUDA  61.62365ms  CPU  22.87991ms  CUDA  22.26287ms
+
+Pre-Process   CPU   0.12740ms  CUDA   3.16646ms  CPU   0.08823ms  CUDA   0.81771ms
+Network       CPU   5.10043ms  CUDA  51.17937ms  CPU  21.12034ms  CUDA  18.10964ms
+Post-Process  CPU   0.12683ms  CUDA   3.73260ms  CPU   0.20412ms  CUDA   0.08193ms
+Visualize     CPU   0.12203ms  CUDA   1.60464ms  CPU   0.23798ms  CUDA   4.49969ms
+Total         CPU   5.47669ms  CUDA  59.68307ms  CPU  21.54008ms  CUDA  21.03594ms
+
+Pre-Process   CPU   0.15771ms  CUDA   3.15151ms  CPU   0.08771ms  CUDA   0.79937ms
+Network       CPU   5.24330ms  CUDA  52.25891ms  CPU  21.44706ms  CUDA  16.87141ms
+Post-Process  CPU   0.16266ms  CUDA   3.68417ms  CPU   0.12130ms  CUDA   0.19870ms
+Visualize     CPU   0.27891ms  CUDA   1.76375ms  CPU   0.33985ms  CUDA   4.63427ms
+Total         CPU   5.84259ms  CUDA  60.85833ms  CPU  21.81379ms  CUDA  21.38516ms
+
+Pre-Process   CPU   0.07485ms  CUDA   3.09365ms  CPU   0.10334ms  CUDA   0.78297ms
+Network       CPU   5.83852ms  CUDA  52.32042ms  CPU  21.00513ms  CUDA  17.32901ms
+Post-Process  CPU   0.10745ms  CUDA   3.65479ms  CPU   0.07130ms  CUDA   0.12167ms
+Visualize     CPU   0.14141ms  CUDA   1.66005ms  CPU   0.27678ms  CUDA   4.52948ms
+Total         CPU   6.16223ms  CUDA  60.72891ms  CPU  21.25461ms  CUDA  20.92885ms
+
+Pre-Process   CPU   0.12693ms  CUDA   3.13224ms  CPU   0.07500ms  CUDA   0.82766ms
+Network       CPU   4.81787ms  CUDA  52.44620ms  CPU  21.81046ms  CUDA  16.93677ms
+Post-Process  CPU   0.12318ms  CUDA   3.70828ms  CPU   0.09516ms  CUDA   0.07078ms
+Visualize     CPU   0.17886ms  CUDA   1.67213ms  CPU   0.29344ms  CUDA   4.64271ms
+Total         CPU   5.24684ms  CUDA  60.95885ms  CPU  22.10755ms  CUDA  21.58344ms
+
+Pre-Process   CPU   0.13198ms  CUDA   3.43214ms  CPU   0.09162ms  CUDA   0.80630ms
+Network       CPU   5.71904ms  CUDA  52.00203ms  CPU  21.12122ms  CUDA  17.54927ms
+Post-Process  CPU   0.12469ms  CUDA   3.63781ms  CPU   0.05891ms  CUDA   0.09562ms
+Visualize     CPU   0.13761ms  CUDA   1.64688ms  CPU   0.29287ms  CUDA   4.61458ms
+Total         CPU   6.11332ms  CUDA  60.71886ms  CPU  21.40373ms  CUDA  21.26750ms
+
+Pre-Process   CPU   0.13490ms  CUDA   3.28193ms  CPU   0.14407ms  CUDA   0.84109ms
+Network       CPU   5.41820ms  CUDA  52.00448ms  CPU  21.81624ms  CUDA  16.93536ms
+Post-Process  CPU   0.17407ms  CUDA   3.69495ms  CPU   0.13021ms  CUDA   0.05891ms
+Visualize     CPU   0.30324ms  CUDA   1.70240ms  CPU   0.43569ms  CUDA   4.61261ms
+Total         CPU   6.03040ms  CUDA  60.68375ms  CPU  22.22542ms  CUDA  21.95328ms
+
+Pre-Process   CPU   0.11761ms  CUDA   4.33375ms  CPU   0.15683ms  CUDA   0.79729ms
+Network       CPU   5.45492ms  CUDA  50.98276ms  CPU  21.41910ms  CUDA  17.66073ms
+Post-Process  CPU   0.37532ms  CUDA   3.85662ms  CPU   0.18599ms  CUDA   0.21333ms
+Visualize     CPU   0.34819ms  CUDA   1.67333ms  CPU   0.35917ms  CUDA   4.42438ms
+Total         CPU   6.29603ms  CUDA  60.84646ms  CPU  21.87952ms  CUDA  22.70958ms
+
+Pre-Process   CPU   0.11219ms  CUDA   4.27578ms  CPU   0.09110ms  CUDA   0.80151ms
+Network       CPU   5.60659ms  CUDA  51.21000ms  CPU  21.60144ms  CUDA  17.38787ms
+Post-Process  CPU   0.26001ms  CUDA   3.82375ms  CPU   0.22594ms  CUDA   0.18646ms
+Visualize     CPU   0.31386ms  CUDA   1.66354ms  CPU   0.37371ms  CUDA   4.60740ms
+Total         CPU   6.29265ms  CUDA  60.97307ms  CPU  22.03067ms  CUDA  22.60568ms
+
+Pre-Process   CPU   0.14193ms  CUDA   3.17818ms  CPU   0.05979ms  CUDA   0.81375ms
+Network       CPU   5.90764ms  CUDA  52.41781ms  CPU  21.25268ms  CUDA  17.34953ms
+Post-Process  CPU   0.15709ms  CUDA   3.67594ms  CPU   0.08130ms  CUDA   0.16661ms
+Visualize     CPU   0.16224ms  CUDA   1.68130ms  CPU   0.22339ms  CUDA   4.61141ms
+Total         CPU   6.36890ms  CUDA  60.95323ms  CPU  21.53571ms  CUDA  21.09599ms
+
+Pre-Process   CPU   0.12974ms  CUDA   3.15151ms  CPU   0.06156ms  CUDA   0.80698ms
+Network       CPU   5.89404ms  CUDA  52.29406ms  CPU  20.74496ms  CUDA  17.02854ms
+Post-Process  CPU   0.17011ms  CUDA   3.60568ms  CPU   0.05385ms  CUDA   0.08229ms
+Visualize     CPU   0.11729ms  CUDA   1.60573ms  CPU   0.26475ms  CUDA   4.59927ms
+Total         CPU   6.31119ms  CUDA  60.65698ms  CPU  20.99013ms  CUDA  20.66031ms
+
+Pre-Process   CPU   0.12240ms  CUDA   4.07807ms  CPU   0.10500ms  CUDA   0.81005ms
+Network       CPU   5.47580ms  CUDA  51.18344ms  CPU  20.72705ms  CUDA  16.64453ms
+Post-Process  CPU   0.22881ms  CUDA   3.74130ms  CPU   0.05688ms  CUDA   0.05422ms
+Visualize     CPU   0.11558ms  CUDA   1.59125ms  CPU   0.30798ms  CUDA   4.60687ms
+Total         CPU   5.94258ms  CUDA  60.59406ms  CPU  21.01133ms  CUDA  21.53281ms
+
+Pre-Process   CPU   0.14078ms  CUDA   3.27312ms  CPU   0.05865ms  CUDA   0.80937ms
+Network       CPU   5.22726ms  CUDA  52.35641ms  CPU  21.22872ms  CUDA  16.58828ms
+Post-Process  CPU   0.19026ms  CUDA   3.71354ms  CPU   0.04589ms  CUDA   0.05708ms
+Visualize     CPU   0.19178ms  CUDA   1.54932ms  CPU   0.27204ms  CUDA   4.56167ms
+Total         CPU   5.75008ms  CUDA  60.89240ms  CPU  21.47404ms  CUDA  21.12932ms
+
+Pre-Process   CPU   0.87002ms  CUDA   4.19573ms  CPU   0.36579ms  CUDA   0.81396ms
+Network       CPU   5.24351ms  CUDA  51.24729ms  CPU  20.94065ms  CUDA  16.99604ms
+Post-Process  CPU   0.41313ms  CUDA   3.85896ms  CPU   0.08547ms  CUDA   0.04620ms
+Visualize     CPU   0.17714ms  CUDA   1.60047ms  CPU   0.35162ms  CUDA   4.56719ms
+Total         CPU   6.70380ms  CUDA  60.90245ms  CPU  22.26193ms  CUDA  22.26359ms
+
+Pre-Process   CPU   0.20360ms  CUDA   3.08010ms  CPU   0.05542ms  CUDA   0.79401ms
+Network       CPU   5.52451ms  CUDA  52.14750ms  CPU  20.98919ms  CUDA  17.18745ms
+Post-Process  CPU   0.11880ms  CUDA   3.72964ms  CPU   0.04281ms  CUDA   0.08641ms
+Visualize     CPU   0.07636ms  CUDA   1.56375ms  CPU   0.17047ms  CUDA   4.56344ms
+Total         CPU   5.92326ms  CUDA  60.52099ms  CPU  21.29101ms  CUDA  20.61146ms
+
+Pre-Process   CPU   0.15178ms  CUDA   3.31906ms  CPU   0.04646ms  CUDA   0.81370ms
+Network       CPU   5.40648ms  CUDA  52.40099ms  CPU  22.17047ms  CUDA  16.67521ms
+Post-Process  CPU   0.10620ms  CUDA   3.64787ms  CPU   0.04984ms  CUDA   0.04245ms
+Visualize     CPU   0.11907ms  CUDA   1.59391ms  CPU   0.11729ms  CUDA   4.61542ms
+Total         CPU   5.78352ms  CUDA  60.96182ms  CPU  22.41854ms  CUDA  22.07838ms
+
+Pre-Process   CPU   0.08511ms  CUDA   3.05417ms  CPU   0.05333ms  CUDA   0.80630ms
+Network       CPU   4.77131ms  CUDA  50.85927ms  CPU  21.02122ms  CUDA  17.90328ms
+Post-Process  CPU   0.08193ms  CUDA   3.65583ms  CPU   0.06573ms  CUDA   0.04974ms
+Visualize     CPU   0.12235ms  CUDA   1.63146ms  CPU   0.25475ms  CUDA   4.49088ms
+Total         CPU   5.06069ms  CUDA  59.20073ms  CPU  21.22539ms  CUDA  20.65985ms
+
+Pre-Process   CPU   0.31480ms  CUDA   3.26792ms  CPU   0.08651ms  CUDA   0.80375ms
+Network       CPU   5.39309ms  CUDA  52.02109ms  CPU  21.36237ms  CUDA  16.73031ms
+Post-Process  CPU   0.13532ms  CUDA   3.69859ms  CPU   0.07511ms  CUDA   0.07162ms
+Visualize     CPU   0.11807ms  CUDA   1.58203ms  CPU   0.26287ms  CUDA   4.56161ms
+Total         CPU   5.96128ms  CUDA  60.56963ms  CPU  21.83879ms  CUDA  21.29745ms
+
+Pre-Process   CPU   0.42819ms  CUDA   3.31359ms  CPU   0.08714ms  CUDA   0.81313ms
+Network       CPU   5.47221ms  CUDA  52.00219ms  CPU  21.23253ms  CUDA  17.13729ms
+Post-Process  CPU   0.12297ms  CUDA   3.67089ms  CPU   0.08641ms  CUDA   0.07912ms
+Visualize     CPU   0.27136ms  CUDA   1.62677ms  CPU   0.21521ms  CUDA   4.59188ms
+Total         CPU   6.29473ms  CUDA  60.61344ms  CPU  21.83426ms  CUDA  21.23609ms
+
+Pre-Process   CPU   0.10808ms  CUDA   4.46385ms  CPU   0.10589ms  CUDA   0.81427ms
+Network       CPU   5.86561ms  CUDA  50.89286ms  CPU  21.19164ms  CUDA  17.02120ms
+Post-Process  CPU   0.13302ms  CUDA   3.65073ms  CPU   0.09188ms  CUDA   0.08703ms
+Visualize     CPU   0.17370ms  CUDA   1.60438ms  CPU   0.36162ms  CUDA   4.57547ms
+Total         CPU   6.28041ms  CUDA  60.61182ms  CPU  21.49748ms  CUDA  22.41109ms
+
+Pre-Process   CPU   0.12271ms  CUDA   3.33385ms  CPU   0.11657ms  CUDA   0.78531ms
+Network       CPU   5.70883ms  CUDA  52.27984ms  CPU  21.20789ms  CUDA  17.06969ms
+Post-Process  CPU   0.24225ms  CUDA   3.78245ms  CPU   0.08115ms  CUDA   0.09224ms
+Visualize     CPU   0.16964ms  CUDA   1.66328ms  CPU   0.34881ms  CUDA   4.59714ms
+Total         CPU   6.24343ms  CUDA  61.05943ms  CPU  21.52832ms  CUDA  21.28427ms
+
+Pre-Process   CPU   0.15464ms  CUDA   3.21557ms  CPU   0.08854ms  CUDA   0.80911ms
+Network       CPU   5.52325ms  CUDA  52.44229ms  CPU  21.16070ms  CUDA  17.05896ms
+Post-Process  CPU   0.20084ms  CUDA   3.74458ms  CPU   0.13214ms  CUDA   0.08234ms
+Visualize     CPU   0.22251ms  CUDA   1.78396ms  CPU   0.17537ms  CUDA   4.60078ms
+Total         CPU   6.10124ms  CUDA  61.18641ms  CPU  21.53602ms  CUDA  21.06995ms
+
+Pre-Process   CPU   0.12839ms  CUDA   4.23083ms  CPU   0.14558ms  CUDA   0.79297ms
+Network       CPU   5.42356ms  CUDA  50.95115ms  CPU  20.99711ms  CUDA  16.92813ms
+Post-Process  CPU   0.25376ms  CUDA   3.73713ms  CPU   0.10354ms  CUDA   0.13328ms
+Visualize     CPU   0.18938ms  CUDA   1.61042ms  CPU   0.32657ms  CUDA   4.47823ms
+Total         CPU   5.99509ms  CUDA  60.52953ms  CPU  21.37461ms  CUDA  22.14776ms
+
+Pre-Process   CPU   0.12808ms  CUDA   3.11969ms  CPU   0.09682ms  CUDA   0.80234ms
+Network       CPU   5.38835ms  CUDA  51.22120ms  CPU  21.56576ms  CUDA  17.00912ms
+Post-Process  CPU   0.18662ms  CUDA   3.73781ms  CPU   0.11709ms  CUDA   0.10547ms
+Visualize     CPU   0.24152ms  CUDA   1.63891ms  CPU   0.33673ms  CUDA   4.52187ms
+Total         CPU   5.94457ms  CUDA  59.71760ms  CPU  21.90775ms  CUDA  21.36417ms
+
+Pre-Process   CPU   0.18881ms  CUDA   4.26203ms  CPU   0.11464ms  CUDA   0.82948ms
+Network       CPU   5.57789ms  CUDA  51.00510ms  CPU  21.76311ms  CUDA  17.29974ms
+Post-Process  CPU   0.17547ms  CUDA   3.71734ms  CPU   0.13485ms  CUDA   0.11526ms
+Visualize     CPU   0.30563ms  CUDA   1.68422ms  CPU   0.43595ms  CUDA   4.61635ms
+Total         CPU   6.24780ms  CUDA  60.66870ms  CPU  22.20140ms  CUDA  22.85000ms
+
+Pre-Process   CPU   0.22829ms  CUDA   3.30052ms  CPU   0.06839ms  CUDA   0.81302ms
+Network       CPU   5.95222ms  CUDA  52.40677ms  CPU  21.26977ms  CUDA  17.62010ms
+Post-Process  CPU   0.11266ms  CUDA   3.63531ms  CPU   0.06271ms  CUDA   0.15484ms
+Visualize     CPU   0.12360ms  CUDA   1.61047ms  CPU   0.23813ms  CUDA   4.62505ms
+Total         CPU   6.41676ms  CUDA  60.95308ms  CPU  21.62915ms  CUDA  21.24490ms
+
+Pre-Process   CPU   0.14214ms  CUDA   3.21526ms  CPU   0.05010ms  CUDA   0.80750ms
+Network       CPU   5.31054ms  CUDA  52.43583ms  CPU  21.72353ms  CUDA  17.07385ms
+Post-Process  CPU   0.08365ms  CUDA   3.61026ms  CPU   0.08240ms  CUDA   0.06302ms
+Visualize     CPU   0.16808ms  CUDA   1.62266ms  CPU   0.25339ms  CUDA   4.58016ms
+Total         CPU   5.70441ms  CUDA  60.88401ms  CPU  21.99817ms  CUDA  21.55567ms
+
+Pre-Process   CPU   0.12203ms  CUDA   3.17792ms  CPU   0.06349ms  CUDA   0.83594ms
+Network       CPU   5.44992ms  CUDA  52.65589ms  CPU  21.03336ms  CUDA  17.42047ms
+Post-Process  CPU   0.08766ms  CUDA   3.62911ms  CPU   0.04396ms  CUDA   0.08401ms
+Visualize     CPU   0.08302ms  CUDA   1.58713ms  CPU   0.20110ms  CUDA   4.55979ms
+Total         CPU   5.74263ms  CUDA  61.05005ms  CPU  21.26284ms  CUDA  20.82438ms
+
+Pre-Process   CPU   0.13683ms  CUDA   3.12578ms  CPU   0.08151ms  CUDA   0.80073ms
+Network       CPU   5.41997ms  CUDA  52.33953ms  CPU  21.07263ms  CUDA  16.80125ms
+Post-Process  CPU   0.10698ms  CUDA   3.62453ms  CPU   0.06667ms  CUDA   0.04448ms
+Visualize     CPU   0.13068ms  CUDA   1.61875ms  CPU   0.28542ms  CUDA   4.54693ms
+Total         CPU   5.79446ms  CUDA  60.70860ms  CPU  21.35764ms  CUDA  20.88912ms
+
+Pre-Process   CPU   0.12188ms  CUDA   3.27375ms  CPU   0.08474ms  CUDA   0.79990ms
+Network       CPU   5.98597ms  CUDA  51.11609ms  CPU  21.28529ms  CUDA  16.89651ms
+Post-Process  CPU   0.10943ms  CUDA   3.65417ms  CPU   0.09151ms  CUDA   0.06693ms
+Visualize     CPU   0.18053ms  CUDA   1.62719ms  CPU   0.37308ms  CUDA   4.61573ms
+Total         CPU   6.39780ms  CUDA  59.67120ms  CPU  21.58342ms  CUDA  21.24745ms
+
+Pre-Process   CPU   0.15615ms  CUDA   4.17969ms  CPU   0.14927ms  CUDA   0.81052ms
+Network       CPU   5.55383ms  CUDA  51.02677ms  CPU  22.06765ms  CUDA  17.07234ms
+Post-Process  CPU   0.27751ms  CUDA   3.74120ms  CPU   0.06875ms  CUDA   0.09083ms
+Visualize     CPU   0.14089ms  CUDA   1.66490ms  CPU   0.15469ms  CUDA   4.56844ms
+Total         CPU   6.12837ms  CUDA  60.61255ms  CPU  22.44183ms  CUDA  23.23167ms
+
+Pre-Process   CPU   0.07964ms  CUDA   3.23542ms  CPU   0.07229ms  CUDA   0.80760ms
+Network       CPU   5.38664ms  CUDA  50.77438ms  CPU  21.46904ms  CUDA  18.17542ms
+Post-Process  CPU   0.15026ms  CUDA   3.72073ms  CPU   0.11005ms  CUDA   0.06896ms
+Visualize     CPU   0.23678ms  CUDA   1.62797ms  CPU   0.28037ms  CUDA   4.49161ms
+Total         CPU   5.85331ms  CUDA  59.35849ms  CPU  21.73103ms  CUDA  21.35161ms
+
+Pre-Process   CPU   0.13339ms  CUDA   3.19536ms  CPU   0.08557ms  CUDA   0.84052ms
+Network       CPU   5.45700ms  CUDA  52.13979ms  CPU  20.97414ms  CUDA  17.16438ms
+Post-Process  CPU   0.23240ms  CUDA   3.79625ms  CPU   0.13120ms  CUDA   0.11130ms
+Visualize     CPU   0.22428ms  CUDA   1.60432ms  CPU   0.37470ms  CUDA   4.56234ms
+Total         CPU   6.04707ms  CUDA  60.73573ms  CPU  21.32430ms  CUDA  21.42151ms
+
+Pre-Process   CPU   0.12532ms  CUDA   3.24162ms  CPU   0.07125ms  CUDA   0.81255ms
+Network       CPU   5.17231ms  CUDA  53.62214ms  CPU  21.35826ms  CUDA  16.77865ms
+Post-Process  CPU   0.09860ms  CUDA   3.65781ms  CPU   0.06323ms  CUDA   0.63495ms
+Visualize     CPU   0.13823ms  CUDA   1.63214ms  CPU   0.18823ms  CUDA   4.59323ms
+Total         CPU   5.53445ms  CUDA  62.15370ms  CPU  21.61806ms  CUDA  21.21599ms
+
+Pre-Process   CPU   0.10469ms  CUDA   3.09927ms  CPU   0.10662ms  CUDA   0.81375ms
+Network       CPU   5.33065ms  CUDA  52.30943ms  CPU  21.10997ms  CUDA  17.09802ms
+Post-Process  CPU   0.18740ms  CUDA   3.73016ms  CPU   0.10875ms  CUDA   0.06260ms
+Visualize     CPU   0.21933ms  CUDA   1.69214ms  CPU   0.22870ms  CUDA   4.62344ms
+Total         CPU   5.84206ms  CUDA  60.83099ms  CPU  21.43003ms  CUDA  21.01057ms
+
+Pre-Process   CPU   0.12855ms  CUDA   3.23818ms  CPU   0.10115ms  CUDA   0.81172ms
+Network       CPU   5.57773ms  CUDA  53.84286ms  CPU  21.10487ms  CUDA  16.99083ms
+Post-Process  CPU   0.07818ms  CUDA   3.58443ms  CPU   0.04011ms  CUDA   0.10875ms
+Visualize     CPU   0.15521ms  CUDA   1.64474ms  CPU   0.18329ms  CUDA   4.63714ms
+Total         CPU   5.93967ms  CUDA  62.31021ms  CPU  21.37467ms  CUDA  20.96833ms
+
+Pre-Process   CPU   0.11339ms  CUDA   3.17812ms  CPU   0.06057ms  CUDA   0.83083ms
+Network       CPU   4.74485ms  CUDA  53.71714ms  CPU  21.27289ms  CUDA  16.85917ms
+Post-Process  CPU   0.11443ms  CUDA   3.72495ms  CPU   0.04438ms  CUDA   0.04016ms
+Visualize     CPU   0.09854ms  CUDA   1.62172ms  CPU   0.15318ms  CUDA   4.48010ms
+Total         CPU   5.07121ms  CUDA  62.24193ms  CPU  21.49123ms  CUDA  21.00656ms
+
+Pre-Process   CPU   0.21724ms  CUDA   3.21328ms  CPU   0.06740ms  CUDA   0.78797ms
+Network       CPU   4.81162ms  CUDA  52.35432ms  CPU  21.02778ms  CUDA  16.99729ms
+Post-Process  CPU   0.14375ms  CUDA   3.72203ms  CPU   0.05156ms  CUDA   0.04318ms
+Visualize     CPU   0.10771ms  CUDA   1.57807ms  CPU   0.27610ms  CUDA   4.63771ms
+Total         CPU   5.28033ms  CUDA  60.86770ms  CPU  21.36399ms  CUDA  20.86614ms
+
+Pre-Process   CPU   0.10037ms  CUDA   3.18479ms  CPU   0.05526ms  CUDA   0.80880ms
+Network       CPU   4.79329ms  CUDA  52.67984ms  CPU  20.63783ms  CUDA  16.79271ms
+Post-Process  CPU   0.12641ms  CUDA   3.71755ms  CPU   0.05323ms  CUDA   0.05135ms
+Visualize     CPU   0.10495ms  CUDA   1.61364ms  CPU   0.24917ms  CUDA   4.53557ms
+Total         CPU   5.12502ms  CUDA  61.19583ms  CPU  20.84668ms  CUDA  20.54031ms
+
+Pre-Process   CPU   0.13136ms  CUDA   3.09365ms  CPU   0.08136ms  CUDA   0.81005ms
+Network       CPU   5.06111ms  CUDA  53.40411ms  CPU  21.44425ms  CUDA  16.49182ms
+Post-Process  CPU   0.14558ms  CUDA   3.71641ms  CPU   0.07625ms  CUDA   0.05364ms
+Visualize     CPU   0.12943ms  CUDA   1.63776ms  CPU   0.15053ms  CUDA   4.63818ms
+Total         CPU   5.46747ms  CUDA  61.85193ms  CPU  21.73322ms  CUDA  21.21276ms
+
+Pre-Process   CPU   0.15573ms  CUDA   3.31234ms  CPU   0.06464ms  CUDA   0.81276ms
+Network       CPU   6.29291ms  CUDA  52.44260ms  CPU  21.37482ms  CUDA  17.23031ms
+Post-Process  CPU   0.11943ms  CUDA   3.68870ms  CPU   0.08495ms  CUDA   0.07604ms
+Visualize     CPU   0.15855ms  CUDA   1.63036ms  CPU   0.21032ms  CUDA   4.57177ms
+Total         CPU   6.72662ms  CUDA  61.07401ms  CPU  21.68014ms  CUDA  21.27287ms
+
+Pre-Process   CPU   0.12584ms  CUDA   3.14510ms  CPU   0.04781ms  CUDA   0.81927ms
+Network       CPU   4.85657ms  CUDA  52.61943ms  CPU  21.26409ms  CUDA  17.05583ms
+Post-Process  CPU   0.12802ms  CUDA   3.67807ms  CPU   0.09995ms  CUDA   0.08542ms
+Visualize     CPU   0.25579ms  CUDA   1.68068ms  CPU   0.19084ms  CUDA   4.63490ms
+Total         CPU   5.36622ms  CUDA  61.12328ms  CPU  21.53769ms  CUDA  21.03922ms
+
+Pre-Process   CPU   0.17922ms  CUDA   3.14849ms  CPU   0.30407ms  CUDA   0.80417ms
+Network       CPU   6.11410ms  CUDA  50.91964ms  CPU  21.05924ms  CUDA  16.98911ms
+Post-Process  CPU   0.11860ms  CUDA   3.67620ms  CPU   0.08948ms  CUDA   0.10083ms
+Visualize     CPU   0.18813ms  CUDA   1.62292ms  CPU   0.35329ms  CUDA   4.57177ms
+Total         CPU   6.60005ms  CUDA  59.36724ms  CPU  21.63202ms  CUDA  21.11953ms
+
+Pre-Process   CPU   0.12381ms  CUDA   4.49271ms  CPU   0.10750ms  CUDA   0.83734ms
+Network       CPU   5.24075ms  CUDA  50.90609ms  CPU  21.21216ms  CUDA  17.04396ms
+Post-Process  CPU   0.28001ms  CUDA   3.72151ms  CPU   0.11037ms  CUDA   0.08974ms
+Visualize     CPU   0.19448ms  CUDA   1.61391ms  CPU   0.33511ms  CUDA   4.57901ms
+Total         CPU   5.83904ms  CUDA  60.73422ms  CPU  21.55383ms  CUDA  22.59443ms
+
+Pre-Process   CPU   0.91518ms  CUDA   3.29984ms  CPU   0.09115ms  CUDA   0.81511ms
+Network       CPU   5.11100ms  CUDA  52.52682ms  CPU  21.64603ms  CUDA  17.17906ms
+Post-Process  CPU   0.10959ms  CUDA   3.64125ms  CPU   0.09412ms  CUDA   0.10755ms
+Visualize     CPU   0.17344ms  CUDA   1.70083ms  CPU   0.52246ms  CUDA   4.45667ms
+Total         CPU   6.30921ms  CUDA  61.16875ms  CPU  22.74647ms  CUDA  21.65922ms
+
+Pre-Process   CPU   0.09297ms  CUDA   3.20958ms  CPU   0.27074ms  CUDA   0.79458ms
+Network       CPU   5.89128ms  CUDA  52.74213ms  CPU  22.37823ms  CUDA  17.46969ms
+Post-Process  CPU   0.10964ms  CUDA   3.65662ms  CPU   0.09761ms  CUDA   0.09510ms
+Visualize     CPU   0.20948ms  CUDA   1.70276ms  CPU   0.26173ms  CUDA   4.53849ms
+Total         CPU   6.30338ms  CUDA  61.31109ms  CPU  22.83954ms  CUDA  22.46693ms
+
+Pre-Process   CPU   0.17928ms  CUDA   4.21667ms  CPU   0.10209ms  CUDA   0.81370ms
+Network       CPU   5.57414ms  CUDA  51.04375ms  CPU  21.44842ms  CUDA  18.34448ms
+Post-Process  CPU   0.16719ms  CUDA   3.72240ms  CPU   0.12792ms  CUDA   0.09917ms
+Visualize     CPU   0.24792ms  CUDA   1.66948ms  CPU   0.27506ms  CUDA   4.48963ms
+Total         CPU   6.16853ms  CUDA  60.65229ms  CPU  21.85770ms  CUDA  22.39094ms
+
+Pre-Process   CPU   0.10656ms  CUDA   4.39531ms  CPU   0.18714ms  CUDA   0.81625ms
+Network       CPU   5.72263ms  CUDA  51.10313ms  CPU  21.59129ms  CUDA  17.23151ms
+Post-Process  CPU   0.17261ms  CUDA   3.65588ms  CPU   0.17917ms  CUDA   0.12651ms
+Visualize     CPU   0.27657ms  CUDA   1.78005ms  CPU   0.36938ms  CUDA   4.62234ms
+Total         CPU   6.27837ms  CUDA  60.93438ms  CPU  22.06416ms  CUDA  22.98234ms
+
+Pre-Process   CPU   0.24506ms  CUDA   3.08313ms  CPU   0.09537ms  CUDA   0.79750ms
+Network       CPU   5.37341ms  CUDA  51.24089ms  CPU  21.62061ms  CUDA  17.62219ms
+Post-Process  CPU   0.18495ms  CUDA   3.73177ms  CPU   0.15891ms  CUDA   0.16734ms
+Visualize     CPU   0.29949ms  CUDA   1.71917ms  CPU   0.35792ms  CUDA   4.65135ms
+Total         CPU   6.10290ms  CUDA  59.77495ms  CPU  22.11994ms  CUDA  21.45177ms
+
+Pre-Process   CPU   0.19787ms  CUDA   4.30182ms  CPU   0.09068ms  CUDA   0.81510ms
+Network       CPU   6.26817ms  CUDA  51.10406ms  CPU  21.49930ms  CUDA  17.39609ms
+Post-Process  CPU   0.24652ms  CUDA   3.74026ms  CPU   0.15735ms  CUDA   0.15745ms
+Visualize     CPU   0.30688ms  CUDA   1.67703ms  CPU   0.37813ms  CUDA   4.59370ms
+Total         CPU   7.01943ms  CUDA  60.82318ms  CPU  21.94520ms  CUDA  22.58875ms
+
+Pre-Process   CPU   0.13297ms  CUDA   4.22125ms  CPU   0.12115ms  CUDA   0.80839ms
+Network       CPU   6.11144ms  CUDA  51.24922ms  CPU  21.13419ms  CUDA  17.32026ms
+Post-Process  CPU   0.26808ms  CUDA   3.67771ms  CPU   0.06380ms  CUDA   0.15828ms
+Visualize     CPU   0.12578ms  CUDA   1.64828ms  CPU   0.27397ms  CUDA   4.57365ms
+Total         CPU   6.63828ms  CUDA  60.79646ms  CPU  21.45212ms  CUDA  22.27057ms
+
+Pre-Process   CPU   0.12245ms  CUDA   3.12526ms  CPU   0.08995ms  CUDA   0.82167ms
+Network       CPU   5.27054ms  CUDA  50.68287ms  CPU  21.07622ms  CUDA  17.16370ms
+Post-Process  CPU   0.12219ms  CUDA   3.72339ms  CPU   0.06203ms  CUDA   0.06396ms
+Visualize     CPU   0.13459ms  CUDA   1.64146ms  CPU   0.26344ms  CUDA   4.60813ms
+Total         CPU   5.64977ms  CUDA  59.17297ms  CPU  21.35065ms  CUDA  20.81724ms
+
+Pre-Process   CPU   0.13532ms  CUDA   3.12615ms  CPU   0.11740ms  CUDA   0.83312ms
+Network       CPU   5.15575ms  CUDA  52.96885ms  CPU  21.67749ms  CUDA  16.79599ms
+Post-Process  CPU   0.16667ms  CUDA   3.74323ms  CPU   0.09552ms  CUDA   0.06286ms
+Visualize     CPU   0.23251ms  CUDA   1.76594ms  CPU   0.31495ms  CUDA   4.47807ms
+Total         CPU   5.69024ms  CUDA  61.60416ms  CPU  22.02572ms  CUDA  21.07021ms
+
+Pre-Process   CPU   0.10412ms  CUDA   4.15771ms  CPU   0.11016ms  CUDA   0.80984ms
+Network       CPU   5.51086ms  CUDA  50.93932ms  CPU  21.18805ms  CUDA  17.03698ms
+Post-Process  CPU   0.19553ms  CUDA   3.71552ms  CPU   0.12360ms  CUDA   0.09724ms
+Visualize     CPU   0.29068ms  CUDA   1.70338ms  CPU   0.36115ms  CUDA   4.56662ms
+Total         CPU   6.10118ms  CUDA  60.51594ms  CPU  21.52592ms  CUDA  22.20635ms
+
+Pre-Process   CPU   0.14454ms  CUDA   4.18052ms  CPU   0.09537ms  CUDA   0.79948ms
+Network       CPU   5.52815ms  CUDA  51.19416ms  CPU  21.67639ms  CUDA  17.12234ms
+Post-Process  CPU   0.18407ms  CUDA   3.71151ms  CPU   0.16584ms  CUDA   0.12682ms
+Visualize     CPU   0.31506ms  CUDA   1.65302ms  CPU   0.35975ms  CUDA   4.58469ms
+Total         CPU   6.17181ms  CUDA  60.73922ms  CPU  22.08213ms  CUDA  22.69964ms
+
+Pre-Process   CPU   0.27975ms  CUDA   4.25760ms  CPU   0.13474ms  CUDA   0.81714ms
+Network       CPU   5.29684ms  CUDA  50.89635ms  CPU  21.66691ms  CUDA  17.53588ms
+Post-Process  CPU   0.20355ms  CUDA   3.74130ms  CPU   0.18053ms  CUDA   0.16609ms
+Visualize     CPU   0.36303ms  CUDA   1.71052ms  CPU   0.34944ms  CUDA   4.59484ms
+Total         CPU   6.14317ms  CUDA  60.60578ms  CPU  22.26192ms  CUDA  22.75552ms
+
+Pre-Process   CPU   0.23521ms  CUDA   3.22380ms  CPU   0.09375ms  CUDA   0.81870ms
+Network       CPU   5.47195ms  CUDA  52.30849ms  CPU  20.94789ms  CUDA  17.49813ms
+Post-Process  CPU   0.21652ms  CUDA   3.73000ms  CPU   0.07240ms  CUDA   0.18109ms
+Visualize     CPU   0.73892ms  CUDA   2.16422ms  CPU   0.27454ms  CUDA   4.64422ms
+Total         CPU   6.66260ms  CUDA  61.42651ms  CPU  21.34925ms  CUDA  20.88271ms
+
+Pre-Process   CPU   0.12719ms  CUDA   4.16844ms  CPU   0.11115ms  CUDA   0.84115ms
+Network       CPU   5.39632ms  CUDA  51.02594ms  CPU  21.61535ms  CUDA  16.74438ms
+Post-Process  CPU   0.19235ms  CUDA   3.75594ms  CPU   0.20355ms  CUDA   0.07339ms
+Visualize     CPU   0.38720ms  CUDA   1.73104ms  CPU   0.34964ms  CUDA   4.61339ms
+Total         CPU   6.10306ms  CUDA  60.68135ms  CPU  22.05723ms  CUDA  22.56313ms
+
+Pre-Process   CPU   0.16792ms  CUDA   4.23078ms  CPU   0.21230ms  CUDA   0.80901ms
+Network       CPU   5.27434ms  CUDA  51.08349ms  CPU  21.28477ms  CUDA  17.38323ms
+Post-Process  CPU   0.18099ms  CUDA   3.75068ms  CPU   0.18105ms  CUDA   0.20245ms
+Visualize     CPU   0.30897ms  CUDA   1.65208ms  CPU   0.35298ms  CUDA   4.61406ms
+Total         CPU   5.93222ms  CUDA  60.71703ms  CPU  21.84603ms  CUDA  22.44432ms
+
+Pre-Process   CPU   0.14875ms  CUDA   3.96401ms  CPU   0.10834ms  CUDA   0.81604ms
+Network       CPU   5.33997ms  CUDA  51.00463ms  CPU  22.05520ms  CUDA  17.21609ms
+Post-Process  CPU   0.18250ms  CUDA   3.72312ms  CPU   0.07823ms  CUDA   0.18141ms
+Visualize     CPU   0.16870ms  CUDA   1.61854ms  CPU   0.35600ms  CUDA   4.60437ms
+Total         CPU   5.83993ms  CUDA  60.31031ms  CPU  22.39053ms  CUDA  22.76094ms
+
+Pre-Process   CPU   0.09193ms  CUDA   3.14755ms  CPU   0.07609ms  CUDA   0.82974ms
+Network       CPU   5.37044ms  CUDA  52.88401ms  CPU  22.63470ms  CUDA  17.90359ms
+Post-Process  CPU   0.18131ms  CUDA   3.66557ms  CPU   0.06250ms  CUDA   0.06359ms
+Visualize     CPU   0.12245ms  CUDA   1.80073ms  CPU   0.19797ms  CUDA   4.59375ms
+Total         CPU   5.76612ms  CUDA  61.49786ms  CPU  22.86522ms  CUDA  22.48333ms
+
+Pre-Process   CPU   0.32787ms  CUDA   4.33156ms  CPU   0.09729ms  CUDA   0.79240ms
+Network       CPU   6.81875ms  CUDA  51.08203ms  CPU  21.24487ms  CUDA  18.48057ms
+Post-Process  CPU   0.16693ms  CUDA   3.71292ms  CPU   0.12375ms  CUDA   0.06281ms
+Visualize     CPU   0.23355ms  CUDA   1.64661ms  CPU   0.37756ms  CUDA   4.43620ms
+Total         CPU   7.54710ms  CUDA  60.77312ms  CPU  21.79379ms  CUDA  22.31396ms
+
+Pre-Process   CPU   0.15016ms  CUDA   4.21349ms  CPU   0.10589ms  CUDA   0.82120ms
+Network       CPU   5.15127ms  CUDA  50.92818ms  CPU  21.39472ms  CUDA  17.03682ms
+Post-Process  CPU   0.12615ms  CUDA   3.72354ms  CPU   0.13459ms  CUDA   0.12438ms
+Visualize     CPU   0.32542ms  CUDA   1.71094ms  CPU   0.36027ms  CUDA   4.53922ms
+Total         CPU   5.75300ms  CUDA  60.57615ms  CPU  21.78535ms  CUDA  22.27583ms
+
+Pre-Process   CPU   0.13250ms  CUDA   3.35786ms  CPU   0.08943ms  CUDA   0.81771ms
+Network       CPU   5.81581ms  CUDA  52.02771ms  CPU  21.24336ms  CUDA  17.11073ms
+Post-Process  CPU   0.12323ms  CUDA   3.62245ms  CPU   0.07287ms  CUDA   0.13391ms
+Visualize     CPU   0.13740ms  CUDA   1.59521ms  CPU   0.28459ms  CUDA   4.59937ms
+Total         CPU   6.20895ms  CUDA  60.60323ms  CPU  21.53816ms  CUDA  21.34005ms
+
+Pre-Process   CPU   0.16349ms  CUDA   4.17792ms  CPU   0.12136ms  CUDA   0.79807ms
+Network       CPU   4.95324ms  CUDA  51.09151ms  CPU  21.05284ms  CUDA  17.11078ms
+Post-Process  CPU   0.31355ms  CUDA   3.73974ms  CPU   0.08792ms  CUDA   0.07333ms
+Visualize     CPU   0.17188ms  CUDA   1.65135ms  CPU   0.35423ms  CUDA   4.59130ms
+Total         CPU   5.60216ms  CUDA  60.66052ms  CPU  21.42560ms  CUDA  22.10386ms
+
+Pre-Process   CPU   0.13901ms  CUDA   3.28375ms  CPU   0.11073ms  CUDA   0.81276ms
+Network       CPU   5.03022ms  CUDA  52.42958ms  CPU  20.83814ms  CUDA  17.02479ms
+Post-Process  CPU   0.30126ms  CUDA   3.77125ms  CPU   0.04984ms  CUDA   0.08839ms
+Visualize     CPU   0.11094ms  CUDA   1.62208ms  CPU   0.24714ms  CUDA   4.59443ms
+Total         CPU   5.58143ms  CUDA  61.10667ms  CPU  21.13773ms  CUDA  20.90250ms
+
+Pre-Process   CPU   0.22443ms  CUDA   4.08313ms  CPU   0.11073ms  CUDA   0.82010ms
+Network       CPU   5.81691ms  CUDA  50.94021ms  CPU  21.10294ms  CUDA  16.74781ms
+Post-Process  CPU   0.24995ms  CUDA   3.75114ms  CPU   0.16079ms  CUDA   0.05083ms
+Visualize     CPU   0.34313ms  CUDA   1.66510ms  CPU   0.37537ms  CUDA   4.66078ms
+Total         CPU   6.63443ms  CUDA  60.43958ms  CPU  21.59889ms  CUDA  21.97438ms
+
+Pre-Process   CPU   0.11011ms  CUDA   4.21917ms  CPU   0.11172ms  CUDA   0.82359ms
+Network       CPU   5.12793ms  CUDA  51.10458ms  CPU  21.33190ms  CUDA  16.90396ms
+Post-Process  CPU   0.22730ms  CUDA   3.71740ms  CPU   0.17422ms  CUDA   0.16370ms
+Visualize     CPU   0.27975ms  CUDA   1.68729ms  CPU   0.22964ms  CUDA   4.62427ms
+Total         CPU   5.74508ms  CUDA  60.72844ms  CPU  21.72795ms  CUDA  22.43287ms
+
+Pre-Process   CPU   0.11485ms  CUDA   3.22713ms  CPU   0.14037ms  CUDA   0.79979ms
+Network       CPU   5.29705ms  CUDA  52.00620ms  CPU  21.38290ms  CUDA  17.24010ms
+Post-Process  CPU   0.22396ms  CUDA   3.69052ms  CPU   0.20641ms  CUDA   0.17380ms
+Visualize     CPU   0.23542ms  CUDA   1.66557ms  CPU   0.23652ms  CUDA   4.58385ms
+Total         CPU   5.87128ms  CUDA  60.58943ms  CPU  21.84452ms  CUDA  21.55974ms
+
+Pre-Process   CPU   0.13578ms  CUDA   3.12016ms  CPU   0.10505ms  CUDA   0.79932ms
+Network       CPU   5.54065ms  CUDA  51.19703ms  CPU  21.33831ms  CUDA  17.32656ms
+Post-Process  CPU   0.18157ms  CUDA   3.68583ms  CPU   0.14672ms  CUDA   0.20672ms
+Visualize     CPU   0.29089ms  CUDA   1.68026ms  CPU   0.28433ms  CUDA   4.57302ms
+Total         CPU   6.14890ms  CUDA  59.68328ms  CPU  21.72588ms  CUDA  21.25906ms
+
+Pre-Process   CPU   0.13782ms  CUDA   3.30359ms  CPU   0.05005ms  CUDA   0.81286ms
+Network       CPU   5.52841ms  CUDA  52.05745ms  CPU  21.09877ms  CUDA  17.18073ms
+Post-Process  CPU   0.07969ms  CUDA   3.63917ms  CPU   0.05656ms  CUDA   0.14531ms
+Visualize     CPU   0.12422ms  CUDA   1.67687ms  CPU   0.25021ms  CUDA   4.59089ms
+Total         CPU   5.87014ms  CUDA  60.67709ms  CPU  21.34321ms  CUDA  20.98583ms
+
+Pre-Process   CPU   0.09682ms  CUDA   3.26089ms  CPU   0.05823ms  CUDA   0.80568ms
+Network       CPU   5.17023ms  CUDA  52.64193ms  CPU  20.91413ms  CUDA  16.81969ms
+Post-Process  CPU   0.12641ms  CUDA   3.69042ms  CPU   0.08459ms  CUDA   0.05688ms
+Visualize     CPU   0.21902ms  CUDA   1.67573ms  CPU   0.17704ms  CUDA   4.66901ms
+Total         CPU   5.61247ms  CUDA  61.26895ms  CPU  21.15377ms  CUDA  20.78511ms
+
+Pre-Process   CPU   0.14427ms  CUDA   3.31589ms  CPU   0.07932ms  CUDA   0.79969ms
+Network       CPU   5.41263ms  CUDA  52.09599ms  CPU  20.84783ms  CUDA  16.64005ms
+Post-Process  CPU   0.12599ms  CUDA   3.65198ms  CPU   0.14985ms  CUDA   0.08448ms
+Visualize     CPU   0.11026ms  CUDA   1.62786ms  CPU   0.92398ms  CUDA   4.62839ms
+Total         CPU   5.79315ms  CUDA  60.69172ms  CPU  21.22128ms  CUDA  20.91979ms
+
+Pre-Process   CPU   0.13802ms  CUDA   4.10766ms  CPU   0.11985ms  CUDA   0.80901ms
+Network       CPU   5.58310ms  CUDA  51.14630ms  CPU  21.32086ms  CUDA  16.64708ms
+Post-Process  CPU   0.20735ms  CUDA   3.71912ms  CPU   0.08740ms  CUDA   0.14781ms
+Visualize     CPU   0.17547ms  CUDA   1.63042ms  CPU   0.37074ms  CUDA   4.56745ms
+Total         CPU   6.10394ms  CUDA  60.60349ms  CPU  21.66613ms  CUDA  22.26015ms
+
+Pre-Process   CPU   0.16464ms  CUDA   3.31651ms  CPU   0.13474ms  CUDA   0.81849ms
+Network       CPU   5.91092ms  CUDA  51.08969ms  CPU  21.08023ms  CUDA  17.24656ms
+Post-Process  CPU   0.26074ms  CUDA   3.69250ms  CPU   0.06271ms  CUDA   0.08745ms
+Visualize     CPU   0.09391ms  CUDA   1.55047ms  CPU   0.22907ms  CUDA   4.56313ms
+Total         CPU   6.43020ms  CUDA  59.64917ms  CPU  21.44232ms  CUDA  21.27489ms
+
+Pre-Process   CPU   0.30397ms  CUDA   3.07474ms  CPU   0.14651ms  CUDA   0.80563ms
+Network       CPU   5.23809ms  CUDA  52.11281ms  CPU  21.87791ms  CUDA  17.08625ms
+Post-Process  CPU   0.31360ms  CUDA   3.76318ms  CPU   0.10146ms  CUDA   0.06651ms
+Visualize     CPU   0.22922ms  CUDA   1.66750ms  CPU   0.24641ms  CUDA   4.55865ms
+Total         CPU   6.08488ms  CUDA  60.61823ms  CPU  22.42985ms  CUDA  21.87224ms
+
+Pre-Process   CPU   0.13943ms  CUDA   4.63365ms  CPU   0.06526ms  CUDA   0.83443ms
+Network       CPU   6.53724ms  CUDA  50.85885ms  CPU  21.32347ms  CUDA  17.86161ms
+Post-Process  CPU   0.14771ms  CUDA   3.67307ms  CPU   0.13552ms  CUDA   0.10146ms
+Visualize     CPU   0.35251ms  CUDA   1.77057ms  CPU   0.29563ms  CUDA   4.67745ms
+Total         CPU   7.17689ms  CUDA  60.93614ms  CPU  21.66368ms  CUDA  22.64135ms
+
+Pre-Process   CPU   0.10761ms  CUDA   3.21583ms  CPU   0.09141ms  CUDA   0.78844ms
+Network       CPU   5.74821ms  CUDA  50.81250ms  CPU  21.25659ms  CUDA  17.08099ms
+Post-Process  CPU   0.22433ms  CUDA   3.69526ms  CPU   0.09693ms  CUDA   0.13828ms
+Visualize     CPU   0.18787ms  CUDA   1.63432ms  CPU   0.25240ms  CUDA   4.56464ms
+Total         CPU   6.26801ms  CUDA  59.35791ms  CPU  21.55254ms  CUDA  21.25802ms
+
+Pre-Process   CPU   0.13823ms  CUDA   3.18901ms  CPU   0.13516ms  CUDA   0.82068ms
+Network       CPU   5.20299ms  CUDA  52.40937ms  CPU  20.97184ms  CUDA  17.12286ms
+Post-Process  CPU   0.12516ms  CUDA   3.63292ms  CPU   0.05719ms  CUDA   0.09865ms
+Visualize     CPU   0.12474ms  CUDA   1.60589ms  CPU   0.27636ms  CUDA   4.61667ms
+Total         CPU   5.59112ms  CUDA  60.83718ms  CPU  21.30243ms  CUDA  20.96792ms
+
+Pre-Process   CPU   0.11500ms  CUDA   3.21594ms  CPU   0.07005ms  CUDA   0.80729ms
+Network       CPU   5.70784ms  CUDA  52.09656ms  CPU  21.91713ms  CUDA  16.91495ms
+Post-Process  CPU   0.09766ms  CUDA   3.58130ms  CPU   0.07552ms  CUDA   0.05667ms
+Visualize     CPU   0.16047ms  CUDA   1.60260ms  CPU   0.31714ms  CUDA   4.61464ms
+Total         CPU   6.08097ms  CUDA  60.49641ms  CPU  22.17771ms  CUDA  21.82656ms
+
+Pre-Process   CPU   0.11740ms  CUDA   3.05786ms  CPU   0.11479ms  CUDA   0.82318ms
+Network       CPU   5.39752ms  CUDA  51.25161ms  CPU  21.13534ms  CUDA  17.71037ms
+Post-Process  CPU   0.19303ms  CUDA   3.68120ms  CPU   0.08042ms  CUDA   0.07708ms
+Visualize     CPU   0.16058ms  CUDA   1.61349ms  CPU   0.34501ms  CUDA   4.58792ms
+Total         CPU   5.86852ms  CUDA  59.60417ms  CPU  21.44795ms  CUDA  21.03344ms
+
+Pre-Process   CPU   0.13563ms  CUDA   3.39609ms  CPU   0.11953ms  CUDA   0.80667ms
+Network       CPU   6.40598ms  CUDA  52.02666ms  CPU  20.87981ms  CUDA  17.08740ms
+Post-Process  CPU   0.21678ms  CUDA   3.70885ms  CPU   0.06318ms  CUDA   0.08151ms
+Visualize     CPU   0.13875ms  CUDA   1.65005ms  CPU   0.35391ms  CUDA   4.47344ms
+Total         CPU   6.89714ms  CUDA  60.78167ms  CPU  21.19815ms  CUDA  21.12599ms
+
+Pre-Process   CPU   0.13037ms  CUDA   3.30281ms  CPU   0.07474ms  CUDA   0.79432ms
+Network       CPU   5.40674ms  CUDA  52.02630ms  CPU  21.30466ms  CUDA  16.87156ms
+Post-Process  CPU   0.39662ms  CUDA   3.92000ms  CPU   0.15787ms  CUDA   0.06401ms
+Visualize     CPU   0.36194ms  CUDA   1.71438ms  CPU   0.20777ms  CUDA   4.51474ms
+Total         CPU   6.29567ms  CUDA  60.96349ms  CPU  21.66764ms  CUDA  21.31036ms
+
+Pre-Process   CPU   0.08453ms  CUDA   3.27870ms  CPU   0.19370ms  CUDA   0.81385ms
+Network       CPU   5.34570ms  CUDA  51.08578ms  CPU  21.40576ms  CUDA  17.03588ms
+Post-Process  CPU   0.19073ms  CUDA   3.68880ms  CPU   0.17084ms  CUDA   0.15781ms
+Visualize     CPU   0.40668ms  CUDA   1.72901ms  CPU   0.37860ms  CUDA   4.64255ms
+Total         CPU   6.02764ms  CUDA  59.78229ms  CPU  21.85483ms  CUDA  21.69557ms
+
+Pre-Process   CPU   0.14099ms  CUDA   3.11073ms  CPU   0.11438ms  CUDA   0.79896ms
+Network       CPU   5.69420ms  CUDA  51.10963ms  CPU  21.23810ms  CUDA  17.44797ms
+Post-Process  CPU   0.27985ms  CUDA   3.72625ms  CPU   0.08594ms  CUDA   0.16995ms
+Visualize     CPU   0.18011ms  CUDA   1.59990ms  CPU   0.37990ms  CUDA   4.60338ms
+Total         CPU   6.29515ms  CUDA  59.54651ms  CPU  21.57941ms  CUDA  21.19114ms
+
+Pre-Process   CPU   0.12797ms  CUDA   4.21422ms  CPU   0.15422ms  CUDA   0.82401ms
+Network       CPU   5.43211ms  CUDA  51.07052ms  CPU  20.79814ms  CUDA  17.17005ms
+Post-Process  CPU   0.26053ms  CUDA   3.77182ms  CPU   0.05776ms  CUDA   0.08635ms
+Visualize     CPU   0.13214ms  CUDA   1.60969ms  CPU   0.27667ms  CUDA   4.59760ms
+Total         CPU   5.95274ms  CUDA  60.66625ms  CPU  21.13810ms  CUDA  21.90365ms
+
+Pre-Process   CPU   0.14818ms  CUDA   3.35307ms  CPU   0.04568ms  CUDA   0.83573ms
+Network       CPU   6.66234ms  CUDA  52.42505ms  CPU  20.89106ms  CUDA  16.79552ms
+Post-Process  CPU   0.12912ms  CUDA   3.62578ms  CPU   0.10063ms  CUDA   0.05818ms
+Visualize     CPU   0.14136ms  CUDA   1.60474ms  CPU   0.17985ms  CUDA   4.57979ms
+Total         CPU   7.08100ms  CUDA  61.00865ms  CPU  21.18555ms  CUDA  20.91646ms
+
+Pre-Process   CPU   0.10912ms  CUDA   3.11115ms  CPU   0.06912ms  CUDA   0.78667ms
+Network       CPU   5.49278ms  CUDA  51.03724ms  CPU  20.97112ms  CUDA  16.67797ms
+Post-Process  CPU   0.16464ms  CUDA   3.63115ms  CPU   0.07099ms  CUDA   0.09875ms
+Visualize     CPU   0.13026ms  CUDA   1.62833ms  CPU   0.29074ms  CUDA   4.57365ms
+Total         CPU   5.89680ms  CUDA  59.40786ms  CPU  21.22034ms  CUDA  20.80609ms
+
+Pre-Process   CPU   0.14141ms  CUDA   3.28568ms  CPU   0.07651ms  CUDA   0.81161ms
+Network       CPU   5.83128ms  CUDA  51.14974ms  CPU  21.57920ms  CUDA  16.81161ms
+Post-Process  CPU   0.20214ms  CUDA   3.69438ms  CPU   0.18818ms  CUDA   0.07172ms
+Visualize     CPU   0.38881ms  CUDA   1.69302ms  CPU   0.37037ms  CUDA   4.54276ms
+Total         CPU   6.56364ms  CUDA  59.82281ms  CPU  21.98531ms  CUDA  21.59568ms
+
+Pre-Process   CPU   0.15136ms  CUDA   4.21010ms  CPU   0.19610ms  CUDA   0.82000ms
+Network       CPU   5.50206ms  CUDA  51.02589ms  CPU  22.03208ms  CUDA  17.30094ms
+Post-Process  CPU   0.16396ms  CUDA   3.74458ms  CPU   0.34725ms  CUDA   0.18906ms
+Visualize     CPU   0.16037ms  CUDA   1.65667ms  CPU   0.30162ms  CUDA   4.63156ms
+Total         CPU   5.97775ms  CUDA  60.63724ms  CPU  22.72678ms  CUDA  23.29557ms
+
+Pre-Process   CPU   0.15792ms  CUDA   4.15052ms  CPU   0.12021ms  CUDA   0.80609ms
+Network       CPU   5.23017ms  CUDA  51.09255ms  CPU  22.48052ms  CUDA  17.93854ms
+Post-Process  CPU   0.25787ms  CUDA   3.73438ms  CPU   0.09443ms  CUDA   0.34083ms
+Visualize     CPU   0.18433ms  CUDA   1.63172ms  CPU   0.23907ms  CUDA   4.62760ms
+Total         CPU   5.83029ms  CUDA  60.60917ms  CPU  22.85308ms  CUDA  23.29443ms
+
+Pre-Process   CPU   0.13235ms  CUDA   3.24943ms  CPU   0.10662ms  CUDA   0.84338ms
+Network       CPU   5.64294ms  CUDA  52.27729ms  CPU  21.25399ms  CUDA  18.24463ms
+Post-Process  CPU   0.18948ms  CUDA   3.65901ms  CPU   0.14526ms  CUDA   0.05589ms
+Visualize     CPU   0.28563ms  CUDA   1.66177ms  CPU   0.27782ms  CUDA   4.61391ms
+Total         CPU   6.25041ms  CUDA  60.84750ms  CPU  21.63821ms  CUDA  21.34849ms
+
+Pre-Process   CPU   0.12011ms  CUDA   4.26599ms  CPU   0.10802ms  CUDA   0.79281ms
+Network       CPU   5.23314ms  CUDA  51.08765ms  CPU  21.23930ms  CUDA  17.15990ms
+Post-Process  CPU   0.18933ms  CUDA   3.76266ms  CPU   0.11813ms  CUDA   0.14635ms
+Visualize     CPU   0.25225ms  CUDA   1.63589ms  CPU   0.30016ms  CUDA   4.62542ms
+Total         CPU   5.79482ms  CUDA  60.75218ms  CPU  21.58556ms  CUDA  22.21630ms
+
+Pre-Process   CPU   0.14954ms  CUDA   3.09943ms  CPU   0.16964ms  CUDA   0.83125ms
+Network       CPU   5.38841ms  CUDA  51.55750ms  CPU  22.22646ms  CUDA  17.00214ms
+Post-Process  CPU   0.09552ms  CUDA   3.70667ms  CPU   0.33792ms  CUDA   0.11693ms
+Visualize     CPU   0.08156ms  CUDA   1.70812ms  CPU   0.12792ms  CUDA   4.62292ms
+Total         CPU   5.71503ms  CUDA  60.07172ms  CPU  22.88355ms  CUDA  22.25620ms
+
+Pre-Process   CPU   0.14297ms  CUDA   3.26333ms  CPU   0.05235ms  CUDA   0.79656ms
+Network       CPU   8.08936ms  CUDA  60.41151ms  CPU  37.46447ms  CUDA  18.02849ms
+Post-Process  CPU   0.08615ms  CUDA   5.01964ms  CPU   0.08453ms  CUDA   0.33172ms
+Visualize     CPU   0.11396ms  CUDA   4.43807ms  CPU   0.11328ms  CUDA   4.61146ms
+Total         CPU   8.43244ms  CUDA  73.13255ms  CPU  37.74432ms  CUDA  35.93125ms
+
+Pre-Process   CPU   0.13245ms  CUDA   3.24911ms  CPU   0.04854ms  CUDA   0.87099ms
+Network       CPU   5.31294ms  CUDA  76.27401ms  CPU  31.88934ms  CUDA  31.71375ms
+Post-Process  CPU   0.08214ms  CUDA   3.68172ms  CPU   0.03594ms  CUDA   0.08318ms
+Visualize     CPU   0.24719ms  CUDA   1.82151ms  CPU   0.42548ms  CUDA   7.12849ms
+Total         CPU   5.77472ms  CUDA  85.02635ms  CPU  32.10627ms  CUDA  31.65963ms
+
+Pre-Process   CPU   0.18412ms  CUDA   3.20104ms  CPU   0.21563ms  CUDA   0.80609ms
+Network       CPU   6.86204ms  CUDA  74.29131ms  CPU  27.15267ms  CUDA  27.56807ms
+Post-Process  CPU   0.14724ms  CUDA   3.65354ms  CPU   0.07011ms  CUDA   0.03635ms
+Visualize     CPU   0.06323ms  CUDA   1.62979ms  CPU   0.10448ms  CUDA   4.46271ms
+Total         CPU   7.25663ms  CUDA  82.77568ms  CPU  27.62252ms  CUDA  26.33187ms
+
+Pre-Process   CPU   0.10453ms  CUDA   3.22766ms  CPU   0.08141ms  CUDA   0.79854ms
+Network       CPU   4.90814ms  CUDA  74.95495ms  CPU  32.71868ms  CUDA  22.26188ms
+Post-Process  CPU   0.15235ms  CUDA   3.70880ms  CPU   0.11698ms  CUDA   0.07042ms
+Visualize     CPU   0.09245ms  CUDA   1.58786ms  CPU   0.25001ms  CUDA   6.60885ms
+Total         CPU   5.25747ms  CUDA  83.47927ms  CPU  33.02161ms  CUDA  31.70380ms
+
+Pre-Process   CPU   0.10162ms  CUDA   3.29500ms  CPU   0.05219ms  CUDA   0.80646ms
+Network       CPU   9.08667ms  CUDA  75.37891ms  CPU  31.40886ms  CUDA  27.61479ms
+Post-Process  CPU   0.14563ms  CUDA   3.67370ms  CPU   0.03208ms  CUDA   0.05490ms
+Visualize     CPU   0.05734ms  CUDA   1.54896ms  CPU   0.13547ms  CUDA   4.38104ms
+Total         CPU   9.39126ms  CUDA  83.89656ms  CPU  31.59475ms  CUDA  31.30068ms
+
+Pre-Process   CPU   0.16907ms  CUDA   3.15906ms  CPU   0.07641ms  CUDA   0.83271ms
+Network       CPU   5.34028ms  CUDA  71.43250ms  CPU  27.48398ms  CUDA  27.14068ms
+Post-Process  CPU   0.10750ms  CUDA   3.62964ms  CPU   0.03542ms  CUDA   0.03229ms
+Visualize     CPU   0.05787ms  CUDA   1.52662ms  CPU   0.10625ms  CUDA   4.46406ms
+Total         CPU   5.67472ms  CUDA  79.74782ms  CPU  27.76487ms  CUDA  25.94484ms
+
+Pre-Process   CPU   0.10453ms  CUDA   3.06990ms  CPU   0.07084ms  CUDA   0.84281ms
+Network       CPU   5.74633ms  CUDA  52.10917ms  CPU  20.97372ms  CUDA  21.94141ms
+Post-Process  CPU   0.10354ms  CUDA   3.65396ms  CPU   0.03609ms  CUDA   0.00156ms
+Visualize     CPU   0.10651ms  CUDA   1.61688ms  CPU   0.16808ms  CUDA   6.84250ms
+Total         CPU   6.06092ms  CUDA  60.44989ms  CPU  21.18518ms  CUDA  20.63865ms
+
+Pre-Process   CPU   0.13547ms  CUDA   3.14547ms  CPU   0.04750ms  CUDA   0.80375ms
+Network       CPU   6.67745ms  CUDA  53.85708ms  CPU  21.23596ms  CUDA  16.72953ms
+Post-Process  CPU   0.14563ms  CUDA   3.72141ms  CPU   0.03214ms  CUDA   0.03547ms
+Visualize     CPU   0.06115ms  CUDA   1.57167ms  CPU   0.13032ms  CUDA   4.61359ms
+Total         CPU   7.01969ms  CUDA  62.29562ms  CPU  21.45107ms  CUDA  20.92120ms
+
+Pre-Process   CPU   0.14683ms  CUDA   3.07151ms  CPU   0.07750ms  CUDA   0.80927ms
+Network       CPU   5.84436ms  CUDA  50.70594ms  CPU  21.06357ms  CUDA  16.93411ms
+Post-Process  CPU   0.18855ms  CUDA   3.67896ms  CPU   0.10839ms  CUDA   0.03234ms
+Visualize     CPU   0.19157ms  CUDA   1.62010ms  CPU   0.24615ms  CUDA   4.67802ms
+Total         CPU   6.37130ms  CUDA  59.07651ms  CPU  21.39628ms  CUDA  20.83755ms
+
+Pre-Process   CPU   0.13381ms  CUDA   4.50823ms  CPU   0.10927ms  CUDA   0.79292ms
+Network       CPU   5.33804ms  CUDA  50.83229ms  CPU  22.31500ms  CUDA  16.86531ms
+Post-Process  CPU   0.18573ms  CUDA   3.68219ms  CPU   0.07563ms  CUDA   0.10781ms
+Visualize     CPU   0.15610ms  CUDA   1.60281ms  CPU   0.18886ms  CUDA   4.52146ms
+Total         CPU   5.81368ms  CUDA  60.62553ms  CPU  22.63371ms  CUDA  23.67636ms
+
+Pre-Process   CPU   0.31428ms  CUDA   3.94250ms  CPU   0.09354ms  CUDA   0.81677ms
+Network       CPU   5.45148ms  CUDA  51.26844ms  CPU  21.19201ms  CUDA  18.27479ms
+Post-Process  CPU   0.20813ms  CUDA   3.72641ms  CPU   0.08735ms  CUDA   0.07656ms
+Visualize     CPU   0.76033ms  CUDA   2.12833ms  CPU   0.41558ms  CUDA   4.59646ms
+Total         CPU   6.73422ms  CUDA  61.06568ms  CPU  21.68717ms  CUDA  21.85125ms
+
+Pre-Process   CPU   0.16209ms  CUDA   4.14510ms  CPU   0.15302ms  CUDA   0.79995ms
+Network       CPU   5.17049ms  CUDA  51.34141ms  CPU  21.35503ms  CUDA  17.02141ms
+Post-Process  CPU   0.38694ms  CUDA   3.73588ms  CPU   0.20594ms  CUDA   0.08740ms
+Visualize     CPU   0.31058ms  CUDA   1.74792ms  CPU   0.22407ms  CUDA   4.59271ms
+Total         CPU   6.03009ms  CUDA  60.97031ms  CPU  21.87608ms  CUDA  22.52406ms
+
+Pre-Process   CPU   0.14203ms  CUDA   4.09526ms  CPU   0.10849ms  CUDA   0.80995ms
+Network       CPU   6.94688ms  CUDA  51.38781ms  CPU  21.30852ms  CUDA  17.36260ms
+Post-Process  CPU   0.25188ms  CUDA   3.75193ms  CPU   0.14235ms  CUDA   0.20641ms
+Visualize     CPU   0.37673ms  CUDA   1.81229ms  CPU   0.28183ms  CUDA   4.60063ms
+Total         CPU   7.71753ms  CUDA  61.04729ms  CPU  21.70139ms  CUDA  22.16276ms
+
+Pre-Process   CPU   0.25527ms  CUDA   3.18885ms  CPU   0.06500ms  CUDA   0.83349ms
+Network       CPU   5.21002ms  CUDA  52.17083ms  CPU  21.38024ms  CUDA  17.09188ms
+Post-Process  CPU   0.16620ms  CUDA   3.67078ms  CPU   0.14948ms  CUDA   0.14213ms
+Visualize     CPU   0.30386ms  CUDA   1.71490ms  CPU   0.27553ms  CUDA   4.60963ms
+Total         CPU   5.93535ms  CUDA  60.74537ms  CPU  21.84999ms  CUDA  21.27073ms
+
+Pre-Process   CPU   0.13969ms  CUDA   3.09354ms  CPU   0.05635ms  CUDA   0.79453ms
+Network       CPU   5.55388ms  CUDA  51.00646ms  CPU  20.98815ms  CUDA  17.13724ms
+Post-Process  CPU   0.09787ms  CUDA   3.63792ms  CPU   0.05417ms  CUDA   0.15010ms
+Visualize     CPU   0.10203ms  CUDA   1.69422ms  CPU   0.40980ms  CUDA   4.62953ms
+Total         CPU   5.89347ms  CUDA  59.43213ms  CPU  21.23836ms  CUDA  20.68844ms
+
+Pre-Process   CPU   0.13834ms  CUDA   3.22703ms  CPU   0.05589ms  CUDA   0.81495ms
+Network       CPU   5.05403ms  CUDA  52.92641ms  CPU  21.19211ms  CUDA  16.72573ms
+Post-Process  CPU   0.15141ms  CUDA   3.73255ms  CPU   0.12719ms  CUDA   0.05422ms
+Visualize     CPU   0.25646ms  CUDA   1.70010ms  CPU   0.26704ms  CUDA   4.39693ms
+Total         CPU   5.60024ms  CUDA  61.58609ms  CPU  21.51353ms  CUDA  20.99568ms
+
+Pre-Process   CPU   0.14339ms  CUDA   3.12135ms  CPU   0.06953ms  CUDA   0.81818ms
+Network       CPU   5.49174ms  CUDA  51.33958ms  CPU  21.24472ms  CUDA  16.82276ms
+Post-Process  CPU   0.09651ms  CUDA   3.67411ms  CPU   0.08823ms  CUDA   0.12771ms
+Visualize     CPU   0.19302ms  CUDA   1.63802ms  CPU   0.28225ms  CUDA   4.66974ms
+Total         CPU   5.92467ms  CUDA  59.77307ms  CPU  21.54587ms  CUDA  21.08359ms
+
+Pre-Process   CPU   0.10401ms  CUDA   3.14927ms  CPU   0.08417ms  CUDA   0.80536ms
+Network       CPU   5.10460ms  CUDA  52.20474ms  CPU  21.11039ms  CUDA  17.06771ms
+Post-Process  CPU   0.12130ms  CUDA   3.64714ms  CPU   0.09438ms  CUDA   0.08917ms
+Visualize     CPU   0.10985ms  CUDA   1.59177ms  CPU   0.22735ms  CUDA   4.62609ms
+Total         CPU   5.43976ms  CUDA  60.59292ms  CPU  21.39295ms  CUDA  20.97912ms
+
+Pre-Process   CPU   0.14646ms  CUDA   3.13490ms  CPU   0.22443ms  CUDA   0.81047ms
+Network       CPU   5.49185ms  CUDA  51.30854ms  CPU  21.30138ms  CUDA  16.92453ms
+Post-Process  CPU   0.19974ms  CUDA   3.69391ms  CPU   0.11485ms  CUDA   0.09484ms
+Visualize     CPU   0.24724ms  CUDA   1.61943ms  CPU   0.28172ms  CUDA   4.56490ms
+Total         CPU   6.08530ms  CUDA  59.75677ms  CPU  21.78712ms  CUDA  21.32177ms
+
+Pre-Process   CPU   0.15620ms  CUDA   3.29427ms  CPU   0.04427ms  CUDA   0.81505ms
+Network       CPU   5.35492ms  CUDA  53.85245ms  CPU  21.66603ms  CUDA  17.25719ms
+Post-Process  CPU   0.07656ms  CUDA   3.64552ms  CPU   0.06802ms  CUDA   0.11463ms
+Visualize     CPU   0.14860ms  CUDA   1.73792ms  CPU   0.30865ms  CUDA   4.61802ms
+Total         CPU   5.73628ms  CUDA  62.53015ms  CPU  21.93452ms  CUDA  21.49141ms
+
+Pre-Process   CPU   0.20933ms  CUDA   3.16146ms  CPU   0.06323ms  CUDA   0.81760ms
+Network       CPU   6.16613ms  CUDA  52.94542ms  CPU  21.46910ms  CUDA  17.31187ms
+Post-Process  CPU   0.15328ms  CUDA   3.64995ms  CPU   0.10505ms  CUDA   0.06766ms
+Visualize     CPU   0.22829ms  CUDA   1.78286ms  CPU   0.22683ms  CUDA   4.48635ms
+Total         CPU   6.75703ms  CUDA  61.53968ms  CPU  21.84671ms  CUDA  21.25541ms
+
+Pre-Process   CPU   0.10698ms  CUDA   3.23307ms  CPU   0.05068ms  CUDA   0.80687ms
+Network       CPU   5.57763ms  CUDA  52.17250ms  CPU  21.45134ms  CUDA  17.18396ms
+Post-Process  CPU   0.27246ms  CUDA   3.77646ms  CPU   0.03985ms  CUDA   0.10312ms
+Visualize     CPU   0.07521ms  CUDA   1.58000ms  CPU   0.18266ms  CUDA   4.47802ms
+Total         CPU   6.03228ms  CUDA  60.76204ms  CPU  21.64884ms  CUDA  21.31109ms
+

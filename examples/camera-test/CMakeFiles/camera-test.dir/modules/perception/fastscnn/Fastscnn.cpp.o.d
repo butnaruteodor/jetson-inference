@@ -147,7 +147,6 @@ CMakeFiles/camera-test.dir/modules/perception/fastscnn/Fastscnn.cpp.o: \
  /usr/include/c++/7/bits/basic_string.tcc \
  /usr/local/include/jetson-utils/imageFormat.h \
  /usr/local/include/jetson-utils/imageFormat.inl \
- /usr/local/include/jetson-utils/timespec.h \
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/util/logger.h \
  /home/jeet/ideas/myjetsonrepo/jetson-inference/examples/camera-test/util/logging.h \
  /usr/include/aarch64-linux-gnu/NvInferRuntimeCommon.h \
